@@ -106,9 +106,11 @@ def test_opening_hours():
     hours = response.json()
     assert len(hours) >= 7
 
-    # Check Tuesday is NOT confirmed
+    # Check Tuesday is confirmed with client-provided hours
     tuesday = next(h for h in hours if h["day_of_week"] == "Tuesday")
-    assert tuesday["is_confirmed"] is False
+    assert tuesday["is_confirmed"] is True
+    assert tuesday["opening_time"] == "10:30"
+    assert tuesday["closing_time"] == "21:00"
 
     # Check Friday has 2 intervals
     friday_intervals = [h for h in hours if h["day_of_week"] == "Friday"]

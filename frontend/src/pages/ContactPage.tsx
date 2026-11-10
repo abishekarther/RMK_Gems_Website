@@ -1,19 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { MapPin, Phone, MessageSquare, Clock, Truck, ExternalLink, Sparkles, Navigation } from 'lucide-react';
 import { SHOP_CONFIG, createGeneralWhatsAppEnquiry } from '../config/shop';
-import { fetchOpeningHours } from '../services/api';
-import type { OpeningHour } from '../types/gemstone';
 
 export const ContactPage: React.FC = () => {
-  const [hours, setHours] = useState<OpeningHour[]>([]);
-
   useEffect(() => {
     window.scrollTo(0, 0);
-    fetchOpeningHours().then((data) => {
-      if (data && data.length > 0) {
-        setHours(data);
-      }
-    });
   }, []);
 
   return (
@@ -121,81 +112,57 @@ export const ContactPage: React.FC = () => {
             <div className="bg-white rounded-2xl p-6 sm:p-8 border border-[#E8E2D9] shadow-xs">
               <h3 className="font-serif text-lg font-bold text-[#1E1E1E] flex items-center gap-2 mb-4 border-b border-[#E8E2D9] pb-3">
                 <Clock className="w-5 h-5 text-[#997A48]" />
-                <span>Opening Hours</span>
+                <span>Visiting Hours</span>
               </h3>
 
-              <div className="divide-y divide-[#F4EFE6] text-xs sm:text-sm">
-                {hours.length > 0 ? (
-                  hours.map((h) => (
-                    <div
-                      key={h.id}
-                      className={`py-2.5 flex justify-between items-center ${
-                        !h.is_confirmed ? 'bg-[#FAF8F5] -mx-2 px-2 rounded-md' : ''
-                      }`}
-                    >
-                      <span className="font-medium text-[#1E1E1E]">
-                        {h.day_of_week}
-                        {h.period_number > 1 ? ' (Evening)' : ''}
-                      </span>
-                      {h.is_closed ? (
-                        <span className="text-[#9E1B32] font-semibold">Closed</span>
-                      ) : !h.is_confirmed ? (
-                        <span className="text-[#997A48] italic font-medium">Please contact shop to confirm</span>
-                      ) : (
-                        <span className="text-[#4A4A4A]">
-                          {h.opening_time} – {h.closing_time}
-                        </span>
-                      )}
-                    </div>
-                  ))
-                ) : (
-                  <>
-                    <div className="py-2.5 flex justify-between items-center">
-                      <span className="font-medium text-[#1E1E1E]">Monday</span>
-                      <span className="text-[#4A4A4A]">10:30 AM – 9:00 PM</span>
-                    </div>
-                    <div className="py-2.5 flex justify-between items-center bg-[#FAF8F5] -mx-2 px-2 rounded-md">
-                      <span className="font-medium text-[#1E1E1E]">Tuesday</span>
-                      <span className="text-[#997A48] italic font-medium">Please contact shop to confirm</span>
-                    </div>
-                    <div className="py-2.5 flex justify-between items-center">
-                      <span className="font-medium text-[#1E1E1E]">Wednesday</span>
-                      <span className="text-[#4A4A4A]">10:30 AM – 9:00 PM</span>
-                    </div>
-                    <div className="py-2.5 flex justify-between items-center">
-                      <span className="font-medium text-[#1E1E1E]">Thursday</span>
-                      <span className="text-[#4A4A4A]">10:30 AM – 9:00 PM</span>
-                    </div>
-                    <div className="py-2.5 flex justify-between items-center">
-                      <span className="font-medium text-[#1E1E1E]">Friday</span>
-                      <div className="text-right text-[#4A4A4A]">
-                        <div>10:30 AM – 12:30 PM</div>
-                        <div className="text-xs text-[#717171]">4:00 PM – 9:00 PM</div>
-                      </div>
-                    </div>
-                    <div className="py-2.5 flex justify-between items-center">
-                      <span className="font-medium text-[#1E1E1E]">Saturday</span>
-                      <span className="text-[#4A4A4A]">10:30 AM – 9:00 PM</span>
-                    </div>
-                    <div className="py-2.5 flex justify-between items-center">
-                      <span className="font-medium text-[#1E1E1E]">Sunday</span>
-                      <span className="text-[#9E1B32] font-semibold">Closed</span>
-                    </div>
-                  </>
-                )}
+              <div className="overflow-hidden rounded-xl border border-[#E8E2D9] text-xs">
+                <div className="grid grid-cols-2 bg-[#F4EFE6] px-4 py-2.5 font-semibold text-[#1E1E1E] border-b border-[#E8E2D9]">
+                  <span>Day</span>
+                  <span className="text-right">Timings</span>
+                </div>
+                <div className="divide-y divide-[#F4EFE6] bg-white">
+                  <div className="grid grid-cols-2 px-4 py-2.5 text-[#4A4A4A]">
+                    <span className="font-medium text-[#1E1E1E]">Monday</span>
+                    <span className="text-right">10:30 AM – 9:00 PM</span>
+                  </div>
+                  <div className="grid grid-cols-2 px-4 py-2.5 text-[#4A4A4A]">
+                    <span className="font-medium text-[#1E1E1E]">Tuesday</span>
+                    <span className="text-right">10:30 AM – 9:00 PM</span>
+                  </div>
+                  <div className="grid grid-cols-2 px-4 py-2.5 text-[#4A4A4A]">
+                    <span className="font-medium text-[#1E1E1E]">Wednesday</span>
+                    <span className="text-right">10:30 AM – 9:00 PM</span>
+                  </div>
+                  <div className="grid grid-cols-2 px-4 py-2.5 text-[#4A4A4A]">
+                    <span className="font-medium text-[#1E1E1E]">Thursday</span>
+                    <span className="text-right">10:30 AM – 9:00 PM</span>
+                  </div>
+                  <div className="grid grid-cols-2 px-4 py-2.5 text-[#4A4A4A]">
+                    <span className="font-medium text-[#1E1E1E]">Friday</span>
+                    <span className="text-right">10:30 AM – 12:30 PM, 4:00 PM – 9:00 PM</span>
+                  </div>
+                  <div className="grid grid-cols-2 px-4 py-2.5 text-[#4A4A4A]">
+                    <span className="font-medium text-[#1E1E1E]">Saturday</span>
+                    <span className="text-right">10:30 AM – 9:00 PM</span>
+                  </div>
+                  <div className="grid grid-cols-2 px-4 py-2.5 text-[#4A4A4A] bg-[#FAF8F5]">
+                    <span className="font-medium text-[#1E1E1E]">Sunday</span>
+                    <span className="text-right font-semibold text-[#9E1B32]">Closed</span>
+                  </div>
+                </div>
               </div>
             </div>
 
           </div>
 
-          {/* Right Column (7 cols): Full Interactive Embedded Map */}
+          {/* Right Column (7 cols): Interactive Embedded Map */}
           <div className="lg:col-span-7 flex flex-col">
-            <div className="bg-white rounded-2xl overflow-hidden border border-[#E8E2D9] shadow-sm flex flex-col h-full min-h-[500px]">
+            <div className="bg-white rounded-2xl overflow-hidden border border-[#E8E2D9] shadow-sm flex flex-col">
               
               <div className="p-4 bg-[#FAF8F5] border-b border-[#E8E2D9] flex items-center justify-between">
                 <div>
                   <h3 className="font-serif text-base font-semibold text-[#1E1E1E]">
-                    Interactive Map
+                    Location Map
                   </h3>
                   <p className="text-xs text-[#717171]">
                     No. 12, Arafath Complex, Keela Avani Moola Veethi, Tenkasi
@@ -213,18 +180,20 @@ export const ContactPage: React.FC = () => {
                 </a>
               </div>
 
-              {/* Embedded Google Map iframe */}
-              <iframe
-                title="RMK Gems Shop Location Map"
-                src={SHOP_CONFIG.embeddedMapUrl}
-                width="100%"
-                height="100%"
-                style={{ border: 0, minHeight: '520px' }}
-                allowFullScreen={false}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="flex-1 w-full h-full"
-              />
+              {/* Embedded Google Map iframe with street-level zoom */}
+              <div className="w-full h-[320px] bg-[#EDE8E0]">
+                <iframe
+                  title="RMK Gems Shop Location Map"
+                  src={SHOP_CONFIG.embeddedMapUrl}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen={false}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="w-full h-full"
+                />
+              </div>
             </div>
           </div>
 

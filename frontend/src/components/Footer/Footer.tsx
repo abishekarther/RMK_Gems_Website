@@ -67,16 +67,12 @@ export const Footer: React.FC = () => {
             </h4>
             <div className="text-xs space-y-1.5 text-[#B8AF9F]">
               <div className="flex justify-between py-0.5 border-b border-[#2D2D2D]">
-                <span>Mon, Wed, Thu, Sat:</span>
+                <span>Mon – Thu, Sat:</span>
                 <span className="text-white">10:30 AM – 9:00 PM</span>
               </div>
               <div className="flex justify-between py-0.5 border-b border-[#2D2D2D]">
                 <span>Friday:</span>
                 <span className="text-white">10:30 AM – 12:30 PM<br/>4:00 PM – 9:00 PM</span>
-              </div>
-              <div className="flex justify-between py-0.5 border-b border-[#2D2D2D]">
-                <span>Tuesday:</span>
-                <span className="text-[#C5A880] italic">Contact shop to confirm</span>
               </div>
               <div className="flex justify-between py-0.5">
                 <span>Sunday:</span>

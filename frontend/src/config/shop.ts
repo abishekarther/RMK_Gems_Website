@@ -14,7 +14,7 @@ export const SHOP_CONFIG = {
   // Confirmed Google Maps links
   mapSearchUrl: "https://www.google.com/maps/search/?api=1&query=No.%2012%2C%20Arafath%20Complex%2C%20Keela%20Avani%20Moola%20Veethi%2C%20Near%20Theppakulam%2C%20Tenkasi%20627811%2C%20Tamil%20Nadu%2C%20India",
   directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=No.%2012%2C%20Arafath%20Complex%2C%20Keela%20Avani%20Moola%20Veethi%2C%20Near%20Theppakulam%2C%20Tenkasi%20627811%2C%20Tamil%20Nadu%2C%20India",
-  embeddedMapUrl: "https://www.google.com/maps?q=No.+12,+Arafath+Complex,+Keela+Avani+Moola+Veethi,+Near+Theppakulam,+Tenkasi+627811,+Tamil+Nadu,+India&output=embed",
+  embeddedMapUrl: "https://maps.google.com/maps?q=Arafath+Complex,+Keela+Avani+Moola+Veethi,+Tenkasi&t=&z=18&ie=UTF8&output=embed",
 };
 
 /**

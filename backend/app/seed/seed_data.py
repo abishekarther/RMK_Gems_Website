@@ -104,7 +104,7 @@ def get_seed_data():
 
     opening_hours_data = [
         {"day_of_week": "Monday", "period_number": 1, "opening_time": "10:30", "closing_time": "21:00", "is_closed": False, "is_confirmed": True, "display_order": 1},
-        {"day_of_week": "Tuesday", "period_number": 1, "opening_time": None, "closing_time": None, "is_closed": False, "is_confirmed": False, "display_order": 2},
+        {"day_of_week": "Tuesday", "period_number": 1, "opening_time": "10:30", "closing_time": "21:00", "is_closed": False, "is_confirmed": True, "display_order": 2},
         {"day_of_week": "Wednesday", "period_number": 1, "opening_time": "10:30", "closing_time": "21:00", "is_closed": False, "is_confirmed": True, "display_order": 3},
         {"day_of_week": "Thursday", "period_number": 1, "opening_time": "10:30", "closing_time": "21:00", "is_closed": False, "is_confirmed": True, "display_order": 4},
         {"day_of_week": "Friday", "period_number": 1, "opening_time": "10:30", "closing_time": "12:30", "is_closed": False, "is_confirmed": True, "display_order": 5},

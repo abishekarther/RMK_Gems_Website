@@ -60,7 +60,7 @@ export const FALLBACK_SLIDES: HomepageSlide[] = [
 
 export const FALLBACK_HOURS: OpeningHour[] = [
   { id: "h1", day_of_week: "Monday", period_number: 1, opening_time: "10:30", closing_time: "21:00", is_closed: false, is_confirmed: true, display_order: 1 },
-  { id: "h2", day_of_week: "Tuesday", period_number: 1, opening_time: undefined, closing_time: undefined, is_closed: false, is_confirmed: false, display_order: 2 },
+  { id: "h2", day_of_week: "Tuesday", period_number: 1, opening_time: "10:30", closing_time: "21:00", is_closed: false, is_confirmed: true, display_order: 2 },
   { id: "h3", day_of_week: "Wednesday", period_number: 1, opening_time: "10:30", closing_time: "21:00", is_closed: false, is_confirmed: true, display_order: 3 },
   { id: "h4", day_of_week: "Thursday", period_number: 1, opening_time: "10:30", closing_time: "21:00", is_closed: false, is_confirmed: true, display_order: 4 },
   { id: "h5", day_of_week: "Friday", period_number: 1, opening_time: "10:30", closing_time: "12:30", is_closed: false, is_confirmed: true, display_order: 5 },
