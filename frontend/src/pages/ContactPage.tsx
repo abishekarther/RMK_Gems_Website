@@ -19,7 +19,7 @@ export const ContactPage: React.FC = () => {
           </div>
 
           <h1 className="font-serif text-3xl sm:text-5xl font-bold text-[#1E1E1E] tracking-tight">
-            Contact & Boutique Visit
+            Contact & Shop Visit
           </h1>
 
           <div className="w-20 h-0.5 bg-[#C5A880] mx-auto mt-4 mb-5" />
@@ -96,12 +96,12 @@ export const ContactPage: React.FC = () => {
 
         </div>
 
-        {/* Boutique Location & Visiting Hours Unified Card */}
+        {/* Shop Location & Visiting Hours Unified Card */}
         <div className="bg-white rounded-2xl p-6 sm:p-10 border border-[#E8E2D9] shadow-xs">
           
           <div className="mb-8 pb-6 border-b border-[#E8E2D9]">
             <span className="text-xs font-semibold uppercase tracking-widest text-[#997A48]">
-              Boutique Location
+              Shop Location
             </span>
             <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#1E1E1E] mt-1">
               RMK Gems — Tenkasi, Tamil Nadu

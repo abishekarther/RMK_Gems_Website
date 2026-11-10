@@ -28,7 +28,7 @@ export const LocationSection: React.FC = () => {
               to="/contact"
               className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#997A48] hover:text-[#806437] transition-colors"
             >
-              <span>Visit Our Boutique in Tenkasi</span>
+              <span>Visit Our Shop in Tenkasi</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
