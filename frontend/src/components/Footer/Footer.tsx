@@ -1,42 +1,43 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, MessageSquare, Clock, Truck, ExternalLink } from 'lucide-react';
+import { Phone, MessageSquare, MapPin, Truck } from 'lucide-react';
 import { SHOP_CONFIG, createGeneralWhatsAppEnquiry } from '../../config/shop';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#1E1E1E] text-[#D1C7BA] pt-16 pb-12 border-t border-[#333333]">
+    <footer className="bg-[#1A1A1A] text-[#D1C7BA] pt-14 pb-10 border-t border-[#2D2D2D]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        
+        {/* Main Footer Grid: 3 Clean, Distinct Columns */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-10 border-b border-[#2D2D2D]">
           
-          {/* Col 1: Brand & Business Statement */}
-          <div className="space-y-4">
+          {/* Col 1: Brand & Craft (5 cols) */}
+          <div className="md:col-span-5 space-y-4">
             <div>
               <span className="font-serif text-2xl font-bold tracking-wider text-white">
                 RMK GEMS
               </span>
               <p className="text-xs uppercase tracking-widest text-[#997A48] mt-0.5">
-                Tenkasi, Tamil Nadu
+                Tenkasi, Tamil Nadu, India
               </p>
             </div>
             
-            <p className="font-brand-statement text-base text-[#D1C7BA] leading-relaxed">
-              &ldquo;{SHOP_CONFIG.aboutDescription}&rdquo;
+            <p className="text-xs sm:text-sm text-[#A8A196] leading-relaxed max-w-sm">
+              Sourcing, crafting, and delivering authentic natural gemstones across India.
             </p>
 
-            {/* Delivery badge */}
-            <div className="flex items-center gap-2 text-xs text-[#E5D7C2] bg-[#2A2A2A] px-3 py-2 rounded-lg border border-[#3A3A3A]">
-              <Truck className="w-4 h-4 text-[#C5A880] shrink-0" />
+            <div className="inline-flex items-center gap-2 text-xs text-[#E5D7C2] bg-[#242424] px-3 py-1.5 rounded-full border border-[#333333]">
+              <Truck className="w-3.5 h-3.5 text-[#C5A880] shrink-0" />
               <span>{SHOP_CONFIG.deliveryStatement}</span>
             </div>
           </div>
 
-          {/* Col 2: Navigation Links */}
-          <div className="space-y-3">
-            <h4 className="font-serif text-base font-semibold text-white tracking-wide">
-              Gemstone Collections
+          {/* Col 2: Navigation Links (3 cols) */}
+          <div className="md:col-span-3 space-y-3">
+            <h4 className="font-serif text-sm font-semibold text-white tracking-wider uppercase text-xs">
+              Collections
             </h4>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-xs sm:text-sm">
               <li>
                 <Link to="/" className="hover:text-white transition-colors">
                   Home
@@ -54,94 +55,57 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <Link to="/contact" className="hover:text-white transition-colors">
-                  Contact & Visiting Hours
+                  Visiting Hours & Shop Map
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Col 3: Opening Hours Summary */}
-          <div className="space-y-3">
-            <h4 className="font-serif text-base font-semibold text-white tracking-wide flex items-center gap-1.5">
-              <Clock className="w-4 h-4 text-[#C5A880]" /> Visiting Hours
+          {/* Col 3: Direct Connect & Location (4 cols) */}
+          <div className="md:col-span-4 space-y-3">
+            <h4 className="font-serif text-sm font-semibold text-white tracking-wider uppercase text-xs">
+              Quick Connect
             </h4>
-            <div className="text-xs space-y-1.5 text-[#B8AF9F]">
-              <div className="flex justify-between py-0.5 border-b border-[#2D2D2D]">
-                <span>Mon – Thu, Sat:</span>
-                <span className="text-white">10:30 AM – 9:00 PM</span>
-              </div>
-              <div className="flex justify-between py-0.5 border-b border-[#2D2D2D]">
-                <span>Friday:</span>
-                <span className="text-white">10:30 AM – 12:30 PM<br/>4:00 PM – 9:00 PM</span>
-              </div>
-              <div className="flex justify-between py-0.5">
-                <span>Sunday:</span>
-                <span className="text-white">Closed</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Col 4: Contact & Directions */}
-          <div className="space-y-3">
-            <h4 className="font-serif text-base font-semibold text-white tracking-wide">
-              Shop Location
-            </h4>
-            <div className="text-xs text-[#B8AF9F] space-y-2">
-              <p className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-[#C5A880] shrink-0 mt-0.5" />
-                <span>{SHOP_CONFIG.address}</span>
-              </p>
-
-              <p className="flex items-center gap-2">
+            <div className="space-y-2.5 text-xs sm:text-sm">
+              <p className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#C5A880] shrink-0" />
-                <a href={`tel:${SHOP_CONFIG.phoneTel}`} className="hover:text-white transition-colors">
+                <a href={`tel:${SHOP_CONFIG.phoneTel}`} className="hover:text-white transition-colors font-medium">
                   {SHOP_CONFIG.phoneDisplay}
                 </a>
               </p>
 
-              <div className="pt-2 flex flex-col gap-2">
+              <p className="flex items-center gap-2.5">
+                <MessageSquare className="w-4 h-4 text-[#C5A880] shrink-0" />
                 <a
                   href={createGeneralWhatsAppEnquiry()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-4 py-2 text-xs font-semibold text-white bg-[#997A48] hover:bg-[#806437] transition-colors rounded-lg"
+                  className="text-[#C5A880] hover:underline font-medium"
                 >
-                  <MessageSquare className="w-3.5 h-3.5" />
-                  WhatsApp Enquiry
+                  Chat on WhatsApp &rarr;
                 </a>
+              </p>
 
-                <div className="flex gap-2">
-                  <a
-                    href={SHOP_CONFIG.directionsUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 text-center py-1.5 px-2 text-[11px] bg-[#2A2A2A] hover:bg-[#333333] text-[#D1C7BA] rounded border border-[#3A3A3A] transition-colors flex items-center justify-center gap-1"
-                  >
-                    <span>Directions</span>
-                    <ExternalLink className="w-3 h-3 text-[#C5A880]" />
-                  </a>
-
-                  <a
-                    href={SHOP_CONFIG.mapSearchUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 text-center py-1.5 px-2 text-[11px] bg-[#2A2A2A] hover:bg-[#333333] text-[#D1C7BA] rounded border border-[#3A3A3A] transition-colors flex items-center justify-center gap-1"
-                  >
-                    <span>View Map</span>
-                    <ExternalLink className="w-3 h-3 text-[#C5A880]" />
-                  </a>
-                </div>
-              </div>
+              <p className="flex items-start gap-2.5 text-[#A8A196]">
+                <MapPin className="w-4 h-4 text-[#C5A880] shrink-0 mt-0.5" />
+                <span>
+                  Arafath Complex, Tenkasi •{' '}
+                  <Link to="/contact" className="text-[#C5A880] hover:underline">
+                    View Schedule & Map &rarr;
+                  </Link>
+                </span>
+              </p>
             </div>
           </div>
+
         </div>
 
         {/* Bottom copyright line */}
-        <div className="mt-12 pt-6 border-t border-[#2D2D2D] text-center text-xs text-[#7A7468]">
-          <p>© {new Date().getFullYear()} RMK Gems, Tenkasi. All rights reserved. Fine gemstone discovery & WhatsApp catalogue.</p>
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#7A7468] gap-4">
+          <p>© {new Date().getFullYear()} RMK Gems. All rights reserved.</p>
+          <p>No. 12, Arafath Complex, Keela Avani Moola Veethi, Tenkasi – 627811</p>
         </div>
       </div>
     </footer>
   );
 };
-

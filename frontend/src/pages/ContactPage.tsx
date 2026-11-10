@@ -11,107 +11,113 @@ export const ContactPage: React.FC = () => {
     <main className="py-12 sm:py-20 bg-[#FAF8F5] min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        {/* Page Header */}
+        <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-[#997A48] mb-3">
             <Sparkles className="w-4 h-4" />
-            <span>Connect With Us</span>
+            <span>Customer Assistance</span>
           </div>
 
           <h1 className="font-serif text-3xl sm:text-5xl font-bold text-[#1E1E1E] tracking-tight">
-            Contact & Location
+            Contact & Boutique Visit
           </h1>
 
           <div className="w-20 h-0.5 bg-[#C5A880] mx-auto mt-4 mb-5" />
 
           <p className="text-sm sm:text-base text-[#717171] leading-relaxed">
-            Visit our shop in Tenkasi or get in touch directly via WhatsApp for tailored consultations, certified gemstone inquiries, and nationwide delivery.
+            Connect with RMK Gems for tailored gemstone consultations, certified availability, and nationwide delivery.
           </p>
         </div>
 
-        {/* Content Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        {/* 3 Direct Contact Pillars */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           
-          {/* Left Column (5 cols): Business Details, Hours & Enquiry */}
-          <div className="lg:col-span-5 space-y-8">
-            
-            {/* Address & Direct Phone Card */}
-            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-[#E8E2D9] shadow-xs space-y-6">
-              <h2 className="font-serif text-xl sm:text-2xl font-bold text-[#1E1E1E]">
-                RMK Gems
-              </h2>
-
-              <div className="space-y-4 text-sm text-[#4A4A4A]">
-                <div className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-[#997A48] shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-semibold text-[#1E1E1E] block">Shop Address</span>
-                    <p className="mt-0.5 leading-relaxed">{SHOP_CONFIG.address}</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <Phone className="w-5 h-5 text-[#997A48] shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-semibold text-[#1E1E1E] block">Phone Number</span>
-                    <a
-                      href={`tel:${SHOP_CONFIG.phoneTel}`}
-                      className="mt-0.5 inline-block text-[#997A48] hover:underline font-semibold"
-                    >
-                      {SHOP_CONFIG.phoneDisplay}
-                    </a>
-                  </div>
-                </div>
+          {/* Pillar 1: WhatsApp */}
+          <div className="bg-white rounded-2xl p-6 border border-[#E8E2D9] shadow-xs flex flex-col justify-between">
+            <div>
+              <div className="w-10 h-10 rounded-xl bg-[#F4EFE6] flex items-center justify-center text-[#997A48] mb-4">
+                <MessageSquare className="w-5 h-5" />
               </div>
-
-              {/* Action Buttons */}
-              <div className="pt-4 border-t border-[#E8E2D9] flex flex-col gap-3">
-                <a
-                  href={createGeneralWhatsAppEnquiry()}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full py-3 px-5 text-xs font-semibold tracking-wider text-white bg-[#997A48] hover:bg-[#806437] transition-colors rounded-full flex items-center justify-center gap-2 shadow-xs"
-                >
-                  <MessageSquare className="w-4 h-4" />
-                  <span>Enquire on WhatsApp</span>
-                </a>
-
-                <div className="flex gap-3">
-                  <a
-                    href={SHOP_CONFIG.directionsUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 text-center py-2.5 px-4 text-xs font-semibold bg-[#F4EFE6] hover:bg-[#EAE2D5] text-[#1E1E1E] rounded-full transition-colors flex items-center justify-center gap-1.5"
-                  >
-                    <Navigation className="w-3.5 h-3.5 text-[#997A48]" />
-                    <span>Get Directions</span>
-                  </a>
-
-                  <a
-                    href={SHOP_CONFIG.mapSearchUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 text-center py-2.5 px-4 text-xs font-semibold bg-[#F4EFE6] hover:bg-[#EAE2D5] text-[#1E1E1E] rounded-full transition-colors flex items-center justify-center gap-1.5"
-                  >
-                    <span>View Map</span>
-                    <ExternalLink className="w-3.5 h-3.5 text-[#997A48]" />
-                  </a>
-                </div>
-              </div>
-
-              {/* All-India Delivery Statement */}
-              <div className="p-4 rounded-xl bg-[#FAF8F5] border border-[#E8E2D9] flex items-center gap-3">
-                <Truck className="w-5 h-5 text-[#997A48] shrink-0" />
-                <span className="text-xs text-[#4A4A4A] font-medium leading-relaxed">
-                  {SHOP_CONFIG.deliveryStatement}
-                </span>
-              </div>
+              <h3 className="font-serif text-lg font-bold text-[#1E1E1E]">WhatsApp Consultation</h3>
+              <p className="text-xs text-[#717171] mt-1.5 leading-relaxed">
+                Direct one-on-one assistance for gemstone inquiries, real photos, and custom requirements.
+              </p>
             </div>
+            <div className="mt-6 pt-4 border-t border-[#F4EFE6]">
+              <a
+                href={createGeneralWhatsAppEnquiry()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-2.5 px-4 text-xs font-semibold tracking-wider text-white bg-[#997A48] hover:bg-[#806437] transition-colors rounded-full flex items-center justify-center gap-2"
+              >
+                <span>Chat on WhatsApp</span>
+              </a>
+            </div>
+          </div>
 
-            {/* Opening Hours Table Card */}
-            <div className="bg-white rounded-2xl p-6 sm:p-8 border border-[#E8E2D9] shadow-xs">
-              <h3 className="font-serif text-lg font-bold text-[#1E1E1E] flex items-center gap-2 mb-4 border-b border-[#E8E2D9] pb-3">
-                <Clock className="w-5 h-5 text-[#997A48]" />
+          {/* Pillar 2: Phone */}
+          <div className="bg-white rounded-2xl p-6 border border-[#E8E2D9] shadow-xs flex flex-col justify-between">
+            <div>
+              <div className="w-10 h-10 rounded-xl bg-[#F4EFE6] flex items-center justify-center text-[#997A48] mb-4">
+                <Phone className="w-5 h-5" />
+              </div>
+              <h3 className="font-serif text-lg font-bold text-[#1E1E1E]">Direct Phone Call</h3>
+              <p className="text-xs text-[#717171] mt-1.5 leading-relaxed">
+                Speak directly with our shop team during business hours for immediate guidance.
+              </p>
+            </div>
+            <div className="mt-6 pt-4 border-t border-[#F4EFE6]">
+              <a
+                href={`tel:${SHOP_CONFIG.phoneTel}`}
+                className="w-full py-2.5 px-4 text-xs font-semibold tracking-wider text-[#1E1E1E] bg-[#F4EFE6] hover:bg-[#EAE2D5] transition-colors rounded-full flex items-center justify-center gap-2"
+              >
+                <span>Call {SHOP_CONFIG.phoneDisplay}</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Pillar 3: Delivery */}
+          <div className="bg-white rounded-2xl p-6 border border-[#E8E2D9] shadow-xs flex flex-col justify-between">
+            <div>
+              <div className="w-10 h-10 rounded-xl bg-[#F4EFE6] flex items-center justify-center text-[#997A48] mb-4">
+                <Truck className="w-5 h-5" />
+              </div>
+              <h3 className="font-serif text-lg font-bold text-[#1E1E1E]">Nationwide Delivery</h3>
+              <p className="text-xs text-[#717171] mt-1.5 leading-relaxed">
+                {SHOP_CONFIG.deliveryStatement} Secure, insured dispatch to your location.
+              </p>
+            </div>
+            <div className="mt-6 pt-4 border-t border-[#F4EFE6]">
+              <span className="w-full py-2.5 px-4 text-xs font-semibold text-[#997A48] bg-[#FAF8F5] rounded-full flex items-center justify-center">
+                All-India Insured Transit
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        {/* Boutique Location & Visiting Hours Unified Card */}
+        <div className="bg-white rounded-2xl p-6 sm:p-10 border border-[#E8E2D9] shadow-xs">
+          
+          <div className="mb-8 pb-6 border-b border-[#E8E2D9]">
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#997A48]">
+              Boutique Location
+            </span>
+            <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#1E1E1E] mt-1">
+              RMK Gems — Tenkasi, Tamil Nadu
+            </h2>
+            <p className="mt-2 text-sm text-[#4A4A4A] flex items-start gap-2">
+              <MapPin className="w-4 h-4 text-[#997A48] shrink-0 mt-0.5" />
+              <span>{SHOP_CONFIG.address}</span>
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            {/* Left: Schedule Table (6 cols) */}
+            <div className="lg:col-span-6 space-y-4">
+              <h3 className="text-xs uppercase tracking-wider font-semibold text-[#1E1E1E] flex items-center gap-2">
+                <Clock className="w-4 h-4 text-[#997A48]" />
                 <span>Visiting Hours</span>
               </h3>
 
@@ -151,39 +157,35 @@ export const ContactPage: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
 
-          </div>
-
-          {/* Right Column (7 cols): Interactive Embedded Map */}
-          <div className="lg:col-span-7 flex flex-col">
-            <div className="bg-white rounded-2xl overflow-hidden border border-[#E8E2D9] shadow-sm flex flex-col">
-              
-              <div className="p-4 bg-[#FAF8F5] border-b border-[#E8E2D9] flex items-center justify-between">
-                <div>
-                  <h3 className="font-serif text-base font-semibold text-[#1E1E1E]">
-                    Location Map
-                  </h3>
-                  <p className="text-xs text-[#717171]">
-                    No. 12, Arafath Complex, Keela Avani Moola Veethi, Tenkasi
-                  </p>
-                </div>
+              <div className="pt-2 flex gap-3">
+                <a
+                  href={SHOP_CONFIG.directionsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 text-xs font-semibold bg-[#F4EFE6] hover:bg-[#EAE2D5] text-[#1E1E1E] rounded-full transition-colors flex items-center gap-1.5"
+                >
+                  <Navigation className="w-3.5 h-3.5 text-[#997A48]" />
+                  <span>Get Directions</span>
+                </a>
 
                 <a
                   href={SHOP_CONFIG.mapSearchUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-3 py-1.5 text-xs font-medium text-[#997A48] bg-white rounded-lg border border-[#E8E2D9] hover:bg-[#F4EFE6] transition-colors flex items-center gap-1"
+                  className="px-4 py-2 text-xs font-semibold bg-[#F4EFE6] hover:bg-[#EAE2D5] text-[#1E1E1E] rounded-full transition-colors flex items-center gap-1.5"
                 >
                   <span>Open in Google Maps</span>
-                  <ExternalLink className="w-3.5 h-3.5" />
+                  <ExternalLink className="w-3.5 h-3.5 text-[#997A48]" />
                 </a>
               </div>
+            </div>
 
-              {/* Embedded Google Map iframe with street-level zoom */}
-              <div className="w-full h-[320px] bg-[#EDE8E0]">
+            {/* Right: Embedded Google Map (6 cols) */}
+            <div className="lg:col-span-6 rounded-xl overflow-hidden border border-[#E8E2D9] shadow-xs">
+              <div className="h-[280px] bg-[#EDE8E0]">
                 <iframe
-                  title="RMK Gems Shop Location Map"
+                  title="RMK Gems Exact Area Map in Tenkasi"
                   src={SHOP_CONFIG.embeddedMapUrl}
                   width="100%"
                   height="100%"
@@ -194,7 +196,12 @@ export const ContactPage: React.FC = () => {
                   className="w-full h-full"
                 />
               </div>
+              <div className="p-3 bg-[#FAF8F5] text-xs text-[#717171] flex items-center justify-between">
+                <span>Near Theppakulam, Keela Avani Moola Veethi</span>
+                <span className="font-medium text-[#997A48]">Tenkasi 627811</span>
+              </div>
             </div>
+
           </div>
 
         </div>
