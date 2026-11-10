@@ -20,8 +20,8 @@ export const Footer: React.FC = () => {
               </p>
             </div>
             
-            <p className="text-sm text-[#A89F91] leading-relaxed">
-              {SHOP_CONFIG.aboutDescription}
+            <p className="font-brand-statement text-base text-[#D1C7BA] leading-relaxed">
+              &ldquo;{SHOP_CONFIG.aboutDescription}&rdquo;
             </p>
 
             {/* Delivery badge */}

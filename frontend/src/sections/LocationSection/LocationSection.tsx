@@ -12,8 +12,8 @@ export const LocationSection: React.FC = () => {
           <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#997A48] mb-3 block">
             About RMK Gems
           </span>
-          <p className="font-serif text-xl sm:text-2xl text-[#1E1E1E] leading-relaxed italic">
-            "{SHOP_CONFIG.aboutDescription}"
+          <p className="font-brand-statement text-2xl sm:text-3xl text-[#1E1E1E] leading-relaxed font-medium">
+            &ldquo;{SHOP_CONFIG.aboutDescription}&rdquo;
           </p>
 
           <div className="mt-6 inline-flex items-center gap-2 text-xs font-medium text-[#4A4A4A] bg-white px-4 py-2 rounded-full border border-[#E8E2D9] shadow-2xs">

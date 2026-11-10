@@ -48,6 +48,13 @@
   }
 }
 
+/* Luxury Brand Statement Typography */
+.font-brand-statement {
+  font-family: 'Cormorant Garamond', 'Italiana', Georgia, serif;
+  letter-spacing: 0.015em;
+  font-style: italic;
+}
+
 /* Luxury card and subtle gradient effects */
 .luxury-gold-border {
   border: 1px solid rgba(197, 168, 128, 0.4);
