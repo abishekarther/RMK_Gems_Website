@@ -38,8 +38,8 @@ export interface GemstoneDetail extends GemstoneItem {
   history_notes?: string;
   treatments?: string;
   care_instructions?: string;
-  created_at: string;
-  updated_at: string;
+  created_at?: string;
+  updated_at?: string;
 }
 
 export interface PaginatedGemstones {

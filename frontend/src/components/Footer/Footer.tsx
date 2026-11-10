@@ -8,11 +8,11 @@ export const Footer: React.FC = () => {
     <footer className="bg-[#1A1A1A] text-[#D1C7BA] pt-14 pb-10 border-t border-[#2D2D2D]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Main Footer Grid: 3 Clean, Distinct Columns */}
+        {/* Main Footer Grid: 2 Clean, Distinct Columns */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-10 border-b border-[#2D2D2D]">
           
-          {/* Col 1: Brand & Craft (5 cols) */}
-          <div className="md:col-span-5 space-y-4">
+          {/* Col 1: Brand & Craft (7 cols) */}
+          <div className="md:col-span-7 space-y-4">
             <div>
               <span className="font-serif text-2xl font-bold tracking-wider text-white">
                 RMK GEMS
@@ -22,47 +22,18 @@ export const Footer: React.FC = () => {
               </p>
             </div>
             
-            <p className="text-xs sm:text-sm text-[#A8A196] leading-relaxed max-w-sm">
+            <p className="text-xs sm:text-sm text-[#A8A196] leading-relaxed max-w-md">
               Sourcing, crafting, and delivering authentic natural gemstones across India.
             </p>
 
-            <div className="inline-flex items-center gap-2 text-xs text-[#E5D7C2] bg-[#242424] px-3 py-1.5 rounded-full border border-[#333333]">
+            <div className="inline-flex items-center gap-2 text-xs text-[#E5D7C2] bg-[#242424] px-3.5 py-1.5 rounded-full border border-[#333333]">
               <Truck className="w-3.5 h-3.5 text-[#C5A880] shrink-0" />
               <span>{SHOP_CONFIG.deliveryStatement}</span>
             </div>
           </div>
 
-          {/* Col 2: Navigation Links (3 cols) */}
-          <div className="md:col-span-3 space-y-3">
-            <h4 className="font-serif text-sm font-semibold text-white tracking-wider uppercase text-xs">
-              Collections
-            </h4>
-            <ul className="space-y-2 text-xs sm:text-sm">
-              <li>
-                <Link to="/" className="hover:text-white transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/precious-gemstones" className="hover:text-white transition-colors">
-                  Precious Gemstones
-                </Link>
-              </li>
-              <li>
-                <Link to="/semi-precious-gemstones" className="hover:text-white transition-colors">
-                  Semi-Precious Gemstones
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="hover:text-white transition-colors">
-                  Visiting Hours & Shop Map
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Col 3: Direct Connect & Location (4 cols) */}
-          <div className="md:col-span-4 space-y-3">
+          {/* Col 2: Direct Connect & Location (5 cols) */}
+          <div className="md:col-span-5 space-y-3 md:pl-6">
             <h4 className="font-serif text-sm font-semibold text-white tracking-wider uppercase text-xs">
               Quick Connect
             </h4>
