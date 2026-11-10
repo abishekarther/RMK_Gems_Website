@@ -9,7 +9,7 @@ export const Header: React.FC = () => {
     { name: 'Home', path: '/' },
     { name: 'Precious Gemstones', path: '/precious-gemstones' },
     { name: 'Semi-Precious Gemstones', path: '/semi-precious-gemstones' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Contact & Shop Visit', path: '/contact' },
   ];
 
   return (
@@ -17,28 +17,30 @@ export const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           
-          {/* Brand Wordmark (Section 4) */}
-          <Link
-            to="/"
-            className="flex flex-col group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#997A48] rounded-sm py-1"
-            aria-label="RMK Gems Home"
-          >
-            <span className="font-serif text-2xl sm:text-3xl font-bold tracking-wider text-[#1E1E1E] group-hover:text-[#997A48] transition-colors">
-              RMK GEMS
-            </span>
-            <span className="text-[10px] uppercase tracking-[0.25em] text-[#717171] -mt-1 font-sans">
-              Tenkasi • Fine Gemstones
-            </span>
-          </Link>
+          {/* Left Zone: Brand Wordmark */}
+          <div className="flex-1 flex items-center justify-start">
+            <Link
+              to="/"
+              className="flex flex-col group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#997A48] rounded-sm py-1"
+              aria-label="RMK Gems Home"
+            >
+              <span className="font-serif text-2xl sm:text-3xl font-bold tracking-wider text-[#1E1E1E] group-hover:text-[#997A48] transition-colors">
+                RMK GEMS
+              </span>
+              <span className="text-[10px] uppercase tracking-[0.25em] text-[#717171] -mt-1 font-sans">
+                Tenkasi • Fine Gemstones
+              </span>
+            </Link>
+          </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8" aria-label="Main Navigation">
+          {/* Center Zone: Desktop Navigation (Centered) */}
+          <nav className="hidden md:flex items-center justify-center space-x-6 lg:space-x-8" aria-label="Main Navigation">
             {navLinks.map((link) => (
               <NavLink
                 key={link.path}
                 to={link.path}
                 className={({ isActive }) =>
-                  `text-sm font-medium tracking-wide transition-colors duration-200 relative py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#997A48] rounded ${
+                  `text-xs sm:text-sm uppercase tracking-wider font-medium transition-colors duration-200 relative py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#997A48] rounded ${
                     isActive
                       ? 'text-[#997A48] font-semibold after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[#997A48]'
                       : 'text-[#4A4A4A] hover:text-[#1E1E1E]'
@@ -49,6 +51,13 @@ export const Header: React.FC = () => {
               </NavLink>
             ))}
           </nav>
+
+          {/* Right Zone: Balanced Luxury Location Tag */}
+          <div className="flex-1 hidden md:flex items-center justify-end">
+            <span className="text-[11px] uppercase tracking-[0.2em] text-[#997A48] font-semibold font-sans">
+              Tenkasi, Tamil Nadu
+            </span>
+          </div>
 
           {/* Mobile Menu Button */}
           <div className="flex md:hidden items-center">

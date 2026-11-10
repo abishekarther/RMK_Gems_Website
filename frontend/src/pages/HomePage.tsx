@@ -9,11 +9,11 @@ export const HomePage: React.FC = () => {
       {/* 1. Five-Slide Gemstone History Carousel */}
       <HeroCarousel />
 
-      {/* 2. Category Selection: Precious Gemstones & Semi-Precious Gemstones */}
-      <CategorySelection />
-
-      {/* 3. Brand Statement & Location Preview */}
+      {/* 2. Brand Statement & Values */}
       <LocationSection />
+
+      {/* 3. Curated Gemstone Galleries (Precious & Semi-Precious) */}
+      <CategorySelection />
     </main>
   );
 };
