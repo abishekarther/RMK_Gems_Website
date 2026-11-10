@@ -17,7 +17,7 @@ export const CategorySelection: React.FC = () => {
           </h2>
           <div className="w-16 h-0.5 bg-[#C5A880] mx-auto mt-4 mb-4" />
           <p className="text-sm sm:text-base text-[#717171] leading-relaxed">
-            Browse our distinct categories of precious and semi-precious gemstones through interactive 3D visual models and direct WhatsApp assistance.
+            Browse our curated categories of precious and semi-precious gemstones with direct WhatsApp assistance.
           </p>
         </div>
 
@@ -34,24 +34,16 @@ export const CategorySelection: React.FC = () => {
               </div>
 
               <span className="text-xs font-semibold uppercase tracking-widest text-[#997A48]">
-                9 Iconic Varieties
+                Timeless Rarity & Value
               </span>
               
               <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#1E1E1E] mt-2 group-hover:text-[#997A48] transition-colors">
                 Precious Gemstones
               </h3>
 
-              <p className="text-sm text-[#717171] mt-4 leading-relaxed">
-                A distinguished selection of timeless corundum rubies, sapphires, Colombian emeralds, diamonds, pearls, red coral, and chrysoberyl cat’s eye.
+              <p className="text-sm sm:text-base text-[#5A5A5A] mt-4 leading-relaxed font-sans">
+                Precious gemstones are rare, natural stones prized for their exceptional beauty, extraordinary hardness, and enduring value. Historically celebrated across cultures, they represent the pinnacle of fine jewelry.
               </p>
-
-              <div className="mt-6 flex flex-wrap gap-2 text-xs text-[#717171]">
-                <span className="px-2.5 py-1 bg-[#FAF8F5] rounded-md border border-[#E8E2D9]">Ruby</span>
-                <span className="px-2.5 py-1 bg-[#FAF8F5] rounded-md border border-[#E8E2D9]">Blue Sapphire</span>
-                <span className="px-2.5 py-1 bg-[#FAF8F5] rounded-md border border-[#E8E2D9]">Emerald</span>
-                <span className="px-2.5 py-1 bg-[#FAF8F5] rounded-md border border-[#E8E2D9]">Diamond</span>
-                <span className="px-2.5 py-1 bg-[#FAF8F5] rounded-md border border-[#E8E2D9]">Cat's Eye</span>
-              </div>
             </div>
 
             <div className="relative z-10 mt-10 pt-6 border-t border-[#E8E2D9]">
@@ -75,24 +67,16 @@ export const CategorySelection: React.FC = () => {
               </div>
 
               <span className="text-xs font-semibold uppercase tracking-widest text-[#997A48]">
-                Expansive Mineral Spectrum
+                Vibrant Variety & Color
               </span>
               
               <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#1E1E1E] mt-2 group-hover:text-[#997A48] transition-colors">
                 Semi-Precious Gemstones
               </h3>
 
-              <p className="text-sm text-[#717171] mt-4 leading-relaxed">
-                A rich panorama of fine natural minerals: amethyst, turquoise, carnelian, lapis, moonstone, malachite, golden rutile, and optical tourmalines.
+              <p className="text-sm sm:text-base text-[#5A5A5A] mt-4 leading-relaxed font-sans">
+                Semi-precious gemstones encompass all other fine natural mineral gemstones. Prized for their wide spectrum of vibrant colors, distinctive patterns, and accessible charm, they are cherished for both ornamental elegance and everyday adornment.
               </p>
-
-              <div className="mt-6 flex flex-wrap gap-2 text-xs text-[#717171]">
-                <span className="px-2.5 py-1 bg-[#FAF8F5] rounded-md border border-[#E8E2D9]">Amethyst</span>
-                <span className="px-2.5 py-1 bg-[#FAF8F5] rounded-md border border-[#E8E2D9]">Lapis</span>
-                <span className="px-2.5 py-1 bg-[#FAF8F5] rounded-md border border-[#E8E2D9]">Moonstone</span>
-                <span className="px-2.5 py-1 bg-[#FAF8F5] rounded-md border border-[#E8E2D9]">Malachite</span>
-                <span className="px-2.5 py-1 bg-[#FAF8F5] rounded-md border border-[#E8E2D9]">Carnelian</span>
-              </div>
             </div>
 
             <div className="relative z-10 mt-10 pt-6 border-t border-[#E8E2D9]">
@@ -111,4 +95,3 @@ export const CategorySelection: React.FC = () => {
     </section>
   );
 };
-

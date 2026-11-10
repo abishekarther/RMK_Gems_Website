@@ -77,7 +77,7 @@ def get_seed_data():
         },
         {
             "title": "Discover the Gemstone World",
-            "subtitle": "Step into our curated gallery of precious and semi-precious treasures at RMK Gems. Explore interactive 3D visualisations and connect directly for bespoke enquiries.",
+            "subtitle": "Step into our curated gallery of precious and semi-precious treasures at RMK Gems. Explore authentic polished gemstones and connect directly for bespoke enquiries.",
             "image_url": "/images/slides/slide-5-discovery.webp",
             "image_alt_text": "Curated selection of natural coloured gemstones and mineral crystals",
             "image_credit": "RMK Gems Curatorial Collection",

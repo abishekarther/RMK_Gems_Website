@@ -48,7 +48,7 @@ export const FALLBACK_SLIDES: HomepageSlide[] = [
   {
     id: "slide-5",
     title: "Discover the Gemstone World",
-    subtitle: "Step into our curated gallery of precious and semi-precious treasures at RMK Gems. Explore interactive 3D visualisations and connect directly for bespoke enquiries.",
+    subtitle: "Step into our curated gallery of precious and semi-precious treasures at RMK Gems. Explore authentic polished gemstones and connect directly for bespoke enquiries.",
     image_url: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1920&q=80",
     image_alt_text: "Curated selection of natural coloured gemstones and mineral crystals",
     image_credit: "RMK Gems Curatorial Collection",
