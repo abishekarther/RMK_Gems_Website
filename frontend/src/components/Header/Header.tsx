@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Menu, X, Phone } from 'lucide-react';
-import { SHOP_CONFIG, createGeneralWhatsAppEnquiry } from '../../config/shop';
+import { Menu, X } from 'lucide-react';
 
 export const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -51,26 +50,6 @@ export const Header: React.FC = () => {
             ))}
           </nav>
 
-          {/* Header Action: Phone & WhatsApp */}
-          <div className="hidden lg:flex items-center space-x-5">
-            <a
-              href={`tel:${SHOP_CONFIG.phoneTel}`}
-              className="text-xs tracking-wider text-[#4A4A4A] hover:text-[#997A48] flex items-center gap-1.5 focus:outline-none focus-visible:ring-1 focus-visible:ring-[#997A48] rounded"
-            >
-              <Phone className="w-3.5 h-3.5 text-[#997A48]" />
-              <span>{SHOP_CONFIG.phoneDisplay}</span>
-            </a>
-
-            <a
-              href={createGeneralWhatsAppEnquiry()}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 text-xs font-semibold tracking-wider text-white bg-[#997A48] hover:bg-[#806437] transition-colors rounded-full shadow-xs focus:outline-none focus-visible:ring-2 focus-visible:ring-[#997A48]"
-            >
-              Enquire on WhatsApp
-            </a>
-          </div>
-
           {/* Mobile Menu Button */}
           <div className="flex md:hidden items-center">
             <button
@@ -105,28 +84,8 @@ export const Header: React.FC = () => {
               {link.name}
             </NavLink>
           ))}
-
-          <div className="pt-4 border-t border-[#E8E2D9] space-y-3">
-            <a
-              href={`tel:${SHOP_CONFIG.phoneTel}`}
-              className="block px-3 py-2 text-sm text-[#4A4A4A] flex items-center gap-2"
-            >
-              <Phone className="w-4 h-4 text-[#997A48]" />
-              <span>{SHOP_CONFIG.phoneDisplay}</span>
-            </a>
-
-            <a
-              href={createGeneralWhatsAppEnquiry()}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block w-full text-center px-4 py-2.5 text-xs font-semibold tracking-wider text-white bg-[#997A48] hover:bg-[#806437] transition-colors rounded-full"
-            >
-              Enquire on WhatsApp
-            </a>
-          </div>
         </div>
       )}
     </header>
   );
 };
-
