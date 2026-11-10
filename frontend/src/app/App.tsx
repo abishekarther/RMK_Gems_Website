@@ -13,14 +13,16 @@ import { NotFoundPage } from '../pages/NotFoundPage';
 const AppContent: React.FC = () => {
   const location = useLocation();
 
-  // Hide footer on: Precious Gemstones, Semi-Precious Gemstones, and Contact pages
+  // Hide footer on: Precious Gemstones, Semi-Precious Gemstones, Contact, and inside every gemstone detail page
   const hideFooterRoutes = [
     '/precious-gemstones',
     '/semi-precious-gemstones',
     '/contact',
   ];
 
-  const shouldHideFooter = hideFooterRoutes.includes(location.pathname);
+  const shouldHideFooter =
+    hideFooterRoutes.includes(location.pathname) ||
+    location.pathname.startsWith('/gemstones');
 
   return (
     <div className="flex flex-col min-h-screen bg-[#FAF8F5] text-[#1E1E1E]">
