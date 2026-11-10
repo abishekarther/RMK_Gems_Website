@@ -1,0 +1,24 @@
+{
+  "name": "rmk-gems-website",
+  "version": "1.1.0",
+  "description": "RMK Gems — Fine Gemstone Catalogue & WhatsApp Discovery Website",
+  "scripts": {
+    "install:all": "npm --prefix frontend install && python -m venv backend/venv && backend\\venv\\Scripts\\pip install -r backend/requirements.txt",
+    "dev:backend": "backend\\venv\\Scripts\\python -m uvicorn backend.app.main:app --reload --port 8000",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "test:backend": "backend\\venv\\Scripts\\python -m pytest backend/tests/test_api.py -v",
+    "test": "npm run test:backend && npm run build:frontend"
+  },
+  "keywords": [
+    "rmk-gems",
+    "gemstone-catalogue",
+    "tenkasi",
+    "threejs",
+    "fastapi",
+    "react"
+  ],
+  "author": "RMK Gems Development Team",
+  "license": "Private"
+}
+
