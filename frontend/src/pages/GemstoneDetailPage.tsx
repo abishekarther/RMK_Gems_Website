@@ -92,8 +92,8 @@ export const GemstoneDetailPage: React.FC = () => {
         {/* Gemstone Presentation Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
-          {/* Left Column (5 cols): Original Gemstone Photo */}
-          <div className="lg:col-span-5 sticky top-28 space-y-4">
+          {/* Left Column (5 cols): Original Gemstone Photo (sticky only on desktop) */}
+          <div className="lg:col-span-5 relative lg:sticky lg:top-28 space-y-4">
             <div className="w-full aspect-square overflow-hidden rounded-2xl bg-white border border-[#E8E2D9] shadow-sm flex items-center justify-center p-8">
               <img
                 src={photoUrl}
