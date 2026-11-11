@@ -74,8 +74,8 @@ export const HeroCarousel: React.FC = () => {
   if (total === 0) {
     return (
       <section className="w-full bg-[#FAF8F5] py-0 lg:py-6">
-        <div className="w-full lg:w-[80%] mx-auto h-[520px] sm:h-[600px] lg:h-[650px] bg-[#12100E] lg:rounded-2xl flex items-center justify-center animate-pulse">
-          <p className="font-serif text-lg text-[#C5A880]">Loading Gemstone Heritage...</p>
+        <div className="w-full lg:w-[80%] max-w-[1300px] mx-auto aspect-[16/9] bg-[#12100E] lg:rounded-2xl flex items-center justify-center animate-pulse">
+          <p className="font-serif text-sm sm:text-base text-[#C5A880]">Loading Gemstone Heritage...</p>
         </div>
       </section>
     );
@@ -92,8 +92,11 @@ export const HeroCarousel: React.FC = () => {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
-      {/* 80% Width Centered on Laptop/Desktop, Full-Width on Mobile/Tablet */}
-      <div className="relative w-full lg:w-[80%] mx-auto h-[520px] sm:h-[600px] lg:h-[650px] overflow-hidden lg:rounded-2xl lg:shadow-2xl lg:border lg:border-[#E8E2D9] bg-[#1A1A1A]">
+      {/* 
+        Native 16:9 Aspect Ratio on Mobile/Tablet so 100% of the image graphics & typography fit without any cropping.
+        On Laptop/Desktop: 80% width centered with rounded luxury frame.
+      */}
+      <div className="relative w-full lg:w-[80%] max-w-[1300px] mx-auto aspect-[16/9] overflow-hidden lg:rounded-2xl lg:shadow-2xl lg:border lg:border-[#E8E2D9] bg-[#1A1A1A]">
         {/* Slide Images */}
         {slides.map((slide, idx) => (
           <div
@@ -119,16 +122,16 @@ export const HeroCarousel: React.FC = () => {
             </Link>
 
             {/* Subtle bottom shadow vignette for controls readability without obscuring slide artwork */}
-            <div className="absolute inset-x-0 bottom-0 h-24 sm:h-32 bg-gradient-to-t from-black/75 via-black/30 to-transparent pointer-events-none" />
+            <div className="absolute inset-x-0 bottom-0 h-12 sm:h-20 lg:h-28 bg-gradient-to-t from-black/75 via-black/25 to-transparent pointer-events-none" />
           </div>
         ))}
 
         {/* Floating CTA Pill (Bottom Left) */}
         {currentSlide && currentSlide.button_link && (
-          <div className="absolute z-20 bottom-6 sm:bottom-8 left-4 sm:left-8">
+          <div className="absolute z-20 bottom-2.5 sm:bottom-4 lg:bottom-6 left-2.5 sm:left-4 lg:left-8">
             <Link
               to={currentSlide.button_link}
-              className="inline-flex items-center gap-2 px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-black/65 hover:bg-black/90 backdrop-blur-md border border-[#C5A880]/70 text-white text-xs sm:text-sm font-medium transition-all shadow-lg hover:border-[#C5A880] hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C5A880]"
+              className="inline-flex items-center gap-1 sm:gap-1.5 lg:gap-2 px-2.5 py-1 sm:px-3.5 sm:py-1.5 lg:px-5 lg:py-2 rounded-full bg-black/65 hover:bg-black/90 backdrop-blur-md border border-[#C5A880]/70 text-white text-[10px] sm:text-xs lg:text-sm font-medium transition-all shadow-md hover:border-[#C5A880] hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C5A880]"
             >
               <span>{currentSlide.button_text}</span>
               <span className="text-[#C5A880] font-bold">&rarr;</span>
@@ -137,7 +140,7 @@ export const HeroCarousel: React.FC = () => {
         )}
 
         {/* Prev / Next Controls (Bottom Right - No Stop Button) */}
-        <div className="absolute z-20 bottom-6 sm:bottom-8 right-4 sm:right-8 flex items-center gap-2.5 sm:gap-3">
+        <div className="absolute z-20 bottom-2.5 sm:bottom-4 lg:bottom-6 right-2.5 sm:right-4 lg:right-8 flex items-center gap-1.5 sm:gap-2">
           {/* Prev Slide */}
           <button
             type="button"
@@ -145,10 +148,10 @@ export const HeroCarousel: React.FC = () => {
               e.stopPropagation();
               goToPrev();
             }}
-            className="p-2 sm:p-2.5 rounded-full bg-black/55 hover:bg-black/85 backdrop-blur-sm border border-white/20 text-white transition-all hover:scale-110 hover:border-[#C5A880] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C5A880]"
+            className="p-1 sm:p-1.5 lg:p-2 rounded-full bg-black/55 hover:bg-black/85 backdrop-blur-sm border border-white/20 text-white transition-all hover:scale-110 hover:border-[#C5A880] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C5A880]"
             aria-label="Previous slide"
           >
-            <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
+            <ChevronLeft className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5" />
           </button>
 
           {/* Next Slide */}
@@ -158,16 +161,16 @@ export const HeroCarousel: React.FC = () => {
               e.stopPropagation();
               goToNext();
             }}
-            className="p-2 sm:p-2.5 rounded-full bg-black/55 hover:bg-black/85 backdrop-blur-sm border border-white/20 text-white transition-all hover:scale-110 hover:border-[#C5A880] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C5A880]"
+            className="p-1 sm:p-1.5 lg:p-2 rounded-full bg-black/55 hover:bg-black/85 backdrop-blur-sm border border-white/20 text-white transition-all hover:scale-110 hover:border-[#C5A880] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C5A880]"
             aria-label="Next slide"
           >
-            <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
+            <ChevronRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5" />
           </button>
         </div>
 
         {/* Slide Indicators (Bottom Center) */}
         <div
-          className="absolute z-20 bottom-7 sm:bottom-9 left-1/2 -translate-x-1/2 flex items-center gap-2"
+          className="absolute z-20 bottom-3 sm:bottom-5 lg:bottom-7 left-1/2 -translate-x-1/2 flex items-center gap-1 sm:gap-1.5 lg:gap-2"
           role="tablist"
           aria-label="Slides"
         >
@@ -182,8 +185,8 @@ export const HeroCarousel: React.FC = () => {
                 e.stopPropagation();
                 setCurrentIndex(idx);
               }}
-              className={`h-2 rounded-full transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C5A880] ${
-                idx === currentIndex ? 'w-8 bg-[#C5A880]' : 'w-2 bg-white/40 hover:bg-white/70'
+              className={`h-1 sm:h-1.5 rounded-full transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C5A880] ${
+                idx === currentIndex ? 'w-4 sm:w-6 lg:w-8 bg-[#C5A880]' : 'w-1 sm:w-1.5 lg:w-2 bg-white/40 hover:bg-white/70'
               }`}
             />
           ))}
