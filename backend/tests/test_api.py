@@ -81,13 +81,20 @@ def test_homepage_slides():
     assert response.status_code == 200
     slides = response.json()
     assert len(slides) == 5
-    # Verify titles reflect gemstone history, not shop history
+    # Verify titles and 5-slide images
     titles = [s["title"] for s in slides]
-    assert "The Story of Gemstones" in titles
-    assert "Treasured Through Time" in titles
-    assert "The Legacy of Ruby and Sapphire" in titles
-    assert "Emeralds, Diamonds and Royal Heritage" in titles
-    assert "Discover the Gemstone World" in titles
+    assert "RMK Gems Collection" in titles
+    assert "Ruby — The King of Gemstones" in titles
+    assert "Emerald — Nature's Green Treasure" in titles
+    assert "Blue Sapphire — The Stone of Royalty" in titles
+    assert "The Journey of a Gemstone" in titles
+    assert [s["image_url"] for s in slides] == [
+        "/images/slides/slide-1.jpg",
+        "/images/slides/slide-2.jpg",
+        "/images/slides/slide-3.jpg",
+        "/images/slides/slide-4.jpg",
+        "/images/slides/slide-5.jpg",
+    ]
 
 def test_shop_settings():
     response = client.get("/api/v1/shop")
