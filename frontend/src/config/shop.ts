@@ -11,10 +11,13 @@ export const SHOP_CONFIG = {
   deliveryStatement: "All-India delivery is offered on all gemstones.",
   aboutDescription: "RMK Gems specializes in sourcing, crafting and delivering gemstones, with a focus on quality, authenticity and natural beauty.",
   
-  // Confirmed Google Maps links
-  mapSearchUrl: "https://www.google.com/maps/search/?api=1&query=No.%2012%2C%20Arafath%20Complex%2C%20Keela%20Avani%20Moola%20Veethi%2C%20Near%20Theppakulam%2C%20Tenkasi%20627811%2C%20Tamil%20Nadu%2C%20India",
-  directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=No.%2012%2C%20Arafath%20Complex%2C%20Keela%20Avani%20Moola%20Veethi%2C%20Near%20Theppakulam%2C%20Tenkasi%20627811%2C%20Tamil%20Nadu%2C%20India",
-  embeddedMapUrl: "https://maps.google.com/maps?q=Keela+Avani+Moola+Veethi,+Tenkasi,+Tamil+Nadu+627811&t=m&z=15&ie=UTF8&output=embed",
+  // Verified Google Maps coordinates (https://maps.app.goo.gl/8FnGYe95aAVwfCVJA)
+  latitude: 8.9576002,
+  longitude: 77.3094673,
+
+  // Confirmed Google Maps links for external navigation
+  mapSearchUrl: "https://maps.app.goo.gl/8FnGYe95aAVwfCVJA",
+  directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=8.9576002,77.3094673",
 };
 
 /**

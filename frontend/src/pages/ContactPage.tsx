@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { MapPin, Phone, MessageSquare, Clock, Truck, ExternalLink, Sparkles, Navigation } from 'lucide-react';
 import { SHOP_CONFIG, createGeneralWhatsAppEnquiry } from '../config/shop';
+import { LeafletMap } from '../components/Map/LeafletMap';
 
 export const ContactPage: React.FC = () => {
   useEffect(() => {
@@ -181,7 +182,7 @@ export const ContactPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Right: Embedded Google Map Card with Full Outer Cover Framing (6 cols) */}
+            {/* Right: Embedded Interactive Leaflet.js Map Card (6 cols) */}
             <div className="lg:col-span-6 rounded-2xl overflow-hidden border border-[#E8E2D9] shadow-xs bg-white flex flex-col">
               {/* Top Outer Cover Header */}
               <div className="px-4 py-3 bg-[#FAF8F5] border-b border-[#E8E2D9] flex items-center justify-between">
@@ -195,24 +196,14 @@ export const ContactPage: React.FC = () => {
                   rel="noopener noreferrer"
                   className="text-[11px] text-[#997A48] hover:underline flex items-center gap-1 font-medium"
                 >
-                  <span>Open in Maps</span>
+                  <span>Open in Google Maps</span>
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </div>
 
-              {/* Map Viewport - Balanced height */}
-              <div className="relative w-full h-[320px] sm:h-[350px] bg-[#EDE8E0]">
-                <iframe
-                  title="RMK Gems Location Map - Keela Avani Moola Veethi, Tenkasi"
-                  src={SHOP_CONFIG.embeddedMapUrl}
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen={false}
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="w-full h-full"
-                />
+              {/* Leaflet.js Interactive Map Viewport */}
+              <div className="relative w-full h-[320px] sm:h-[350px] bg-[#EDE8E0] z-0">
+                <LeafletMap />
               </div>
 
               {/* Bottom Outer Cover Footer */}
