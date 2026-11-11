@@ -5,7 +5,7 @@ import { SHOP_CONFIG } from '../../config/shop';
 
 export const LocationSection: React.FC = () => {
   return (
-    <section className="pt-10 pb-8 sm:pt-16 sm:pb-10 bg-[#FAF8F5]">
+    <section className="pt-8 sm:pt-16 pb-12 sm:pb-10 bg-[#FAF8F5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Brand Statement */}

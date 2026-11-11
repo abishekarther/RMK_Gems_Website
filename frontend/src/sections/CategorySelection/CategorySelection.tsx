@@ -4,7 +4,7 @@ import { Sparkles, ArrowRight, Gem } from 'lucide-react';
 
 export const CategorySelection: React.FC = () => {
   return (
-    <section className="pt-10 sm:pt-14 pb-16 sm:pb-20 bg-[#FAF8F5]">
+    <section className="pt-24 sm:pt-14 pb-16 sm:pb-20 bg-[#FAF8F5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading - Compact, balanced spacing */}
