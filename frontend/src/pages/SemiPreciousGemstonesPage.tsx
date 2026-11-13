@@ -3,23 +3,23 @@ import { Search, Sparkles, X, RotateCcw } from 'lucide-react';
 import type { GemstoneItem } from '../types/gemstone';
 import { fetchGemstones } from '../services/api';
 import { GemstoneCard } from '../components/GemstoneCard/GemstoneCard';
+import { FALLBACK_GEMSTONES } from '../data/gemstoneFallbackData';
 
 export const SemiPreciousGemstonesPage: React.FC = () => {
-  const [gemstones, setGemstones] = useState<GemstoneItem[]>([]);
+  const [gemstones, setGemstones] = useState<GemstoneItem[]>(() =>
+    FALLBACK_GEMSTONES.filter((g) => g.category_slug === 'semi-precious')
+  );
   const [searchQuery, setSearchQuery] = useState('');
-  const [loading, setLoading] = useState(true);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const loadData = useCallback(() => {
-    setLoading(true);
     fetchGemstones({ category: 'semi-precious', page_size: 100 })
       .then((res) => {
         setGemstones(res.items);
       })
       .catch((err) => {
         console.error('Error loading semi-precious gemstones:', err);
-      })
-      .finally(() => setLoading(false));
+      });
   }, []);
 
   useEffect(() => {
@@ -132,15 +132,7 @@ export const SemiPreciousGemstonesPage: React.FC = () => {
         </div>
 
         {/* Gemstone Photo Grid */}
-        {loading ? (
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6 py-12 animate-pulse">
-            {[...Array(8)].map((_, i) => (
-              <div key={i} className="aspect-square bg-[#F4EFE6] rounded-xl flex items-center justify-center text-xs text-[#997A48]">
-                Loading...
-              </div>
-            ))}
-          </div>
-        ) : gemstones.length === 0 ? (
+        {gemstones.length === 0 ? (
           /* Empty / Failed to load state */
           <div className="text-center py-16 bg-white rounded-2xl border border-[#E8E2D9] p-8 max-w-lg mx-auto shadow-xs">
             <p className="text-base text-[#1E1E1E] font-medium mb-2">Unable to load gemstones</p>

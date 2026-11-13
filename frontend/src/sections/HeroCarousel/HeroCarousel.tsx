@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import type { HomepageSlide } from '../../types/gemstone';
 import { fetchHomepageSlides } from '../../services/api';
+import { FALLBACK_SLIDES } from '../../data/gemstoneFallbackData';
 
 export const HeroCarousel: React.FC = () => {
-  const [slides, setSlides] = useState<HomepageSlide[]>([]);
+  const [slides, setSlides] = useState<HomepageSlide[]>(FALLBACK_SLIDES);
   const [currentIndex, setCurrentIndex] = useState(0);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 

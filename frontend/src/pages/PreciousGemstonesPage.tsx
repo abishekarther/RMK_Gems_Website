@@ -3,10 +3,13 @@ import { Sparkles } from 'lucide-react';
 import type { GemstoneItem } from '../types/gemstone';
 import { fetchGemstones } from '../services/api';
 import { GemstoneCard } from '../components/GemstoneCard/GemstoneCard';
+import { FALLBACK_GEMSTONES } from '../data/gemstoneFallbackData';
 
 export const PreciousGemstonesPage: React.FC = () => {
-  const [gemstones, setGemstones] = useState<GemstoneItem[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [gemstones, setGemstones] = useState<GemstoneItem[]>(() =>
+    FALLBACK_GEMSTONES.filter((g) => g.category_slug === 'precious')
+  );
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -40,7 +43,7 @@ export const PreciousGemstonesPage: React.FC = () => {
         </div>
 
         {/* Gemstone Gallery Grid */}
-        {loading ? (
+        {loading && gemstones.length === 0 ? (
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-6 sm:gap-10 py-12 animate-pulse">
             {[...Array(6)].map((_, i) => (
               <div key={i} className="aspect-square bg-[#F4EFE6] rounded-xl flex items-center justify-center text-xs text-[#997A48]">

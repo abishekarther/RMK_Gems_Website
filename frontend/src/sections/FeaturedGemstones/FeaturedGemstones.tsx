@@ -4,9 +4,12 @@ import { Sparkles, ArrowRight } from 'lucide-react';
 import type { GemstoneItem } from '../../types/gemstone';
 import { fetchFeaturedGemstones } from '../../services/api';
 import { GemstoneCard } from '../../components/GemstoneCard/GemstoneCard';
+import { FALLBACK_GEMSTONES } from '../../data/gemstoneFallbackData';
 
 export const FeaturedGemstones: React.FC = () => {
-  const [featured, setFeatured] = useState<GemstoneItem[]>([]);
+  const [featured, setFeatured] = useState<GemstoneItem[]>(() =>
+    FALLBACK_GEMSTONES.filter((g) => g.is_featured)
+  );
 
   useEffect(() => {
     fetchFeaturedGemstones().then((items) => {

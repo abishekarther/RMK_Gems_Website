@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { MessageSquare, ArrowLeft, Shield, Sparkles, Truck } from 'lucide-react';
+import { MessageSquare, ArrowLeft, Shield, Truck } from 'lucide-react';
 import type { GemstoneDetail } from '../types/gemstone';
 import { fetchGemstoneBySlug } from '../services/api';
 import { getGemstonePhoto, getGemstoneAltText, isRepresentativePhoto } from '../data/gemstonePhotos';
 import { createWhatsAppEnquiry, SHOP_CONFIG } from '../config/shop';
+import { FALLBACK_GEMSTONES } from '../data/gemstoneFallbackData';
 
 const formatMaterialType = (type?: string): string => {
   if (!type) return 'Gemstone';
@@ -18,8 +19,8 @@ const formatMaterialType = (type?: string): string => {
 export const GemstoneDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
-  const [gemstone, setGemstone] = useState<GemstoneDetail | null>(null);
-  const [loading, setLoading] = useState(true);
+  const initialStone = slug ? (FALLBACK_GEMSTONES.find((g) => g.slug === slug) || null) : null;
+  const [gemstone, setGemstone] = useState<GemstoneDetail | null>(initialStone);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -27,25 +28,9 @@ export const GemstoneDetailPage: React.FC = () => {
 
     fetchGemstoneBySlug(slug)
       .then((data) => {
-        if (!data) {
-          setGemstone(null);
-        } else {
-          setGemstone(data);
-        }
-      })
-      .finally(() => setLoading(false));
+        setGemstone(data);
+      });
   }, [slug]);
-
-  if (loading) {
-    return (
-      <main className="py-24 bg-[#FAF8F5] min-h-screen flex items-center justify-center">
-        <div className="text-center animate-pulse">
-          <Sparkles className="w-8 h-8 text-[#997A48] mx-auto mb-3 animate-spin" />
-          <p className="font-serif text-lg text-[#1E1E1E]">Loading Gemstone...</p>
-        </div>
-      </main>
-    );
-  }
 
   if (!gemstone) {
     return (

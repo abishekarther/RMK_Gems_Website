@@ -13,9 +13,27 @@ import {
 } from '../data/gemstoneFallbackData';
 import { SHOP_CONFIG } from '../config/shop';
 
-const API_BASE = '/api/v1';
+// Use external API URL if configured in environment variables; otherwise operate in high-performance instant static mode
+const API_BASE = import.meta.env.VITE_API_BASE_URL || '';
 
 export async function fetchCategories(): Promise<{ id: string; name: string; slug: string; description: string }[]> {
+  if (!API_BASE) {
+    return [
+      {
+        id: 'cat-precious',
+        name: 'Precious Gemstones',
+        slug: 'precious',
+        description: 'Timeless precious gemstones revered through history for rarity, exceptional brilliance, and enduring cultural prestige.',
+      },
+      {
+        id: 'cat-semi-precious',
+        name: 'Semi-Precious Gemstones',
+        slug: 'semi-precious',
+        description: 'A diverse panorama of fine natural minerals and ornamental gems displaying captivating crystal forms, rich hues, and optical chatoyancy.',
+      },
+    ];
+  }
+
   try {
     const res = await fetch(`${API_BASE}/categories`);
     if (!res.ok) throw new Error('Failed to fetch categories');
@@ -47,22 +65,8 @@ export async function fetchGemstones(params?: {
   page?: number;
   page_size?: number;
 }): Promise<PaginatedGemstones> {
-  const query = new URLSearchParams();
-  if (params?.category) query.append('category', params.category);
-  if (params?.search) query.append('search', params.search);
-  if (params?.availability) query.append('availability', params.availability);
-  if (params?.is_featured !== undefined) query.append('is_featured', String(params.is_featured));
-  if (params?.page) query.append('page', String(params.page));
-  if (params?.page_size) query.append('page_size', String(params.page_size));
-
-  try {
-    const res = await fetch(`${API_BASE}/gemstones?${query.toString()}`);
-    if (!res.ok) throw new Error('Failed to fetch gemstones');
-    return await res.json();
-  } catch (err) {
-    console.warn('API error fetching gemstones; using fallback:', err);
+  const filterLocal = () => {
     let filtered = [...FALLBACK_GEMSTONES];
-
     if (params?.category) {
       filtered = filtered.filter((g) => g.category_slug === params.category);
     }
@@ -88,10 +92,35 @@ export async function fetchGemstones(params?: {
       page_size: pageSize,
       total_pages: totalPages,
     };
+  };
+
+  if (!API_BASE) {
+    return filterLocal();
+  }
+
+  const query = new URLSearchParams();
+  if (params?.category) query.append('category', params.category);
+  if (params?.search) query.append('search', params.search);
+  if (params?.availability) query.append('availability', params.availability);
+  if (params?.is_featured !== undefined) query.append('is_featured', String(params.is_featured));
+  if (params?.page) query.append('page', String(params.page));
+  if (params?.page_size) query.append('page_size', String(params.page_size));
+
+  try {
+    const res = await fetch(`${API_BASE}/gemstones?${query.toString()}`);
+    if (!res.ok) throw new Error('Failed to fetch gemstones');
+    return await res.json();
+  } catch (err) {
+    console.warn('API error fetching gemstones; using fallback:', err);
+    return filterLocal();
   }
 }
 
 export async function fetchGemstoneBySlug(slug: string): Promise<GemstoneDetail | null> {
+  if (!API_BASE) {
+    return FALLBACK_GEMSTONES.find((g) => g.slug === slug) || null;
+  }
+
   try {
     const res = await fetch(`${API_BASE}/gemstones/${encodeURIComponent(slug)}`);
     if (res.ok) {
@@ -100,13 +129,14 @@ export async function fetchGemstoneBySlug(slug: string): Promise<GemstoneDetail 
   } catch (err) {
     console.warn(`API error fetching gemstone ${slug}; checking fallback:`, err);
   }
-  // When backend API is absent or returns 404 on static hosts like Vercel,
-  // seamlessly serve the stone from the verified catalog dataset
-  const found = FALLBACK_GEMSTONES.find((g) => g.slug === slug);
-  return found || null;
+  return FALLBACK_GEMSTONES.find((g) => g.slug === slug) || null;
 }
 
 export async function fetchHomepageSlides(): Promise<HomepageSlide[]> {
+  if (!API_BASE) {
+    return FALLBACK_SLIDES;
+  }
+
   try {
     const res = await fetch(`${API_BASE}/home/slides`);
     if (!res.ok) throw new Error('Failed to fetch slides');
@@ -118,6 +148,10 @@ export async function fetchHomepageSlides(): Promise<HomepageSlide[]> {
 }
 
 export async function fetchFeaturedGemstones(): Promise<GemstoneItem[]> {
+  if (!API_BASE) {
+    return FALLBACK_GEMSTONES.filter((g) => g.is_featured);
+  }
+
   try {
     const res = await fetch(`${API_BASE}/home/featured`);
     if (!res.ok) throw new Error('Failed to fetch featured gemstones');
@@ -129,29 +163,39 @@ export async function fetchFeaturedGemstones(): Promise<GemstoneItem[]> {
 }
 
 export async function fetchShopSettings(): Promise<ShopSettings> {
+  const localShop: ShopSettings = {
+    shop_name: SHOP_CONFIG.shopName,
+    phone: SHOP_CONFIG.phoneDisplay,
+    whatsapp_number: SHOP_CONFIG.whatsappNumber,
+    address: SHOP_CONFIG.address,
+    city: SHOP_CONFIG.city,
+    state: SHOP_CONFIG.state,
+    postal_code: SHOP_CONFIG.postalCode,
+    delivery_description: SHOP_CONFIG.deliveryStatement,
+    map_url: SHOP_CONFIG.mapSearchUrl,
+    directions_url: SHOP_CONFIG.directionsUrl,
+    about_description: SHOP_CONFIG.aboutDescription,
+  };
+
+  if (!API_BASE) {
+    return localShop;
+  }
+
   try {
     const res = await fetch(`${API_BASE}/shop`);
     if (!res.ok) throw new Error('Failed to fetch shop settings');
     return await res.json();
   } catch (err) {
     console.warn('API error fetching shop settings; using fallback:', err);
-    return {
-      shop_name: SHOP_CONFIG.shopName,
-      phone: SHOP_CONFIG.phoneDisplay,
-      whatsapp_number: SHOP_CONFIG.whatsappNumber,
-      address: SHOP_CONFIG.address,
-      city: SHOP_CONFIG.city,
-      state: SHOP_CONFIG.state,
-      postal_code: SHOP_CONFIG.postalCode,
-      delivery_description: SHOP_CONFIG.deliveryStatement,
-      map_url: SHOP_CONFIG.mapSearchUrl,
-      directions_url: SHOP_CONFIG.directionsUrl,
-      about_description: SHOP_CONFIG.aboutDescription,
-    };
+    return localShop;
   }
 }
 
 export async function fetchOpeningHours(): Promise<OpeningHour[]> {
+  if (!API_BASE) {
+    return FALLBACK_HOURS;
+  }
+
   try {
     const res = await fetch(`${API_BASE}/shop/hours`);
     if (!res.ok) throw new Error('Failed to fetch opening hours');
