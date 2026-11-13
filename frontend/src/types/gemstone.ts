@@ -14,11 +14,11 @@ export interface GemstoneItem {
   category_slug?: string;
   name: string;
   slug: string;
-  short_description?: string;
-  material_type?: string;
-  colour?: string;
-  hardness_min?: number;
-  hardness_max?: number;
+  short_description?: string | null;
+  material_type?: string | null;
+  colour?: string | null;
+  hardness_min?: number | null;
+  hardness_max?: number | null;
   availability: 'available' | 'on_request' | 'unconfirmed';
   is_featured: boolean;
   display_order: number;
@@ -30,14 +30,14 @@ export interface GemstoneItem {
 
 export interface GemstoneDetail extends GemstoneItem {
   category_name?: string;
-  full_description?: string;
-  chemical_composition?: string;
-  crystal_system?: string;
-  origin?: string;
-  formation?: string;
-  history_notes?: string;
-  treatments?: string;
-  care_instructions?: string;
+  full_description?: string | null;
+  chemical_composition?: string | null;
+  crystal_system?: string | null;
+  origin?: string | null;
+  formation?: string | null;
+  history_notes?: string | null;
+  treatments?: string | null;
+  care_instructions?: string | null;
   created_at?: string;
   updated_at?: string;
 }

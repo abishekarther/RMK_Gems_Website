@@ -1,0 +1,996 @@
+[
+  {
+    "slug": "ruby",
+    "name": "Ruby",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "ruby",
+    "name": "Ruby",
+    "field": "treatments",
+    "old": "Heat treatment is commonly used in the trade to improve clarity and color; untreated stones command premium valuation.",
+    "new": "Often heat treated in the trade to improve clarity and hue saturation."
+  },
+  {
+    "slug": "pearl",
+    "name": "Pearl",
+    "field": "treatments",
+    "old": "Bleaching and buffing are standard commercial practices for cultured varieties.",
+    "new": "Often bleached or cleaned with mild solutions to uniform surface luster."
+  },
+  {
+    "slug": "red-coral",
+    "name": "Red Coral",
+    "field": "history_notes",
+    "old": "Known in classical Mediterranean and Indian trade as a prized talisman of vitality and good fortune.",
+    "new": "Prized throughout ancient Mediterranean, Indian, and Silk Road trade routes as an esteemed organic gemstone for classical ornamentation."
+  },
+  {
+    "slug": "red-coral",
+    "name": "Red Coral",
+    "field": "treatments",
+    "old": "Waxing or resin stabilization may be applied; dye is occasionally seen on lower grades.",
+    "new": "None routinely applied; sometimes coated with colourless wax to protect surface polish."
+  },
+  {
+    "slug": "emerald",
+    "name": "Emerald",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "emerald",
+    "name": "Emerald",
+    "field": "treatments",
+    "old": "Clarity enhancement with traditional cedarwood oil is an accepted industry standard.",
+    "new": "Commonly treated with cedarwood oil or colourless resin to improve clarity."
+  },
+  {
+    "slug": "yellow-sapphire",
+    "name": "Yellow Sapphire",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "yellow-sapphire",
+    "name": "Yellow Sapphire",
+    "field": "full_description",
+    "old": "Yellow Sapphire belongs to the corundum family and owes its canary to honey-yellow hue to iron trace elements and natural color centers. With high refractive index and Mohs 9 hardness, yellow sapphire sparkles with vivacity and serves as an important gemstone in both traditional Indian and modern fine jewellery.",
+    "new": "Yellow Sapphire belongs to the corundum family and owes its canary to honey-yellow hue to iron trace elements. With high refractive index and Mohs 9 hardness, yellow sapphire sparkles with vivacity and serves as an important gemstone in both traditional Indian and modern fine jewellery."
+  },
+  {
+    "slug": "yellow-sapphire",
+    "name": "Yellow Sapphire",
+    "field": "treatments",
+    "old": "Heat treatment is standard; unheated stones with certificate of purity are highly prized.",
+    "new": "Often heat treated to enhance clarity and golden hue intensity."
+  },
+  {
+    "slug": "yellow-sapphire",
+    "name": "Yellow Sapphire",
+    "field": "care_instructions",
+    "old": "Warm soapy water with a soft cloth. Ultrasonic cleaners are generally safe for untreated or standard heated stones.",
+    "new": "Clean using warm soapy water and a soft brush. Ultrasonic cleaners are generally safe for standard stones."
+  },
+  {
+    "slug": "diamond",
+    "name": "Diamond",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "diamond",
+    "name": "Diamond",
+    "field": "treatments",
+    "old": "Untreated natural diamonds are the standard fine jewelry offering.",
+    "new": "Standard cutting and polishing only; artificial enhancements such as laser drilling or fracture filling are disclosed when present."
+  },
+  {
+    "slug": "blue-sapphire",
+    "name": "Blue Sapphire",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "blue-sapphire",
+    "name": "Blue Sapphire",
+    "field": "history_notes",
+    "old": "Revered as a talisman of divine truth and clear intellect by Persian, Greek, and ancient Indian gemologists.",
+    "new": "Adored through antiquity across Persian, Greek, and Indian traditions as an esteemed gemstone of dignity, integrity, and classical majesty."
+  },
+  {
+    "slug": "blue-sapphire",
+    "name": "Blue Sapphire",
+    "field": "treatments",
+    "old": "Standard heat treatment to improve transparency and color saturation.",
+    "new": "Often heat treated to dissolve rutile silk and enhance deep blue saturation."
+  },
+  {
+    "slug": "hessonite-garnet",
+    "name": "Hessonite Garnet",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "hessonite-garnet",
+    "name": "Hessonite Garnet",
+    "field": "origin",
+    "old": "Sri Lanka, India (Tamil Nadu, Rajasthan), Madagascar, and Canada.",
+    "new": "Sri Lanka, India (Rajasthan, Odisha), Madagascar, and Canada."
+  },
+  {
+    "slug": "hessonite-garnet",
+    "name": "Hessonite Garnet",
+    "field": "history_notes",
+    "old": "Known in Sanskrit gemology as Gomedaka, hessonite has enjoyed uninterrupted reverence in South Asian adornment.",
+    "new": "Revered in historical South Asian gemological literature as Gomedhaka, one of the classical Navaratna gems celebrated for warm cinnamon resonance."
+  },
+  {
+    "slug": "hessonite-garnet",
+    "name": "Hessonite Garnet",
+    "field": "treatments",
+    "old": "Typically untreated; hessonite garnets exhibit stable natural color without heating.",
+    "new": "None routinely applied; garnets typically exhibit stable colour directly from the mine."
+  },
+  {
+    "slug": "cats-eye-chrysoberyl",
+    "name": "Cat's Eye (Chrysoberyl)",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "cats-eye-chrysoberyl",
+    "name": "Cat's Eye (Chrysoberyl)",
+    "field": "treatments",
+    "old": "Naturally occurring chatoyancy; irradiation is rare and detectable.",
+    "new": "Typically fashioned directly from chatoyant rough; artificial treatments are not standard."
+  },
+  {
+    "slug": "agate-black-banded",
+    "name": "Agate Black Banded",
+    "field": "material_type",
+    "old": "natural",
+    "new": "treated"
+  },
+  {
+    "slug": "agate-black-banded",
+    "name": "Agate Black Banded",
+    "field": "treatments",
+    "old": "Often dyed to enhance black saturation in commercial trade.",
+    "new": "Commonly dyed or acid-stained in traditional lapidary processing to achieve uniform dark banding."
+  },
+  {
+    "slug": "agate-green-banded",
+    "name": "Agate Green Banded",
+    "field": "material_type",
+    "old": "natural",
+    "new": "treated"
+  },
+  {
+    "slug": "agate-green-banded",
+    "name": "Agate Green Banded",
+    "field": "treatments",
+    "old": "Some commercial green agates undergo traditional inorganic dyeing.",
+    "new": "Commonly dyed or stained to produce vivid green colouration."
+  },
+  {
+    "slug": "agate-red-jasper",
+    "name": "Agate Red Jasper",
+    "field": "treatments",
+    "old": "Typically untreated natural stone.",
+    "new": "None routinely applied; fashioned directly from ornamental rough."
+  },
+  {
+    "slug": "amethyst-african",
+    "name": "Amethyst African",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "amethyst-african",
+    "name": "Amethyst African",
+    "field": "treatments",
+    "old": "Naturally colored; rarely treated.",
+    "new": "None routinely applied; deep violet saturation occurs naturally during crystal growth."
+  },
+  {
+    "slug": "amethyst-brazil",
+    "name": "Amethyst Brazil",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "amethyst-brazil",
+    "name": "Amethyst Brazil",
+    "field": "treatments",
+    "old": "Untreated natural color.",
+    "new": "None routinely applied; fashioned directly from crystalline geode rough."
+  },
+  {
+    "slug": "amethyst-brazil-pink",
+    "name": "Amethyst Brazil Pink",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "amethyst-brazil-pink",
+    "name": "Amethyst Brazil Pink",
+    "field": "short_description",
+    "old": "A rare pastel variety of Brazilian quartz showcasing delicate blush-pink and lilac tones.",
+    "new": "A delicate pastel variety of Brazilian quartz showcasing soft blush-pink and lilac tones."
+  },
+  {
+    "slug": "amethyst-brazil-pink",
+    "name": "Amethyst Brazil Pink",
+    "field": "treatments",
+    "old": "Untreated natural color.",
+    "new": "None routinely applied; pastel hues reflect trace iron and manganese in quartz."
+  },
+  {
+    "slug": "aquamarine-yellow",
+    "name": "Aquamarine Yellow",
+    "field": "treatments",
+    "old": "Heat may be applied; requires client confirmation.",
+    "new": "Often gently heated to modify greenish-yellow tones."
+  },
+  {
+    "slug": "aventurine-green",
+    "name": "Aventurine Green",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "aventurine-green",
+    "name": "Aventurine Green",
+    "field": "origin",
+    "old": "India (Karnataka, Tamil Nadu), Brazil, Russia.",
+    "new": "India (Karnataka, Andhra Pradesh), Brazil, and Russia."
+  },
+  {
+    "slug": "aventurine-green",
+    "name": "Aventurine Green",
+    "field": "treatments",
+    "old": "Untreated natural mineral.",
+    "new": "None routinely applied; shimmering aventurescence is an inherent crystalline feature."
+  },
+  {
+    "slug": "bloodstone",
+    "name": "Bloodstone",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "bloodstone",
+    "name": "Bloodstone",
+    "field": "treatments",
+    "old": "Untreated natural stone.",
+    "new": "None routinely applied; fashioned directly from opaque rough."
+  },
+  {
+    "slug": "blue-lace-banded-agate",
+    "name": "Blue Lace Banded Agate",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "blue-lace-banded-agate",
+    "name": "Blue Lace Banded Agate",
+    "field": "treatments",
+    "old": "Untreated natural material.",
+    "new": "None routinely applied; delicate blue and white lace banding forms naturally."
+  },
+  {
+    "slug": "carnelian",
+    "name": "Carnelian",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "carnelian",
+    "name": "Carnelian",
+    "field": "treatments",
+    "old": "Sun-baking or mild heat treatment is a traditional Indian method to deepen the orange-red hue.",
+    "new": "Often gently heated or sun-baked to oxidize iron impurities and deepen orange-red saturation."
+  },
+  {
+    "slug": "chalcedony-blue",
+    "name": "Chalcedony BLUE",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "chalcedony-blue",
+    "name": "Chalcedony BLUE",
+    "field": "treatments",
+    "old": "Some blue chalcedony on the market is dyed; natural unenhanced stones are sought by collectors.",
+    "new": "Often dyed to enhance uniform blue coloration."
+  },
+  {
+    "slug": "chalcedony-white",
+    "name": "Chalcedony White",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "chalcedony-white",
+    "name": "Chalcedony White",
+    "field": "treatments",
+    "old": "Typically untreated natural stone.",
+    "new": "None routinely applied; fashioned directly from translucent chalcedony rough."
+  },
+  {
+    "slug": "chrysoprase",
+    "name": "Chrysoprase",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "chrysoprase",
+    "name": "Chrysoprase",
+    "field": "treatments",
+    "old": "Untreated natural gem; distinguished from dyed green chalcedony by spectrographic tests.",
+    "new": "None routinely applied; apple-green coloration derives from nickel-silicate minerals."
+  },
+  {
+    "slug": "diopside-4-ray-star",
+    "name": "Diopside 4-ray Star",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "diopside-4-ray-star",
+    "name": "Diopside 4-ray Star",
+    "field": "origin",
+    "old": "India (Southern states including Tamil Nadu), Russia, Finland.",
+    "new": "India (Andhra Pradesh, Karnataka), Russia, and Finland."
+  },
+  {
+    "slug": "diopside-4-ray-star",
+    "name": "Diopside 4-ray Star",
+    "field": "treatments",
+    "old": "Untreated natural asterism.",
+    "new": "None routinely applied; four-rayed asterism occurs from oriented magnetite needles."
+  },
+  {
+    "slug": "fluorite-multicolor-banded",
+    "name": "Fluorite Multicolor Banded",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "fluorite-multicolor-banded",
+    "name": "Fluorite Multicolor Banded",
+    "field": "treatments",
+    "old": "Occasionally stabilized with clear resin due to cleavage.",
+    "new": "None routinely applied; multi-colored banding develops naturally during crystallization."
+  },
+  {
+    "slug": "garnet-almandine",
+    "name": "Garnet Almandine",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "garnet-almandine",
+    "name": "Garnet Almandine",
+    "field": "origin",
+    "old": "India (Rajasthan, Tamil Nadu), Sri Lanka, Madagascar, USA.",
+    "new": "India (Rajasthan, Andhra Pradesh), Sri Lanka, Madagascar, and the USA."
+  },
+  {
+    "slug": "garnet-almandine",
+    "name": "Garnet Almandine",
+    "field": "treatments",
+    "old": "Untreated natural gemstone.",
+    "new": "None routinely applied; deep red coloration is stable without heating."
+  },
+  {
+    "slug": "garnet-rose-cut-checkerboard",
+    "name": "Garnet Rose Cut / Checkerboard",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "garnet-rose-cut-checkerboard",
+    "name": "Garnet Rose Cut / Checkerboard",
+    "field": "treatments",
+    "old": "Untreated natural gem.",
+    "new": "None routinely applied; fashioned through specialized geometric faceting."
+  },
+  {
+    "slug": "goldstone-sandstone-blue",
+    "name": "Goldstone Sandstone Blue",
+    "field": "treatments",
+    "old": "Synthetic/manufactured decorative glass.",
+    "new": "Man-made aventurine glass produced by suspending metallic crystals in silica glass."
+  },
+  {
+    "slug": "goldstone-sandstone-red",
+    "name": "Goldstone Sandstone Red",
+    "field": "treatments",
+    "old": "Manufactured glass material.",
+    "new": "Man-made aventurine glass produced by dissolving copper in molten glass under reducing conditions."
+  },
+  {
+    "slug": "green-serpentine",
+    "name": "Green Serpentine",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "green-serpentine",
+    "name": "Green Serpentine",
+    "field": "treatments",
+    "old": "Untreated natural mineral; sometimes lightly waxed to enhance luster.",
+    "new": "Sometimes lightly waxed to protect surface polish."
+  },
+  {
+    "slug": "hematite-gunmetal",
+    "name": "Hematite (Gunmetal)",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "hematite-gunmetal",
+    "name": "Hematite (Gunmetal)",
+    "field": "treatments",
+    "old": "Untreated natural iron oxide.",
+    "new": "None routinely applied; fashioned directly from dense iron oxide mineral masses."
+  },
+  {
+    "slug": "hessonite-garnet-semi-precious",
+    "name": "Hessonite Garnet (Semi-Precious)",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "hessonite-garnet-semi-precious",
+    "name": "Hessonite Garnet (Semi-Precious)",
+    "field": "origin",
+    "old": "India, Sri Lanka.",
+    "new": "Sri Lanka, India (Rajasthan, Odisha), Madagascar, and Canada."
+  },
+  {
+    "slug": "hessonite-garnet-semi-precious",
+    "name": "Hessonite Garnet (Semi-Precious)",
+    "field": "history_notes",
+    "old": "Held as a traditional South Asian talisman of prosperity and protection.",
+    "new": "Historically treasured across South Asian lapidary traditions for warm amber-honey ornamental beads and cabochons."
+  },
+  {
+    "slug": "hessonite-garnet-semi-precious",
+    "name": "Hessonite Garnet (Semi-Precious)",
+    "field": "treatments",
+    "old": "Untreated natural garnet.",
+    "new": "None routinely applied; grossular garnet displays stable colouration without heating."
+  },
+  {
+    "slug": "labradorite",
+    "name": "Labradorite",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "labradorite",
+    "name": "Labradorite",
+    "field": "treatments",
+    "old": "Untreated natural optical phenomenon.",
+    "new": "None routinely applied; labradorescent optical flash arises from internal lamellar twinning."
+  },
+  {
+    "slug": "lapis",
+    "name": "Lapis",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "lapis",
+    "name": "Lapis",
+    "field": "treatments",
+    "old": "Occasionally oiled or waxed; lower grades may be dyed.",
+    "new": "Often waxed or lightly oiled to enhance surface polish and protect matrix."
+  },
+  {
+    "slug": "lemon-citrine",
+    "name": "Lemon Citrine",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "lemon-citrine",
+    "name": "Lemon Citrine",
+    "field": "treatments",
+    "old": "Often produced via controlled heat treatment of amethyst or smoky quartz.",
+    "new": "Often produced through controlled low-temperature heating of amethyst or quartz."
+  },
+  {
+    "slug": "malachite",
+    "name": "Malachite",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "malachite",
+    "name": "Malachite",
+    "field": "treatments",
+    "old": "Often coated with protective resin due to porosity and softness.",
+    "new": "Often coated with protective colourless resin or wax due to softness."
+  },
+  {
+    "slug": "moonstone-white",
+    "name": "Moonstone White",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "moonstone-white",
+    "name": "Moonstone White",
+    "field": "treatments",
+    "old": "Untreated natural feldspar.",
+    "new": "None routinely applied; adularescent floating light originates from albite and orthoclase intergrowths."
+  },
+  {
+    "slug": "obsidian-snowflake",
+    "name": "Obsidian Snowflake",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "obsidian-snowflake",
+    "name": "Obsidian Snowflake",
+    "field": "treatments",
+    "old": "Untreated natural volcanic stone.",
+    "new": "None routinely applied; snowflake inclusions are natural spherulites of cristobalite."
+  },
+  {
+    "slug": "onyx-black",
+    "name": "Onyx Black",
+    "field": "material_type",
+    "old": "natural",
+    "new": "treated"
+  },
+  {
+    "slug": "onyx-black",
+    "name": "Onyx Black",
+    "field": "treatments",
+    "old": "Traditional sugar-acid chemical dyeing has been used since Roman antiquity to achieve deep uniform black.",
+    "new": "Commonly dyed using sugar-acid solution to produce an intense, uniform black hue."
+  },
+  {
+    "slug": "onyx-green",
+    "name": "Onyx Green",
+    "field": "treatments",
+    "old": "Standard commercial trade practice involves gentle dyeing of chalcedony to enhance green tones.",
+    "new": "Commonly dyed or acid-stained to produce vivid green colouration."
+  },
+  {
+    "slug": "onyx-ivory",
+    "name": "Onyx Ivory",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "onyx-ivory",
+    "name": "Onyx Ivory",
+    "field": "treatments",
+    "old": "Untreated natural mineral.",
+    "new": "None routinely applied; creamy ivory coloration reflects natural calcite or chalcedony layers."
+  },
+  {
+    "slug": "onyx-multicolor",
+    "name": "Onyx Multicolor",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "onyx-multicolor",
+    "name": "Onyx Multicolor",
+    "field": "treatments",
+    "old": "Untreated natural banding.",
+    "new": "None routinely applied; multi-colored banding occurs naturally in banded travertine/chalcedony."
+  },
+  {
+    "slug": "onyx-red",
+    "name": "Onyx Red",
+    "field": "treatments",
+    "old": "Standard commercial trade color enhancement.",
+    "new": "Commonly dyed or heat-treated to intensify red-orange saturation."
+  },
+  {
+    "slug": "onyx-red-pink",
+    "name": "Onyx Red (Pink)",
+    "field": "treatments",
+    "old": "Color-enhanced in trade to achieve uniform blush-pink hues.",
+    "new": "Commonly dyed or chemical-bath treated to achieve uniform pinkish-red tones."
+  },
+  {
+    "slug": "onyx-rose",
+    "name": "Onyx Rose",
+    "field": "treatments",
+    "old": "Trade enhancement may be applied.",
+    "new": "Commonly dyed to produce delicate rose-pink hues."
+  },
+  {
+    "slug": "onyx-yellow",
+    "name": "Onyx Yellow",
+    "field": "treatments",
+    "old": "Standard commercial color enhancement.",
+    "new": "Commonly stained or dyed to yield bright golden-yellow colouration."
+  },
+  {
+    "slug": "opal-dendrite",
+    "name": "Opal Dendrite",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "opal-dendrite",
+    "name": "Opal Dendrite",
+    "field": "treatments",
+    "old": "Untreated natural mineral phenomenon.",
+    "new": "None routinely applied; black dendritic patterns are natural manganese oxide infiltrations."
+  },
+  {
+    "slug": "pearl-fresh-water",
+    "name": "Pearl Fresh Water",
+    "field": "treatments",
+    "old": "Standard commercial bleaching and buffing.",
+    "new": "Commonly bleached and polished following harvest to uniform luster."
+  },
+  {
+    "slug": "pyrite",
+    "name": "Pyrite",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "pyrite",
+    "name": "Pyrite",
+    "field": "treatments",
+    "old": "Untreated natural mineral.",
+    "new": "None routinely applied; fashioned directly from natural metallic iron sulfide crystals."
+  },
+  {
+    "slug": "quartz-cats-eye",
+    "name": "Quartz Cat's Eye",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "quartz-cats-eye",
+    "name": "Quartz Cat's Eye",
+    "field": "treatments",
+    "old": "Untreated natural chatoyancy.",
+    "new": "None routinely applied; chatoyancy is caused by dense parallel rutile needle inclusions."
+  },
+  {
+    "slug": "rainbow-moonstone",
+    "name": "Rainbow Moonstone",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "rainbow-moonstone",
+    "name": "Rainbow Moonstone",
+    "field": "origin",
+    "old": "India (Southern states), Sri Lanka, Madagascar.",
+    "new": "India (Karnataka, Bihar), Sri Lanka, and Madagascar."
+  },
+  {
+    "slug": "rainbow-moonstone",
+    "name": "Rainbow Moonstone",
+    "field": "treatments",
+    "old": "Untreated natural optical phenomenon.",
+    "new": "None routinely applied; electric blue schiller arises from plagioclase feldspar exsolution lamellae."
+  },
+  {
+    "slug": "rose-quartz",
+    "name": "Rose Quartz",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "rose-quartz",
+    "name": "Rose Quartz",
+    "field": "treatments",
+    "old": "Untreated natural color.",
+    "new": "None routinely applied; soft pink hue derives from microscopic fibrous dumortierite inclusions."
+  },
+  {
+    "slug": "ruby-markara",
+    "name": "Ruby Markara",
+    "field": "treatments",
+    "old": "Requires client confirmation.",
+    "new": "Often heat treated in standard trade practice; details depend on confirmed deposit."
+  },
+  {
+    "slug": "rutilated-quartz-black-needle",
+    "name": "Rutilated Quartz Black Needle",
+    "field": "treatments",
+    "old": "Untreated natural mineral inclusion.",
+    "new": "None routinely applied; black tourmaline needle inclusions are natural crystal growths."
+  },
+  {
+    "slug": "rutile-quartz-golden-needle",
+    "name": "Rutile Quartz Golden Needle",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "rutile-quartz-golden-needle",
+    "name": "Rutile Quartz Golden Needle",
+    "field": "treatments",
+    "old": "Untreated natural growth phenomenon.",
+    "new": "None routinely applied; golden rutile needle sprays are natural crystal growths."
+  },
+  {
+    "slug": "sapphire-blue-semi-precious",
+    "name": "Sapphire Blue (Semi-Precious)",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "sapphire-blue-semi-precious",
+    "name": "Sapphire Blue (Semi-Precious)",
+    "field": "treatments",
+    "old": "Standard heat treatment.",
+    "new": "Often heat treated to dissolve silk and enhance uniform blue coloration."
+  },
+  {
+    "slug": "sillimanite-cats-eye",
+    "name": "Sillimanite Cat's Eye",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "sillimanite-cats-eye",
+    "name": "Sillimanite Cat's Eye",
+    "field": "origin",
+    "old": "India (Odisha, Tamil Nadu), Sri Lanka, Myanmar.",
+    "new": "India (Odisha, Kerala), Sri Lanka, and Myanmar."
+  },
+  {
+    "slug": "sillimanite-cats-eye",
+    "name": "Sillimanite Cat's Eye",
+    "field": "treatments",
+    "old": "Untreated natural chatoyancy.",
+    "new": "None routinely applied; sharp chatoyant eye arises from dense fibrous fibrolite alignment."
+  },
+  {
+    "slug": "smoky-quartz",
+    "name": "Smoky Quartz",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "smoky-quartz",
+    "name": "Smoky Quartz",
+    "field": "treatments",
+    "old": "Untreated natural color.",
+    "new": "None routinely applied; smoky coloration develops naturally from geological irradiation around aluminum centers."
+  },
+  {
+    "slug": "spectrolite-cats-eye",
+    "name": "Spectrolite Cat's Eye",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "spectrolite-cats-eye",
+    "name": "Spectrolite Cat's Eye",
+    "field": "short_description",
+    "old": "Rare high-grade labradorite variety showing chatoyant light reflection with intense peacock spectral colors.",
+    "new": "A distinctive Finnish labradorite variety showing chatoyant light reflection with intense peacock spectral colours."
+  },
+  {
+    "slug": "spectrolite-cats-eye",
+    "name": "Spectrolite Cat's Eye",
+    "field": "treatments",
+    "old": "Untreated natural optical phenomenon.",
+    "new": "None routinely applied; vivid full-spectrum labradorescence occurs naturally in Finnish deposits."
+  },
+  {
+    "slug": "sunstone",
+    "name": "Sunstone",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "sunstone",
+    "name": "Sunstone",
+    "field": "origin",
+    "old": "India (Southern states), USA (Oregon), Norway, Tanzania.",
+    "new": "India (Karnataka, Andhra Pradesh), USA (Oregon), Norway, and Tanzania."
+  },
+  {
+    "slug": "sunstone",
+    "name": "Sunstone",
+    "field": "treatments",
+    "old": "Untreated natural gemstone.",
+    "new": "None routinely applied; sparkling copper and hematite platelets are natural crystalline inclusions."
+  },
+  {
+    "slug": "tiger-eye",
+    "name": "Tiger Eye",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "tiger-eye",
+    "name": "Tiger Eye",
+    "field": "treatments",
+    "old": "Untreated natural mineral.",
+    "new": "None routinely applied; silky golden-brown chatoyancy is formed through pseudomorphic replacement of crocidolite by silica."
+  },
+  {
+    "slug": "tourmaline-green",
+    "name": "Tourmaline Green",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "tourmaline-green",
+    "name": "Tourmaline Green",
+    "field": "treatments",
+    "old": "Usually untreated; occasionally mild heat is used to lighten overly dark stones.",
+    "new": "Sometimes gently heated to lighten dark forest-green tones."
+  },
+  {
+    "slug": "turquoise-chinese",
+    "name": "Turquoise CHINESE",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "turquoise-chinese",
+    "name": "Turquoise CHINESE",
+    "field": "treatments",
+    "old": "Stabilization with colorless resin is common in modern trade to protect porosity.",
+    "new": "Commonly stabilized with colourless polymers or paraffin to protect porosity."
+  },
+  {
+    "slug": "turquoise-tibetan",
+    "name": "Turquoise Tibetan",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "turquoise-tibetan",
+    "name": "Turquoise Tibetan",
+    "field": "history_notes",
+    "old": "Worn by Himalayan peoples as a sacred amulet of spiritual alignment, safe travels, and good fortune.",
+    "new": "Revered across Himalayan communities as a traditional ornamental gemstone treasured in elaborate silver jewellery, belts, and headdresses."
+  },
+  {
+    "slug": "turquoise-tibetan",
+    "name": "Turquoise Tibetan",
+    "field": "treatments",
+    "old": "Natural stone; traditional waxing may be applied.",
+    "new": "Commonly stabilized with clear resins or paraffin to seal natural porous matrix."
+  },
+  {
+    "slug": "white-quartz",
+    "name": "White Quartz",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "white-quartz",
+    "name": "White Quartz",
+    "field": "treatments",
+    "old": "Untreated natural mineral.",
+    "new": "None routinely applied; milky cloudiness is caused by microscopic fluid inclusions during crystal growth."
+  },
+  {
+    "slug": "white-quartz-crystal",
+    "name": "White Quartz Crystal",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "white-quartz-crystal",
+    "name": "White Quartz Crystal",
+    "field": "full_description",
+    "old": "White Quartz Crystal (Rock Crystal) is pure, transparent crystalline silica famous for diamond-like vitreous luster and flawless optical clarity when faceted or polished into natural crystal points.",
+    "new": "White Quartz Crystal (Rock Crystal) is pure, transparent crystalline silica famous for vitreous luster and exceptional optical clarity when fashioned into polished crystal prisms or faceted gemstones."
+  },
+  {
+    "slug": "white-quartz-crystal",
+    "name": "White Quartz Crystal",
+    "field": "origin",
+    "old": "India (Himalayan belts, Tamil Nadu), Brazil, Madagascar, Arkansas USA.",
+    "new": "India (Himalayan belts, Rajasthan), Brazil, Madagascar, and Arkansas USA."
+  },
+  {
+    "slug": "white-quartz-crystal",
+    "name": "White Quartz Crystal",
+    "field": "treatments",
+    "old": "Untreated natural crystal.",
+    "new": "None routinely applied; fashioned directly from transparent rock crystal prisms."
+  },
+  {
+    "slug": "white-topaz",
+    "name": "White Topaz",
+    "field": "material_type",
+    "old": "natural",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "white-topaz",
+    "name": "White Topaz",
+    "field": "treatments",
+    "old": "Untreated natural gemstone.",
+    "new": "None routinely applied; colourless topaz crystals are fashioned directly into faceted gems."
+  },
+  {
+    "slug": "zircon-cubic-white",
+    "name": "Zircon Cubic White",
+    "field": "material_type",
+    "old": "synthetic",
+    "new": "unconfirmed"
+  },
+  {
+    "slug": "zircon-cubic-white",
+    "name": "Zircon Cubic White",
+    "field": "colour",
+    "old": "Flawless colourless with vivid rainbow fire",
+    "new": "Brilliant colourless with vivid spectral fire"
+  },
+  {
+    "slug": "zircon-cubic-white",
+    "name": "Zircon Cubic White",
+    "field": "treatments",
+    "old": "Synthetic material; pending client confirmation.",
+    "new": "Synthesized by skull-melting zirconium dioxide with yttrium stabilizers."
+  }
+]

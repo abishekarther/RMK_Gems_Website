@@ -3,8 +3,17 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { MessageSquare, ArrowLeft, Shield, Sparkles, Truck } from 'lucide-react';
 import type { GemstoneDetail } from '../types/gemstone';
 import { fetchGemstoneBySlug } from '../services/api';
-import { getGemstonePhoto } from '../data/gemstonePhotos';
+import { getGemstonePhoto, getGemstoneAltText, isRepresentativePhoto } from '../data/gemstonePhotos';
 import { createWhatsAppEnquiry, SHOP_CONFIG } from '../config/shop';
+
+const formatMaterialType = (type?: string): string => {
+  if (!type) return 'Gemstone';
+  const t = type.toLowerCase();
+  if (t === 'organic') return 'Organic gemstone';
+  if (t === 'treated') return 'Treated gemstone';
+  if (t === 'imitation') return 'Imitation';
+  return 'Gemstone';
+};
 
 export const GemstoneDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -97,10 +106,15 @@ export const GemstoneDetailPage: React.FC = () => {
             <div className="w-full aspect-square overflow-hidden rounded-2xl bg-white border border-[#E8E2D9] shadow-sm flex items-center justify-center p-8">
               <img
                 src={photoUrl}
-                alt={gemstone.name}
+                alt={getGemstoneAltText(gemstone.name, gemstone.colour)}
                 className="w-full h-full object-contain object-center drop-shadow-xl"
               />
             </div>
+            {isRepresentativePhoto(gemstone.slug) && (
+              <p className="text-xs text-[#717171] italic text-center mt-2">
+                Representative image. Actual stones vary in colour and cut.
+              </p>
+            )}
 
             {/* Delivery Note */}
             <div className="p-4 rounded-xl bg-white border border-[#E8E2D9] shadow-2xs space-y-2.5">
@@ -110,7 +124,7 @@ export const GemstoneDetailPage: React.FC = () => {
               </div>
               <div className="flex items-center gap-2.5 text-xs text-[#717171]">
                 <Shield className="w-4 h-4 text-[#997A48] shrink-0" />
-                <span>Authentic natural gemstone sourcing by RMK Gems, Tenkasi.</span>
+                <span>Carefully curated gemstone sourcing by RMK Gems, Tenkasi.</span>
               </div>
             </div>
           </div>
@@ -194,7 +208,7 @@ export const GemstoneDetailPage: React.FC = () => {
                 {gemstone.material_type && (
                   <div className="border-b border-[#F4EFE6] pb-2">
                     <dt className="text-[#717171] uppercase tracking-wider text-[11px] font-medium">Mineral Classification</dt>
-                    <dd className="font-semibold text-[#1E1E1E] mt-0.5 capitalize">{gemstone.material_type}</dd>
+                    <dd className="font-semibold text-[#1E1E1E] mt-0.5">{formatMaterialType(gemstone.material_type)}</dd>
                   </div>
                 )}
 

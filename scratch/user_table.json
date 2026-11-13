@@ -1,0 +1,474 @@
+[
+  {
+    "num": 1,
+    "name": "Agate Black Banded",
+    "target": "`agate-black-banded`",
+    "cut": "Oval cabochon",
+    "color": "Black & white",
+    "features": "Concentric target-like rings/bands alternating jet-black and crisp white lines."
+  },
+  {
+    "num": 2,
+    "name": "Agate Green Banded",
+    "target": "`agate-green-banded`",
+    "cut": "Oval cabochon",
+    "color": "Dark green & mint",
+    "features": "Concentric target-like rings/bands alternating dark forest green, emerald, and pale mint."
+  },
+  {
+    "num": 3,
+    "name": "Agate Red Jasper",
+    "target": "`agate-red-jasper`",
+    "cut": "Oval cabochon",
+    "color": "Brick-red / rust",
+    "features": "Completely opaque terracotta/brick-red body with thin dark red/brown fracture-like veining."
+  },
+  {
+    "num": 4,
+    "name": "Amethyst African",
+    "target": "`amethyst-african`",
+    "cut": "Cushion (step-cut)",
+    "color": "Deep royal purple",
+    "features": "Very dark, heavily saturated royal purple with bright violet flashes near the bottom facets."
+  },
+  {
+    "num": 5,
+    "name": "Amethyst Brazil",
+    "target": "`amethyst-brazil`",
+    "cut": "Cushion (step-cut)",
+    "color": "Medium purple",
+    "features": "Lighter than African amethyst; transparent medium purple with soft lavender highlights."
+  },
+  {
+    "num": 6,
+    "name": "Amethyst Brazil Pink",
+    "target": "`amethyst-brazil-pink`",
+    "cut": "Cushion (step-cut)",
+    "color": "Soft pinkish-lilac",
+    "features": "Very pale, clean, transparent pastel pink-lilac (Rose de France shade)."
+  },
+  {
+    "num": 7,
+    "name": "Aquamarine Yellow",
+    "target": "`aquamarine-yellow`",
+    "cut": "Cushion (step-cut)",
+    "color": "Pale golden-yellow",
+    "features": "Transparent pale yellow with a subtle greenish-gold tint (lighter than Lemon Citrine)."
+  },
+  {
+    "num": 8,
+    "name": "Aventurine Green",
+    "target": "`aventurine-green`",
+    "cut": "Oval cabochon",
+    "color": "Mid-green",
+    "features": "Translucent medium green filled with tiny glittering silvery-green mica sparkles."
+  },
+  {
+    "num": 9,
+    "name": "Bloodstone",
+    "target": "`bloodstone`",
+    "cut": "Oval cabochon",
+    "color": "Dark forest green",
+    "features": "Opaque dark green body scattered with small, distinct blood-red spots/specks."
+  },
+  {
+    "num": 10,
+    "name": "Blue Lace Banded Agate",
+    "target": "`blue-lace-banded-agate`",
+    "cut": "Oval cabochon",
+    "color": "Pale sky-blue & white",
+    "features": "Translucent periwinkle/sky-blue with delicate, wavy, horizontal lace-like white bands."
+  },
+  {
+    "num": 11,
+    "name": "Carnelian",
+    "target": "`carnelian`",
+    "cut": "Oval cabochon",
+    "color": "Glowing orange-red",
+    "features": "Translucent, warm tangerine/orange-red with subtle cloudy internal color variation."
+  },
+  {
+    "num": 12,
+    "name": "Chalcedony Blue",
+    "target": "`chalcedony-blue`",
+    "cut": "Oval cabochon",
+    "color": "Powder-blue",
+    "features": "Uniform, smooth, milky translucent pastel powder-blue with no banding or spots."
+  },
+  {
+    "num": 13,
+    "name": "Chalcedony White",
+    "target": "`chalcedony-white`",
+    "cut": "Oval cabochon",
+    "color": "Milky white",
+    "features": "Translucent cloudy/milky white with a cool faint gray-blue glow (smoother than White Quartz)."
+  },
+  {
+    "num": 14,
+    "name": "Chrysoprase",
+    "target": "`chrysoprase`",
+    "cut": "Oval cabochon",
+    "color": "Vivid apple-green",
+    "features": "Even, glowing, translucent bright apple/mint-green with no veins, bands, or sparkles."
+  },
+  {
+    "num": 15,
+    "name": "Diopside 4-ray Star",
+    "target": "`diopside-4-ray-star`",
+    "cut": "Oval cabochon",
+    "color": "Near-black green",
+    "features": "Very dark greenish-black dome with a sharp 4-ray white cross/star centered on top."
+  },
+  {
+    "num": 16,
+    "name": "Fluorite Multicolor Banded",
+    "target": "`fluorite-multicolor-banded`",
+    "cut": "Oval cabochon",
+    "color": "Purple, green & white",
+    "features": "Translucent body with straight/diagonal stripes alternating violet-purple, sea-green, and clear/white."
+  },
+  {
+    "num": 17,
+    "name": "Garnet Almandine",
+    "target": "`garnet-almandine`",
+    "cut": "Cushion (step-cut)",
+    "color": "Deep wine-red",
+    "features": "Dark, moody burgundy/wine-red with a slight brownish undertone and standard rectangular step facets."
+  },
+  {
+    "num": 18,
+    "name": "Garnet Rose Cut / Checkerboard",
+    "target": "`garnet-checkerboard`",
+    "cut": "Cushion (checkerboard)",
+    "color": "Deep red",
+    "features": "Domed top covered entirely in a grid of small square checkerboard facets (no flat central table)."
+  },
+  {
+    "num": 19,
+    "name": "Goldstone Sandstone Blue",
+    "target": "`goldstone-sandstone-blue`",
+    "cut": "Oval cabochon",
+    "color": "Deep cobalt-blue",
+    "features": "Dark midnight/cobalt-blue opaque body densely packed with tiny glittering gold/copper flecks."
+  },
+  {
+    "num": 20,
+    "name": "Goldstone Sandstone Red",
+    "target": "`goldstone-sandstone-red`",
+    "cut": "Oval cabochon",
+    "color": "Copper-brown",
+    "features": "Warm reddish-brown/terracotta body densely packed with tiny glittering gold sparkles."
+  },
+  {
+    "num": 21,
+    "name": "Green Serpentine",
+    "target": "`green-serpentine`",
+    "cut": "Oval cabochon",
+    "color": "Olive to apple-green",
+    "features": "Waxy-looking olive/yellow-green opaque stone with dark green/blackish marbled veins."
+  },
+  {
+    "num": 22,
+    "name": "Hematite (Gunmetal)",
+    "target": "`hematite-gunmetal`",
+    "cut": "Oval cabochon",
+    "color": "Metallic gunmetal gray",
+    "features": "Opaque dark silver-gray with a liquid-metal, mirror-like chrome reflection."
+  },
+  {
+    "num": 23,
+    "name": "Hessonite Garnet",
+    "target": "`hessonite-garnet`",
+    "cut": "Cushion (step-cut)",
+    "color": "Honey-orange / cinnamon",
+    "features": "Warm amber/cinnamon-brown faceted gem with a slightly swirly, heat-wave internal texture."
+  },
+  {
+    "num": 24,
+    "name": "Labradorite",
+    "target": "`labradorite`",
+    "cut": "Oval cabochon",
+    "color": "Dark gray + blue flash",
+    "features": "Dark charcoal-gray stone with a bright metallic iridescent flash of electric blue, green, and gold."
+  },
+  {
+    "num": 25,
+    "name": "Lapis",
+    "target": "`lapis`",
+    "cut": "Oval cabochon",
+    "color": "Deep royal blue",
+    "features": "Opaque ultramarine/royal blue speckled with tiny gold pyrite flecks and small white calcite patches."
+  },
+  {
+    "num": 26,
+    "name": "Lemon Citrine",
+    "target": "`lemon-citrine`",
+    "cut": "Cushion (step-cut)",
+    "color": "Bright lemon-yellow",
+    "features": "Vivid, saturated transparent lemon-yellow (brighter and more pure yellow than Aquamarine Yellow)."
+  },
+  {
+    "num": 27,
+    "name": "Malachite",
+    "target": "`malachite`",
+    "cut": "Oval cabochon",
+    "color": "Light & dark emerald",
+    "features": "Opaque rich green with bold, swirling, concentric \"eye\" patterns of light and dark emerald green."
+  },
+  {
+    "num": 28,
+    "name": "Moonstone White",
+    "target": "`moonstone-white`",
+    "cut": "Oval cabochon",
+    "color": "Milky white + blue glow",
+    "features": "Semi-translucent milky white dome with a single soft floating blue sheen (no pink/green flashes)."
+  },
+  {
+    "num": 29,
+    "name": "Obsidian Snowflake",
+    "target": "`obsidian-snowflake`",
+    "cut": "Oval cabochon",
+    "color": "Black + gray patches",
+    "features": "Glossy jet-black volcanic glass dotted with fuzzy, cloud-like gray-white \"snowflake\" blotches."
+  },
+  {
+    "num": 30,
+    "name": "Onyx Black",
+    "target": "`onyx-black`",
+    "cut": "Oval cabochon",
+    "color": "Solid deep black",
+    "features": "Glossy, uniform jet-black dome with barely perceptible faint dark parallel bands."
+  },
+  {
+    "num": 31,
+    "name": "Onyx Green",
+    "target": "`onyx-green`",
+    "cut": "Oval cabochon",
+    "color": "Rich emerald green",
+    "features": "Translucent-to-glossy deep emerald green with soft, straight parallel bands across the stone."
+  },
+  {
+    "num": 32,
+    "name": "Onyx Ivory",
+    "target": "`onyx-ivory`",
+    "cut": "Oval cabochon",
+    "color": "Creamy ivory / beige",
+    "features": "Warm off-white/cream glossy dome with subtle, straight, pale beige parallel bands."
+  },
+  {
+    "num": 33,
+    "name": "Onyx Multicolor",
+    "target": "`onyx-multicolor`",
+    "cut": "Oval cabochon",
+    "color": "Brown, green, purple, cream",
+    "features": "Distinct straight parallel stripes combining earthy brown, tan, sage green, muted purple, and cream."
+  },
+  {
+    "num": 34,
+    "name": "Onyx Red",
+    "target": "`onyx-red`",
+    "cut": "Oval cabochon",
+    "color": "Deep crimson-red",
+    "features": "Glossy dark crimson/maroon-red dome with soft, straight parallel bands (darker than Carnelian)."
+  },
+  {
+    "num": 35,
+    "name": "Onyx Red (Pink)",
+    "target": "`onyx-red-pink`",
+    "cut": "Oval cabochon",
+    "color": "Vivid coral-pink",
+    "features": "Bright salmon/coral-pink glossy dome with soft parallel bands."
+  },
+  {
+    "num": 36,
+    "name": "Onyx Rose",
+    "target": "`onyx-rose`",
+    "cut": "Oval cabochon",
+    "color": "Soft blush-pink",
+    "features": "Pale pastel blush-pink glossy dome with faint straight parallel bands (more opaque/banded than Rose Quartz)."
+  },
+  {
+    "num": 37,
+    "name": "Onyx Yellow",
+    "target": "`onyx-yellow`",
+    "cut": "Oval cabochon",
+    "color": "Golden / honey-yellow",
+    "features": "Warm golden-yellow glossy dome with soft, straight parallel bands."
+  },
+  {
+    "num": 38,
+    "name": "Opal Dendrite",
+    "target": "`opal-dendrite`",
+    "cut": "Oval cabochon",
+    "color": "Milky white + black ferns",
+    "features": "Opaque/milky white-gray body containing sharp, black, tree-branch or fern-like mineral patterns."
+  },
+  {
+    "num": 39,
+    "name": "Pearl Fresh Water",
+    "target": "`pearl-fresh-water`",
+    "cut": "**Round sphere**",
+    "color": "Creamy white",
+    "features": "The **only perfectly round/spherical** item (not oval or cushion); creamy white with a soft pink-silver luster."
+  },
+  {
+    "num": 40,
+    "name": "Pyrite",
+    "target": "`pyrite`",
+    "cut": "Oval cabochon",
+    "color": "Brassy metallic gold",
+    "features": "Opaque pale brassy-gold metallic dome with a slightly pitted, granular crystalline texture."
+  },
+  {
+    "num": 41,
+    "name": "Quartz Cat's Eye",
+    "target": "`quartz-cats-eye`",
+    "cut": "Oval cabochon",
+    "color": "Olive-gray",
+    "features": "Translucent greenish/olive-gray dome with a single sharp white band of light (chatoyancy) down the middle."
+  },
+  {
+    "num": 42,
+    "name": "Rainbow Moonstone",
+    "target": "`rainbow-moonstone`",
+    "cut": "Oval cabochon",
+    "color": "Milky/clear + rainbow glow",
+    "features": "Translucent white/clear dome displaying multi-colored iridescent flashes of blue, pink, and green."
+  },
+  {
+    "num": 43,
+    "name": "Rose Quartz",
+    "target": "`rose-quartz`",
+    "cut": "Oval cabochon",
+    "color": "Soft baby-pink",
+    "features": "Translucent pastel baby-pink with a cloudy, misty interior and faint white internal veils (no straight bands)."
+  },
+  {
+    "num": 44,
+    "name": "Ruby Markara",
+    "target": "`ruby-markara`",
+    "cut": "Cushion (step-cut)",
+    "color": "Vivid crimson/pinkish-red",
+    "features": "Bright, glowing pigeon-blood/crimson red with a slight pinkish-red internal fluorescence."
+  },
+  {
+    "num": 45,
+    "name": "Rutilated Quartz Black Needle",
+    "target": "`rutilated-quartz-black-needle`",
+    "cut": "Oval cabochon",
+    "color": "Clear + black needles",
+    "features": "Water-clear colorless dome crisscrossed inside by sharp, thin black needle-like rods."
+  },
+  {
+    "num": 46,
+    "name": "Rutile Quartz Golden Needle",
+    "target": "`rutile-quartz-golden-needle`",
+    "cut": "Oval cabochon",
+    "color": "Clear + golden needles",
+    "features": "Water-clear colorless dome crisscrossed inside by shiny metallic golden-yellow needle rods."
+  },
+  {
+    "num": 47,
+    "name": "Sapphire Blue",
+    "target": "`sapphire-blue`",
+    "cut": "Cushion (step-cut)",
+    "color": "Deep royal blue",
+    "features": "Rich, velvety, saturated royal blue faceted gem."
+  },
+  {
+    "num": 48,
+    "name": "Sillimanite Cat's Eye",
+    "target": "`sillimanite-cats-eye`",
+    "cut": "Oval cabochon",
+    "color": "Gray-green / teal",
+    "features": "Translucent blue-green/teal-gray dome with a single sharp silvery-white cat's-eye light line across the center."
+  },
+  {
+    "num": 49,
+    "name": "Smoky Quartz",
+    "target": "`smoky-quartz`",
+    "cut": "Cushion (step-cut)",
+    "color": "Chocolate gray-brown",
+    "features": "Transparent warm smoky-brown / clove-brown faceted gem."
+  },
+  {
+    "num": 50,
+    "name": "Spectrolite Cat's Eye",
+    "target": "`spectrolite-cats-eye`",
+    "cut": "Oval cabochon",
+    "color": "Dark gray-black + blue flash",
+    "features": "Very dark charcoal body with an intense electric-blue iridescent glow AND a bright cat's-eye line across the center."
+  },
+  {
+    "num": 51,
+    "name": "Sunstone",
+    "target": "`sunstone`",
+    "cut": "Oval cabochon",
+    "color": "Warm orange / copper",
+    "features": "Translucent copper-orange dome filled with bright glittering golden-orange metallic spangles."
+  },
+  {
+    "num": 52,
+    "name": "Tiger Eye",
+    "target": "`tiger-eye`",
+    "cut": "Oval cabochon",
+    "color": "Golden-brown & dark brown",
+    "features": "Opaque silky-fibrous dome with wavy bands of golden-amber and dark chocolate brown that shimmer."
+  },
+  {
+    "num": 53,
+    "name": "Tourmaline Green",
+    "target": "`tourmaline-green`",
+    "cut": "Cushion (step-cut)",
+    "color": "Vivid forest/emerald green",
+    "features": "Transparent rich emerald/forest-green faceted gem."
+  },
+  {
+    "num": 54,
+    "name": "Turquoise Chinese",
+    "target": "`turquoise-chinese`",
+    "cut": "Oval cabochon",
+    "color": "Vivid sky-blue",
+    "features": "Bright robin's-egg / sky-blue opaque dome with thin, spiderweb dark brown/black matrix lines."
+  },
+  {
+    "num": 55,
+    "name": "Turquoise Tibetan",
+    "target": "`turquoise-tibetan`",
+    "cut": "Oval cabochon",
+    "color": "Muted green-blue",
+    "features": "Earthier greenish-blue / seafoam opaque dome with thicker brown and golden-tan matrix webbing."
+  },
+  {
+    "num": 56,
+    "name": "White Quartz",
+    "target": "`white-quartz`",
+    "cut": "Oval cabochon",
+    "color": "Cloudy milky white",
+    "features": "Semi-translucent white cabochon with natural cloudy/snowy internal wisps (less uniform than White Chalcedony)."
+  },
+  {
+    "num": 57,
+    "name": "White Quartz Crystal",
+    "target": "`white-quartz-crystal`",
+    "cut": "Cushion (step-cut)",
+    "color": "Colorless (pure white)",
+    "features": "Completely transparent, water-clear colorless step-cut gem with crisp white reflections (no blue tint or rainbow fire)."
+  },
+  {
+    "num": 58,
+    "name": "White Topaz",
+    "target": "`white-topaz`",
+    "cut": "Cushion (step-cut)",
+    "color": "Colorless (icy tint)",
+    "features": "Transparent colorless step-cut gem with crisp reflections and subtle cool/icy blue-gray flashes."
+  },
+  {
+    "num": 59,
+    "name": "Zircon Cubic White",
+    "target": "`zircon-cubic-white`",
+    "cut": "Cushion (**brilliant-cut**)",
+    "color": "Colorless (rainbow fire)",
+    "features": "The **only colorless gem with triangular/kite brilliant facets** (no rectangular step-cut table) and strong rainbow fire."
+  }
+]

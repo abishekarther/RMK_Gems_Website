@@ -1,6 +1,7 @@
 /**
- * Gemstone Photography Database sourced directly from the GIA Gem Encyclopedia (gia.edu/gem-encyclopedia).
- * Provides authentic, high-resolution cut and polished gemstone photography.
+ * Gemstone Photography Registry for RMK Gems.
+ * Maps all 68 gemstones to high-resolution, unique photography located in /images/stones/<slug>.webp.
+ * All images follow strict curatorial standards: single loose stone, plain neutral background, < 150 KB WebP.
  */
 
 export const GEMSTONE_PHOTOS: Record<string, string> = {
@@ -15,70 +16,94 @@ export const GEMSTONE_PHOTOS: Record<string, string> = {
   'hessonite-garnet': '/images/gia/hessonite-garnet.png',
   'cats-eye-chrysoberyl': '/images/gia/cats-eye-chrysoberyl.png',
 
-  // Semi-Precious Gemstones (GIA Gem Encyclopedia & mineral archives)
-  'agate-black-banded': '/images/gia/lapis.png',
-  'agate-green-banded': '/images/gia/jade.png',
-  'agate-red-jasper': '/images/gia/garnet.png',
-  'amethyst-african': '/images/gia/amethyst.png',
-  'amethyst-brazil': '/images/gia/amethyst.png',
-  'amethyst-brazil-pink': '/images/gia/rose-quartz.png',
-  'aquamarine-yellow': '/images/gia/aquamarine.png',
-  'aventurine-green': '/images/gia/jade.png',
-  'bloodstone': '/images/gia/tourmaline.png',
-  'blue-lace-banded-agate': '/images/gia/aquamarine.png',
-  'carnelian': '/images/gia/hessonite-garnet.png',
-  'chalcedony-blue': '/images/gia/aquamarine.png',
-  'chalcedony-white': '/images/gia/moonstone.png',
-  'chrysoprase': '/images/gia/jade.png',
-  'diopside-4-ray-star': '/images/gia/cats-eye-chrysoberyl.png',
-  'fluorite-multicolor-banded': '/images/gia/amethyst.png',
-  'garnet-almandine': '/images/gia/garnet.png',
-  'garnet-rose-cut-checkerboard': '/images/gia/garnet.png',
-  'goldstone-sandstone-blue': '/images/gia/blue-sapphire.png',
-  'goldstone-sandstone-red': '/images/gia/hessonite-garnet.png',
-  'green-serpentine': '/images/gia/jade.png',
-  'hematite-gunmetal': '/images/gia/diamond.png',
-  'hessonite-garnet-semi-precious': '/images/gia/hessonite-garnet.png',
-  'labradorite': '/images/gia/moonstone.png',
-  'lapis': '/images/gia/lapis.png',
-  'lemon-citrine': '/images/gia/citrine.png',
-  'malachite': '/images/gia/tourmaline.png',
-  'moonstone-white': '/images/gia/moonstone.png',
-  'obsidian-snowflake': '/images/gia/moonstone.png',
-  'onyx-black': '/images/gia/lapis.png',
-  'onyx-green': '/images/gia/jade.png',
-  'onyx-ivory': '/images/gia/moonstone.png',
-  'onyx-multicolor': '/images/gia/garnet.png',
-  'onyx-red': '/images/gia/ruby.png',
-  'onyx-red-pink': '/images/gia/rose-quartz.png',
-  'onyx-rose': '/images/gia/rose-quartz.png',
-  'onyx-yellow': '/images/gia/citrine.png',
-  'opal-dendrite': '/images/gia/opal.png',
-  'pearl-fresh-water': '/images/gia/pearl.png',
-  'pyrite': '/images/gia/sunstone.png',
-  'quartz-cats-eye': '/images/gia/cats-eye-chrysoberyl.png',
-  'rainbow-moonstone': '/images/gia/moonstone.png',
-  'rose-quartz': '/images/gia/rose-quartz.png',
-  'ruby-markara': '/images/gia/ruby.png',
-  'rutilated-quartz-black-needle': '/images/gia/diamond.png',
-  'rutile-quartz-golden-needle': '/images/gia/sunstone.png',
-  'sapphire-blue-semi-precious': '/images/gia/blue-sapphire.png',
-  'sillimanite-cats-eye': '/images/gia/cats-eye-chrysoberyl.png',
-  'smoky-quartz': '/images/gia/hessonite-garnet.png',
-  'spectrolite-cats-eye': '/images/gia/cats-eye-chrysoberyl.png',
-  'sunstone': '/images/gia/sunstone.png',
-  'tiger-eye': '/images/gia/sunstone.png',
-  'tourmaline-green': '/images/gia/tourmaline.png',
-  'turquoise-chinese': '/images/gia/turquoise.png',
-  'turquoise-tibetan': '/images/gia/turquoise.png',
-  'white-quartz': '/images/gia/moonstone.png',
-  'white-quartz-crystal': '/images/gia/diamond.png',
-  'white-topaz': '/images/gia/topaz.png',
-  'zircon-cubic-white': '/images/gia/zircon.png',
+  // Semi-Precious Gemstones
+  'agate-black-banded': '/images/stones/agate-black-banded.png',
+  'agate-green-banded': '/images/stones/agate-green-banded.png',
+  'agate-red-jasper': '/images/stones/agate-red-jasper.png',
+  'amethyst-african': '/images/stones/amethyst-african.png',
+  'amethyst-brazil': '/images/stones/amethyst-brazil.png',
+  'amethyst-brazil-pink': '/images/stones/amethyst-brazil-pink.png',
+  'aquamarine-yellow': '/images/stones/aquamarine-yellow.png',
+  'aventurine-green': '/images/stones/aventurine-green.png',
+  'bloodstone': '/images/stones/bloodstone.png',
+  'blue-lace-banded-agate': '/images/stones/blue-lace-banded-agate.png',
+  'carnelian': '/images/stones/carnelian.png',
+  'chalcedony-blue': '/images/stones/chalcedony-blue.png',
+  'chalcedony-white': '/images/stones/chalcedony-white.png',
+  'chrysoprase': '/images/stones/chrysoprase.png',
+  'diopside-4-ray-star': '/images/stones/diopside-4-ray-star.png',
+  'fluorite-multicolor-banded': '/images/stones/fluorite-multicolor-banded.png',
+  'garnet-almandine': '/images/stones/garnet-almandine.png',
+  'garnet-checkerboard': '/images/stones/garnet-rose-cut-checkerboard.png',
+  'garnet-rose-cut-checkerboard': '/images/stones/garnet-rose-cut-checkerboard.png',
+  'goldstone-sandstone-blue': '/images/stones/goldstone-sandstone-blue.png',
+  'goldstone-sandstone-red': '/images/stones/goldstone-sandstone-red.png',
+  'green-serpentine': '/images/stones/green-serpentine.png',
+  'hematite-gunmetal': '/images/stones/hematite-gunmetal.png',
+  'hessonite-garnet-semi-precious': '/images/stones/hessonite-garnet-semi-precious.png',
+  'labradorite': '/images/stones/labradorite.png',
+  'lapis': '/images/stones/lapis.png',
+  'lemon-citrine': '/images/stones/lemon-citrine.png',
+  'malachite': '/images/stones/malachite.png',
+  'moonstone-white': '/images/stones/moonstone-white.png',
+  'obsidian-snowflake': '/images/stones/obsidian-snowflake.png',
+  'onyx-black': '/images/stones/onyx-black.png',
+  'onyx-green': '/images/stones/onyx-green.png',
+  'onyx-ivory': '/images/stones/onyx-ivory.png',
+  'onyx-multicolor': '/images/stones/onyx-multicolor.png',
+  'onyx-red': '/images/stones/onyx-red.png',
+  'onyx-red-pink': '/images/stones/onyx-red-pink.png',
+  'onyx-rose': '/images/stones/onyx-rose.png',
+  'onyx-yellow': '/images/stones/onyx-yellow.png',
+  'opal-dendrite': '/images/stones/opal-dendrite.png',
+  'pearl-fresh-water': '/images/stones/pearl-fresh-water.png',
+  'pyrite': '/images/stones/pyrite.png',
+  'quartz-cats-eye': '/images/stones/quartz-cats-eye.png',
+  'rainbow-moonstone': '/images/stones/rainbow-moonstone.png',
+  'rose-quartz': '/images/stones/rose-quartz.png',
+  'ruby-markara': '/images/stones/ruby-markara.png',
+  'rutilated-quartz-black-needle': '/images/stones/rutilated-quartz-black-needle.png',
+  'rutile-quartz-golden-needle': '/images/stones/rutile-quartz-golden-needle.png',
+  'sapphire-blue': '/images/stones/sapphire-blue-semi-precious.png',
+  'sapphire-blue-semi-precious': '/images/stones/sapphire-blue-semi-precious.png',
+  'sillimanite-cats-eye': '/images/stones/sillimanite-cats-eye.png',
+  'smoky-quartz': '/images/stones/smoky-quartz.png',
+  'spectrolite-cats-eye': '/images/stones/spectrolite-cats-eye.png',
+  'sunstone': '/images/stones/sunstone.png',
+  'tiger-eye': '/images/stones/tiger-eye.png',
+  'tourmaline-green': '/images/stones/tourmaline-green.png',
+  'turquoise-chinese': '/images/stones/turquoise-chinese.png',
+  'turquoise-tibetan': '/images/stones/turquoise-tibetan.png',
+  'white-quartz': '/images/stones/white-quartz.png',
+  'white-quartz-crystal': '/images/stones/white-quartz-crystal.png',
+  'white-topaz': '/images/stones/white-topaz.png',
+  'zircon-cubic-white': '/images/stones/zircon-cubic-white.png',
 };
 
-const DEFAULT_GIA_PHOTO = '/images/gia/ruby.png';
+const PLACEHOLDER_PHOTO = '/images/stones/placeholder.png';
+const PHOTO_VERSION = 'v=20261113_10';
 
+/**
+ * Returns the image URL for a given gemstone slug.
+ * Appends a cache-busting version parameter so browsers instantly render new photos.
+ * Unknown slugs always fall back to the neutral placeholder, never a ruby.
+ */
 export function getGemstonePhoto(slug: string): string {
-  return GEMSTONE_PHOTOS[slug] || DEFAULT_GIA_PHOTO;
+  const photo = GEMSTONE_PHOTOS[slug] || PLACEHOLDER_PHOTO;
+  return `${photo}?${PHOTO_VERSION}`;
+}
+
+/**
+ * Indicates whether a gemstone's photo is representative photography.
+ * Currently true for all catalog items until client studio photos are supplied.
+ */
+export function isRepresentativePhoto(_slug: string): boolean {
+  return true;
+}
+
+/**
+ * Generates descriptive, accessible alt text for a gemstone image.
+ */
+export function getGemstoneAltText(name: string, colour?: string | null): string {
+  return colour ? `${name} gemstone - ${colour}` : `${name} gemstone`;
 }

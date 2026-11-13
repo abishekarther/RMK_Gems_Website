@@ -79,7 +79,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "ruby",
     "short_description": "The crimson variety of corundum, admired for intense vitreous red luster and exceptional hardness.",
     "full_description": "Ruby is the red variety of the mineral corundum (aluminium oxide), coloured by trace amounts of chromium. With a Mohs hardness of 9, it is among the hardest naturally occurring minerals. Rubies have been revered for millennia across Asian and European courts as emblems of nobility, passion, and sovereignty.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Pigeon blood red to purplish red",
     "hardness_min": 9.0,
     "hardness_max": 9.0,
@@ -88,12 +88,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "Historically sourced from Myanmar (Burma), Mozambique, Madagascar, and Sri Lanka.",
     "formation": "Metamorphic deposits in marble host rocks, or basalt-related formations.",
     "history_notes": "Referred to in ancient Sanskrit texts as 'Ratnaraj' (King of Gems), ruby was held in supreme reverence across Asian courts and regalia.",
-    "treatments": "Heat treatment is commonly used in the trade to improve clarity and color; untreated stones command premium valuation.",
+    "treatments": "Often heat treated in the trade to improve clarity and hue saturation.",
     "care_instructions": "Warm soapy water and soft brush. Generally safe for ultrasonic cleaning unless heavily fractured or filled.",
     "availability": "available",
     "is_featured": true,
     "display_order": 1,
-    "media": []
+    "media": [
+      {
+        "id": "media-ruby-photo",
+        "media_type": "image",
+        "file_url": "/images/gia/ruby.png",
+        "thumbnail_url": "/images/gia/ruby.png",
+        "alt_text": "Ruby gemstone - Pigeon blood red to purplish red",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-pearl",
@@ -113,12 +123,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "Marine and freshwater mollusk beds in Persian Gulf, South Seas, Japan, and India.",
     "formation": "Concentric nacre secretions around an irritant in freshwater or saltwater mollusks.",
     "history_notes": "Treasured along the Coromandel Coast and Gulf of Mannar for thousands of years as symbols of royalty and serenity.",
-    "treatments": "Bleaching and buffing are standard commercial practices for cultured varieties.",
+    "treatments": "Often bleached or cleaned with mild solutions to uniform surface luster.",
     "care_instructions": "Wipe with a soft damp cloth after wearing. Store separately from harder gemstones. Avoid perfumes, cosmetics, and acids.",
     "availability": "available",
     "is_featured": true,
     "display_order": 2,
-    "media": []
+    "media": [
+      {
+        "id": "media-pearl-photo",
+        "media_type": "image",
+        "file_url": "/images/gia/pearl.png",
+        "thumbnail_url": "/images/gia/pearl.png",
+        "alt_text": "Pearl gemstone - White, cream, silver, gold, and subtle pastels",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-red-coral",
@@ -137,13 +157,23 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "crystal_system": "Amorphous / Microcrystalline",
     "origin": "Mediterranean Sea, coast of Italy, and Western Pacific.",
     "formation": "Colonial marine skeletal growth at depths between 30 and 300 meters.",
-    "history_notes": "Known in classical Mediterranean and Indian trade as a prized talisman of vitality and good fortune.",
-    "treatments": "Waxing or resin stabilization may be applied; dye is occasionally seen on lower grades.",
+    "history_notes": "Prized throughout ancient Mediterranean, Indian, and Silk Road trade routes as an esteemed organic gemstone for classical ornamentation.",
+    "treatments": "None routinely applied; sometimes coated with colourless wax to protect surface polish.",
     "care_instructions": "Gentle wipe with soft dry or damp cloth. Never expose to household acids, vinegar, perfume, or ultrasonic cleaners.",
     "availability": "available",
     "is_featured": true,
     "display_order": 3,
-    "media": []
+    "media": [
+      {
+        "id": "media-red-coral-photo",
+        "media_type": "image",
+        "file_url": "/images/gia/red-coral.png",
+        "thumbnail_url": "/images/gia/red-coral.png",
+        "alt_text": "Red Coral gemstone - Vibrant red, oxblood red, salmon pink",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-emerald",
@@ -154,7 +184,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "emerald",
     "short_description": "The green variety of beryl, celebrated for its rich verdant coloration and natural inclusions.",
     "full_description": "Emerald is the prestigious green gem variety of the beryl mineral species, coloured by trace concentrations of chromium and occasionally vanadium. Its rich green hue has captured royal fascination from the Ptolemaic mines of Egypt to the royal courts of the Americas and Mughal India.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Deep lush green to slightly bluish green",
     "hardness_min": 7.5,
     "hardness_max": 8.0,
@@ -163,12 +193,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "Colombia (Muzo, Chivor), Zambia, Brazil, and Zimbabwe.",
     "formation": "Hydrothermal veins within pegmatites and metamorphic schists.",
     "history_notes": "Treasured by Cleopatra, the Roman philosopher Pliny, and Indian emperors who inscribed sacred verses on expansive emerald crystals.",
-    "treatments": "Clarity enhancement with traditional cedarwood oil is an accepted industry standard.",
+    "treatments": "Commonly treated with cedarwood oil or colourless resin to improve clarity.",
     "care_instructions": "Clean using lukewarm water and mild soap only. Never use ultrasonic or steam cleaners.",
     "availability": "available",
     "is_featured": true,
     "display_order": 4,
-    "media": []
+    "media": [
+      {
+        "id": "media-emerald-photo",
+        "media_type": "image",
+        "file_url": "/images/gia/emerald.png",
+        "thumbnail_url": "/images/gia/emerald.png",
+        "alt_text": "Emerald gemstone - Deep lush green to slightly bluish green",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-yellow-sapphire",
@@ -178,8 +218,8 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "name": "Yellow Sapphire",
     "slug": "yellow-sapphire",
     "short_description": "A radiant golden-yellow corundum gem possessing brilliant adamantine luster and high durability.",
-    "full_description": "Yellow Sapphire belongs to the corundum family and owes its canary to honey-yellow hue to iron trace elements and natural color centers. With high refractive index and Mohs 9 hardness, yellow sapphire sparkles with vivacity and serves as an important gemstone in both traditional Indian and modern fine jewellery.",
-    "material_type": "natural",
+    "full_description": "Yellow Sapphire belongs to the corundum family and owes its canary to honey-yellow hue to iron trace elements. With high refractive index and Mohs 9 hardness, yellow sapphire sparkles with vivacity and serves as an important gemstone in both traditional Indian and modern fine jewellery.",
+    "material_type": "unconfirmed",
     "colour": "Canary yellow, lemon yellow, warm golden amber",
     "hardness_min": 9.0,
     "hardness_max": 9.0,
@@ -188,12 +228,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "Sri Lanka (Ceylon), Madagascar, Australia, and Thailand.",
     "formation": "Metamorphic crystalline limestone and alluvium gravels.",
     "history_notes": "Held as a traditional symbol of wisdom, prosperity, and celestial grace across classical gem literature.",
-    "treatments": "Heat treatment is standard; unheated stones with certificate of purity are highly prized.",
-    "care_instructions": "Warm soapy water with a soft cloth. Ultrasonic cleaners are generally safe for untreated or standard heated stones.",
+    "treatments": "Often heat treated to enhance clarity and golden hue intensity.",
+    "care_instructions": "Clean using warm soapy water and a soft brush. Ultrasonic cleaners are generally safe for standard stones.",
     "availability": "available",
     "is_featured": true,
     "display_order": 5,
-    "media": []
+    "media": [
+      {
+        "id": "media-yellow-sapphire-photo",
+        "media_type": "image",
+        "file_url": "/images/gia/yellow-sapphire.png",
+        "thumbnail_url": "/images/gia/yellow-sapphire.png",
+        "alt_text": "Yellow Sapphire gemstone - Canary yellow, lemon yellow, warm golden amber",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-diamond",
@@ -204,7 +254,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "diamond",
     "short_description": "The ultimate mineral in hardness, forged in deep mantle pressure and renowned for fiery brilliance.",
     "full_description": "Diamond is composed of pure elemental carbon arranged in an isometric crystal lattice, making it the hardest known natural substance (Mohs 10). Known for high optical dispersion ('fire') and adamantine luster, diamonds have served as the benchmark of enduring strength, beauty, and timeless commitment.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Colourless (D-F) to near-colourless (G-J), with faint warm tints",
     "hardness_min": 10.0,
     "hardness_max": 10.0,
@@ -212,13 +262,23 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "crystal_system": "Isometric (Cubic)",
     "origin": "Historic Golconda (India), Botswana, Russia, South Africa, and Canada.",
     "formation": "Forged under intense temperature and pressure 150 km deep within Earth's mantle.",
-    "history_notes": "India\u2019s historic Golconda mines were the world's primary source of diamonds from antiquity until the 18th century.",
-    "treatments": "Untreated natural diamonds are the standard fine jewelry offering.",
+    "history_notes": "India’s historic Golconda mines were the world's primary source of diamonds from antiquity until the 18th century.",
+    "treatments": "Standard cutting and polishing only; artificial enhancements such as laser drilling or fracture filling are disclosed when present.",
     "care_instructions": "Warm water with mild detergent and a soft brush. Keep away from chlorine and harsh bleaches.",
     "availability": "available",
     "is_featured": true,
     "display_order": 6,
-    "media": []
+    "media": [
+      {
+        "id": "media-diamond-photo",
+        "media_type": "image",
+        "file_url": "/images/gia/diamond.png",
+        "thumbnail_url": "/images/gia/diamond.png",
+        "alt_text": "Diamond gemstone - Colourless (D-F) to near-colourless (G-J), with faint warm tints",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-blue-sapphire",
@@ -229,7 +289,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "blue-sapphire",
     "short_description": "The celebrated royal blue corundum gemstone, admired for velvety depth and exceptional hardness.",
     "full_description": "Blue Sapphire is the blue corundum variety coloured by iron and titanium charge transfer. Renowned for its rich cornflower to royal blue tones, excellent hardness (Mohs 9), and vitreous brilliance, blue sapphire has been a cornerstone of royal regalia and fine jewellery across dynasties.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Cornflower blue, royal blue, deep navy",
     "hardness_min": 9.0,
     "hardness_max": 9.0,
@@ -237,13 +297,23 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "crystal_system": "Trigonal / Hexagonal",
     "origin": "Kashmir (historic), Sri Lanka (Ceylon), Madagascar, and Myanmar.",
     "formation": "Metamorphic and igneous pegmatitic rock formations and placer gravels.",
-    "history_notes": "Revered as a talisman of divine truth and clear intellect by Persian, Greek, and ancient Indian gemologists.",
-    "treatments": "Standard heat treatment to improve transparency and color saturation.",
+    "history_notes": "Adored through antiquity across Persian, Greek, and Indian traditions as an esteemed gemstone of dignity, integrity, and classical majesty.",
+    "treatments": "Often heat treated to dissolve rutile silk and enhance deep blue saturation.",
     "care_instructions": "Warm soapy water with a soft brush. Generally safe for ultrasonic cleaners unless heavily fractured.",
     "availability": "available",
     "is_featured": true,
     "display_order": 7,
-    "media": []
+    "media": [
+      {
+        "id": "media-blue-sapphire-photo",
+        "media_type": "image",
+        "file_url": "/images/gia/blue-sapphire.png",
+        "thumbnail_url": "/images/gia/blue-sapphire.png",
+        "alt_text": "Blue Sapphire gemstone - Cornflower blue, royal blue, deep navy",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-hessonite-garnet",
@@ -254,21 +324,31 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "hessonite-garnet",
     "short_description": "The cinnamon-stone grossular garnet, prized for warm honey-amber to brownish-orange brilliance.",
     "full_description": "Hessonite is a calcium-aluminium variety of grossular garnet distinguished by its warm golden-yellow to cinnamon-red hue. It typically contains internal curved heat-wave or 'whiskey-in-water' optical characteristics that distinguish its natural identity and lend it a warm, velvety glow.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Cinnamon orange, honey brown, golden amber",
     "hardness_min": 7.0,
     "hardness_max": 7.5,
     "chemical_composition": "Ca3Al2(SiO4)3 (Calcium Aluminium Silicate)",
     "crystal_system": "Isometric (Cubic)",
-    "origin": "Sri Lanka, India (Tamil Nadu, Rajasthan), Madagascar, and Canada.",
+    "origin": "Sri Lanka, India (Rajasthan, Odisha), Madagascar, and Canada.",
     "formation": "Contact metamorphic calcareous rocks and secondary alluvial gravels.",
-    "history_notes": "Known in Sanskrit gemology as Gomedaka, hessonite has enjoyed uninterrupted reverence in South Asian adornment.",
-    "treatments": "Typically untreated; hessonite garnets exhibit stable natural color without heating.",
+    "history_notes": "Revered in historical South Asian gemological literature as Gomedhaka, one of the classical Navaratna gems celebrated for warm cinnamon resonance.",
+    "treatments": "None routinely applied; garnets typically exhibit stable colour directly from the mine.",
     "care_instructions": "Clean using warm water and a soft cloth. Avoid sudden thermal shocks and harsh chemicals.",
     "availability": "available",
     "is_featured": true,
     "display_order": 8,
-    "media": []
+    "media": [
+      {
+        "id": "media-hessonite-garnet-photo",
+        "media_type": "image",
+        "file_url": "/images/gia/hessonite-garnet.png",
+        "thumbnail_url": "/images/gia/hessonite-garnet.png",
+        "alt_text": "Hessonite Garnet gemstone - Cinnamon orange, honey brown, golden amber",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-cats-eye-chrysoberyl",
@@ -278,8 +358,8 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "name": "Cat's Eye (Chrysoberyl)",
     "slug": "cats-eye-chrysoberyl",
     "short_description": "The benchmark chatoyant gemstone showing a sharp, mobile silver-white line of light across honey-green body color.",
-    "full_description": "True Cat\u2019s Eye refers specifically to chrysoberyl displaying chatoyancy\u2014an optical phenomenon caused by microscopic parallel rutile needles reflecting a crisp band of light resembling a slit feline pupil. Chrysoberyl has an impressive Mohs hardness of 8.5, third only to corundum and diamond.",
-    "material_type": "natural",
+    "full_description": "True Cat’s Eye refers specifically to chrysoberyl displaying chatoyancy—an optical phenomenon caused by microscopic parallel rutile needles reflecting a crisp band of light resembling a slit feline pupil. Chrysoberyl has an impressive Mohs hardness of 8.5, third only to corundum and diamond.",
+    "material_type": "unconfirmed",
     "colour": "Honey yellow, greenish yellow, milk-and-honey",
     "hardness_min": 8.5,
     "hardness_max": 8.5,
@@ -288,12 +368,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "Sri Lanka, Brazil, India (Orissa, Kerala), and Madagascar.",
     "formation": "Granite pegmatites, mica schists, and alluvial gem gravels.",
     "history_notes": "Referred to by Pliny and celebrated in classical gemology for its dramatic 'milk and honey' light-splitting optical effect.",
-    "treatments": "Naturally occurring chatoyancy; irradiation is rare and detectable.",
+    "treatments": "Typically fashioned directly from chatoyant rough; artificial treatments are not standard.",
     "care_instructions": "Very durable. Warm soapy water with a soft brush. Keep away from severe localized impacts.",
     "availability": "available",
     "is_featured": true,
     "display_order": 9,
-    "media": []
+    "media": [
+      {
+        "id": "media-cats-eye-chrysoberyl-photo",
+        "media_type": "image",
+        "file_url": "/images/gia/cats-eye-chrysoberyl.png",
+        "thumbnail_url": "/images/gia/cats-eye-chrysoberyl.png",
+        "alt_text": "Cat's Eye (Chrysoberyl) gemstone - Honey yellow, greenish yellow, milk-and-honey",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-agate-black-banded",
@@ -304,7 +394,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "agate-black-banded",
     "short_description": "Microcrystalline chalcedony with alternating parallel bands of jet black and opaque white.",
     "full_description": "Black Banded Agate is a variety of cryptocrystalline quartz featuring concentric or parallel banding formed over geological epochs. Its sharp contrasting layers make it a favorite for traditional cameo carving, beads, and architectural lapidary.",
-    "material_type": "natural",
+    "material_type": "treated",
     "colour": "Black with white/grey banding",
     "hardness_min": 6.5,
     "hardness_max": 7.0,
@@ -313,12 +403,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "Brazil, India, Madagascar, Uruguay.",
     "formation": "Cavity deposition in volcanic rocks from silica-rich groundwater.",
     "history_notes": "Used in ancient signet rings and protective amulets across Sumer and Rome.",
-    "treatments": "Often dyed to enhance black saturation in commercial trade.",
+    "treatments": "Commonly dyed or acid-stained in traditional lapidary processing to achieve uniform dark banding.",
     "care_instructions": "Warm soapy water with a soft cloth. Keep away from harsh bleaching chemicals.",
     "availability": "available",
     "is_featured": false,
     "display_order": 1,
-    "media": []
+    "media": [
+      {
+        "id": "media-agate-black-banded-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/agate-black-banded.png",
+        "thumbnail_url": "/images/stones/agate-black-banded.png",
+        "alt_text": "Agate Black Banded gemstone - Black with white/grey banding",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-agate-green-banded",
@@ -329,7 +429,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "agate-green-banded",
     "short_description": "Fine chalcedony displaying rhythmic parallel bands in soothing forest and moss greens.",
     "full_description": "Green Banded Agate features fine rhythmic layers of chalcedony silica stained with chlorite or green iron silicates, creating intricate and organic contour patterns.",
-    "material_type": "natural",
+    "material_type": "treated",
     "colour": "Emerald green to sage and white banding",
     "hardness_min": 6.5,
     "hardness_max": 7.0,
@@ -338,12 +438,57 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "India, Brazil, Germany, Madagascar.",
     "formation": "Precipitated within volcanic vesicles from low-temperature hydrothermal fluids.",
     "history_notes": "Historically valued in decorative vessels and European decorative arts.",
-    "treatments": "Some commercial green agates undergo traditional inorganic dyeing.",
+    "treatments": "Commonly dyed or stained to produce vivid green colouration.",
     "care_instructions": "Warm soapy water. Avoid prolonged exposure to direct high heat.",
     "availability": "available",
     "is_featured": false,
     "display_order": 2,
-    "media": []
+    "media": [
+      {
+        "id": "media-agate-green-banded-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/agate-green-banded.png",
+        "thumbnail_url": "/images/stones/agate-green-banded.png",
+        "alt_text": "Agate Green Banded gemstone - Emerald green to sage and white banding",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
+  },
+  {
+    "id": "gem-agate-red-jasper",
+    "category_id": "cat-semi-precious",
+    "category_slug": "semi-precious",
+    "category_name": "Semi-Precious Gemstones",
+    "name": "Agate Red Jasper",
+    "slug": "agate-red-jasper",
+    "short_description": "A microcrystalline quartz stone displaying rich brick-red jasper body with chalcedonic banding.",
+    "full_description": "Agate Red Jasper is a microcrystalline quartz variety combining the translucent layered structure of banded agate with opaque red jasper pigmented by iron oxide inclusions.",
+    "material_type": "unconfirmed",
+    "colour": "Brick-red and terracotta with subtle banding",
+    "hardness_min": 6.5,
+    "hardness_max": 7.0,
+    "chemical_composition": "SiO2 with iron oxide inclusions",
+    "crystal_system": "Trigonal",
+    "origin": "Found in volcanic rock cavities across India, South Africa, and Brazil.",
+    "formation": "Precipitated from low-temperature silica-bearing hydrothermal fluids in rock cavities.",
+    "history_notes": "Used ornamentally since antiquity for seals, beads, and decorative carvings.",
+    "treatments": "Cut directly from rough stones; polishing enhances surface luster.",
+    "care_instructions": "Clean with warm soapy water and a soft brush.",
+    "availability": "available",
+    "is_featured": false,
+    "display_order": 3,
+    "media": [
+      {
+        "id": "media-agate-red-jasper-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/agate-red-jasper.png",
+        "thumbnail_url": "/images/stones/agate-red-jasper.png",
+        "alt_text": "Agate Red Jasper gemstone - Brick-red and terracotta with subtle banding",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-amethyst-african",
@@ -354,7 +499,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "amethyst-african",
     "short_description": "Deeply saturated purple quartz with intense violet and crimson secondary flashes.",
     "full_description": "African Amethyst is renowned among gemologists for its extraordinary color saturation, exhibiting deep royal purple with vibrant magenta-red flashes under warm lighting.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Deep royal purple with violet-red flashes",
     "hardness_min": 7.0,
     "hardness_max": 7.0,
@@ -363,12 +508,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "Zambia, Namibia, Tanzania, Madagascar.",
     "formation": "Crystallized within gas cavities and veins in igneous rocks.",
     "history_notes": "Prized in ancient Greece and medieval regalia as an emblem of clarity and composure.",
-    "treatments": "Naturally colored; rarely treated.",
+    "treatments": "None routinely applied; deep violet saturation occurs naturally during crystal growth.",
     "care_instructions": "Warm soapy water. Avoid prolonged exposure to intense sunlight to prevent fading.",
     "availability": "available",
     "is_featured": true,
     "display_order": 4,
-    "media": []
+    "media": [
+      {
+        "id": "media-amethyst-african-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/amethyst-african.png",
+        "thumbnail_url": "/images/stones/amethyst-african.png",
+        "alt_text": "Amethyst African gemstone - Deep royal purple with violet-red flashes",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-amethyst-brazil",
@@ -379,7 +534,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "amethyst-brazil",
     "short_description": "Classic lilac to violet quartz formed within massive basaltic geodes in South America.",
     "full_description": "Brazilian Amethyst displays an attractive, delicate medium purple to lilac body color with vitreous luster, renowned for its exceptional crystal size and transparency.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Light to medium lilac purple",
     "hardness_min": 7.0,
     "hardness_max": 7.0,
@@ -388,12 +543,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "Rio Grande do Sul, Brazil.",
     "formation": "Vast basalt geode cavities formed by volcanic flows.",
     "history_notes": "Brazil became the world's most prolific source of fine amethyst during the 19th century.",
-    "treatments": "Untreated natural color.",
+    "treatments": "None routinely applied; fashioned directly from crystalline geode rough.",
     "care_instructions": "Clean with mild detergent and soft cloth. Protect from extreme heat.",
     "availability": "available",
     "is_featured": false,
     "display_order": 5,
-    "media": []
+    "media": [
+      {
+        "id": "media-amethyst-brazil-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/amethyst-brazil.png",
+        "thumbnail_url": "/images/stones/amethyst-brazil.png",
+        "alt_text": "Amethyst Brazil gemstone - Light to medium lilac purple",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-amethyst-brazil-pink",
@@ -402,9 +567,9 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "category_name": "Semi-Precious Gemstones",
     "name": "Amethyst Brazil Pink",
     "slug": "amethyst-brazil-pink",
-    "short_description": "A rare pastel variety of Brazilian quartz showcasing delicate blush-pink and lilac tones.",
+    "short_description": "A delicate pastel variety of Brazilian quartz showcasing soft blush-pink and lilac tones.",
     "full_description": "Pink Amethyst from South America owes its romantic blush-pink and soft lilac tone to microscopic hematite and manganese inclusions trapped within the quartz lattice.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Blush pink, pastel lavender, dusty rose",
     "hardness_min": 7.0,
     "hardness_max": 7.0,
@@ -413,12 +578,57 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "Patagonia region / Brazil.",
     "formation": "Low-temperature silica mineralization with iron oxide micro-inclusions.",
     "history_notes": "A relatively modern discovery celebrated for soft aesthetic tones in designer jewellery.",
-    "treatments": "Untreated natural color.",
+    "treatments": "None routinely applied; pastel hues reflect trace iron and manganese in quartz.",
     "care_instructions": "Mild soap and water. Keep away from harsh abrasive scrubbers.",
     "availability": "available",
     "is_featured": false,
     "display_order": 6,
-    "media": []
+    "media": [
+      {
+        "id": "media-amethyst-brazil-pink-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/amethyst-brazil-pink.png",
+        "thumbnail_url": "/images/stones/amethyst-brazil-pink.png",
+        "alt_text": "Amethyst Brazil Pink gemstone - Blush pink, pastel lavender, dusty rose",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
+  },
+  {
+    "id": "gem-aquamarine-yellow",
+    "category_id": "cat-semi-precious",
+    "category_slug": "semi-precious",
+    "category_name": "Semi-Precious Gemstones",
+    "name": "Aquamarine Yellow",
+    "slug": "aquamarine-yellow",
+    "short_description": "A trade designation applied to yellow beryl.",
+    "full_description": "Aquamarine Yellow is a commercial trade term for yellow beryl, historically referred to as heliodor. While aquamarine gemologically designates blue beryl, yellow beryl shares the hexagonal beryl crystal structure.",
+    "material_type": "unconfirmed",
+    "colour": "Yellow to greenish yellow",
+    "hardness_min": 7.5,
+    "hardness_max": 8.0,
+    "chemical_composition": "Be3Al2Si6O18",
+    "crystal_system": "Hexagonal",
+    "origin": null,
+    "formation": null,
+    "history_notes": "Yellow beryl was historically named heliodor from Greek words meaning gift of the sun.",
+    "treatments": null,
+    "care_instructions": "Clean with warm soapy water and a soft brush.",
+    "availability": "available",
+    "is_featured": false,
+    "display_order": 7,
+    "media": [
+      {
+        "id": "media-aquamarine-yellow-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/aquamarine-yellow.png",
+        "thumbnail_url": "/images/stones/aquamarine-yellow.png",
+        "alt_text": "Aquamarine Yellow gemstone - Yellow to greenish yellow",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-aventurine-green",
@@ -429,21 +639,31 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "aventurine-green",
     "short_description": "A translucent green quartz variety showcasing shimmering aventurescence caused by fuchsite mica flakes.",
     "full_description": "Green Aventurine is a quartz rock characterised by brilliant optical spangles known as aventurescence, caused by platy inclusions of green chromium-bearing fuchsite mica distributed throughout the stone.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Translucent jade-green to forest green with metallic glitter",
     "hardness_min": 6.5,
     "hardness_max": 7.0,
     "chemical_composition": "SiO2 with Fuchsite Mica (K(Al,Cr)2(AlSi3O10)(OH)2)",
     "crystal_system": "Trigonal",
-    "origin": "India (Karnataka, Tamil Nadu), Brazil, Russia.",
+    "origin": "India (Karnataka, Andhra Pradesh), Brazil, and Russia.",
     "formation": "Metamorphic quartzites containing disseminated chromian mica.",
     "history_notes": "Historically referred to as Indian Jade in carving traditions of the subcontinent.",
-    "treatments": "Untreated natural mineral.",
+    "treatments": "None routinely applied; shimmering aventurescence is an inherent crystalline feature.",
     "care_instructions": "Wash with warm soapy water and a soft cloth.",
     "availability": "available",
     "is_featured": false,
     "display_order": 8,
-    "media": []
+    "media": [
+      {
+        "id": "media-aventurine-green-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/aventurine-green.png",
+        "thumbnail_url": "/images/stones/aventurine-green.png",
+        "alt_text": "Aventurine Green gemstone - Translucent jade-green to forest green with metallic glitter",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-bloodstone",
@@ -454,7 +674,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "bloodstone",
     "short_description": "Dark green jasper chalcedony speckled with distinctive crimson spots of iron oxide.",
     "full_description": "Bloodstone (also known as heliotrope) is an opaque dark green variety of chalcedony quartz dotted with vivid red or brownish speckles caused by hematite iron oxide inclusions.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Deep forest green with red hematite flecks",
     "hardness_min": 6.5,
     "hardness_max": 7.0,
@@ -463,12 +683,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "India (Deccan Traps), Australia, Brazil, Madagascar.",
     "formation": "Low-temperature silica deposition in volcanic rocks.",
     "history_notes": "Carved into signet intaglios and valued in ancient Babylonia and medieval Europe.",
-    "treatments": "Untreated natural stone.",
+    "treatments": "None routinely applied; fashioned directly from opaque rough.",
     "care_instructions": "Warm water and mild soap. Avoid acidic chemicals.",
     "availability": "available",
     "is_featured": false,
     "display_order": 9,
-    "media": []
+    "media": [
+      {
+        "id": "media-bloodstone-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/bloodstone.png",
+        "thumbnail_url": "/images/stones/bloodstone.png",
+        "alt_text": "Bloodstone gemstone - Deep forest green with red hematite flecks",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-blue-lace-banded-agate",
@@ -479,7 +709,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "blue-lace-banded-agate",
     "short_description": "Serene light blue chalcedony displaying delicate lace-like undulating white bands.",
     "full_description": "Blue Lace Agate is an ornamental chalcedony characterized by alternating wavy, filigree-like bands of powder blue and opaque white. Its calming color palette and fine polish make it highly sought-after in fine cabochons.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Sky blue, periwinkle, white lace bands",
     "hardness_min": 6.5,
     "hardness_max": 7.0,
@@ -488,12 +718,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "Namibia, South Africa, Romania.",
     "formation": "Hydrothermal deposition in dolomite cavity fractures.",
     "history_notes": "Discovered in southern Africa and cherished in modern jewelry for soft undulating banding.",
-    "treatments": "Untreated natural material.",
+    "treatments": "None routinely applied; delicate blue and white lace banding forms naturally.",
     "care_instructions": "Clean gently with warm water and a soft cloth.",
     "availability": "available",
     "is_featured": false,
     "display_order": 10,
-    "media": []
+    "media": [
+      {
+        "id": "media-blue-lace-banded-agate-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/blue-lace-banded-agate.png",
+        "thumbnail_url": "/images/stones/blue-lace-banded-agate.png",
+        "alt_text": "Blue Lace Banded Agate gemstone - Sky blue, periwinkle, white lace bands",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-carnelian",
@@ -504,7 +744,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "carnelian",
     "short_description": "Translucent reddish-orange chalcedony admired for warm fire and glossy vitreous polish.",
     "full_description": "Carnelian is a brownish-red to fiery orange variety of chalcedony quartz, coloured by finely dispersed iron oxide (hematite). Renowned for its translucency and glossy luster, carnelian has served as a cornerstone of ancient decorative arts for over five millennia.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Fiery orange, amber red, deep rust",
     "hardness_min": 6.5,
     "hardness_max": 7.0,
@@ -513,12 +753,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "India (Gujarat, Maharashtra), Brazil, Madagascar, Uruguay.",
     "formation": "Cavity fills in ancient volcanic basalt lavas.",
     "history_notes": "Extensively engraved for royal seal rings in the Indus Valley Civilization (Harappa) and ancient Egypt.",
-    "treatments": "Sun-baking or mild heat treatment is a traditional Indian method to deepen the orange-red hue.",
+    "treatments": "Often gently heated or sun-baked to oxidize iron impurities and deepen orange-red saturation.",
     "care_instructions": "Warm soapy water with a soft cloth. Keep away from extreme thermal shocks.",
     "availability": "available",
     "is_featured": true,
     "display_order": 11,
-    "media": []
+    "media": [
+      {
+        "id": "media-carnelian-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/carnelian.png",
+        "thumbnail_url": "/images/stones/carnelian.png",
+        "alt_text": "Carnelian gemstone - Fiery orange, amber red, deep rust",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-chalcedony-blue",
@@ -529,7 +779,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "chalcedony-blue",
     "short_description": "Translucent cryptocrystalline quartz displaying a soft ethereal cornflower-blue glow.",
     "full_description": "Blue Chalcedony is a cryptocrystalline form of silica composed of submicroscopic intergrowths of quartz and moganite. When cut en cabochon, it displays a gentle internal milky translucence reminiscent of moonlit water.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Soft pastel blue, lavender blue, translucent grey-blue",
     "hardness_min": 6.5,
     "hardness_max": 7.0,
@@ -538,12 +788,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "Namibia, Turkey, India, USA.",
     "formation": "Precipitated at low temperatures in hydrothermal volcanic cavities.",
     "history_notes": "Used since Minoan Crete in signet seals and imperial medallions.",
-    "treatments": "Some blue chalcedony on the market is dyed; natural unenhanced stones are sought by collectors.",
+    "treatments": "Often dyed to enhance uniform blue coloration.",
     "care_instructions": "Mild soap and lukewarm water. Avoid ultrasonic cleaners if dyed.",
     "availability": "available",
     "is_featured": false,
     "display_order": 12,
-    "media": []
+    "media": [
+      {
+        "id": "media-chalcedony-blue-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/chalcedony-blue.png",
+        "thumbnail_url": "/images/stones/chalcedony-blue.png",
+        "alt_text": "Chalcedony BLUE gemstone - Soft pastel blue, lavender blue, translucent grey-blue",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-chalcedony-white",
@@ -554,7 +814,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "chalcedony-white",
     "short_description": "Pristine milky to translucent white microcrystalline quartz with silky luster.",
     "full_description": "White Chalcedony presents a serene, uniform milky-white appearance with vitreous to waxy luster. Its clean, cloud-like translucence makes it a staple in minimalist modern jewellery design.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Milky white, opalescent pearl-white",
     "hardness_min": 6.5,
     "hardness_max": 7.0,
@@ -563,12 +823,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "India, Brazil, Madagascar.",
     "formation": "Cavity precipitation in sedimentary and volcanic geological formations.",
     "history_notes": "Valued in ancient glyptic art for precision cameos and intaglios.",
-    "treatments": "Typically untreated natural stone.",
+    "treatments": "None routinely applied; fashioned directly from translucent chalcedony rough.",
     "care_instructions": "Warm soapy water with a soft microfibre cloth.",
     "availability": "available",
     "is_featured": false,
     "display_order": 13,
-    "media": []
+    "media": [
+      {
+        "id": "media-chalcedony-white-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/chalcedony-white.png",
+        "thumbnail_url": "/images/stones/chalcedony-white.png",
+        "alt_text": "Chalcedony White gemstone - Milky white, opalescent pearl-white",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-chrysoprase",
@@ -579,7 +849,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "chrysoprase",
     "short_description": "Apple-green chalcedony coloured by nickel silicates, the most valuable chalcedony variety.",
     "full_description": "Chrysoprase is the apple-green to vivid mint variety of chalcedony quartz, coloured by microscopic inclusions of nickel compounds (kerolite or garnierite). It has been celebrated since Greek antiquity for its vibrant, jade-like visual appeal.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Luminous apple-green, mint, emerald tint",
     "hardness_min": 6.5,
     "hardness_max": 7.0,
@@ -588,12 +858,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "Australia (Queensland), Poland, Tanzania, Brazil.",
     "formation": "Nickel laterite deposits resulting from weathered serpentinites.",
     "history_notes": "Favored by Frederick the Great of Prussia in the 18th century for palatial decor.",
-    "treatments": "Untreated natural gem; distinguished from dyed green chalcedony by spectrographic tests.",
+    "treatments": "None routinely applied; apple-green coloration derives from nickel-silicate minerals.",
     "care_instructions": "Keep away from prolonged hot sunlight which may dehydrate nickel silicates.",
     "availability": "available",
     "is_featured": false,
     "display_order": 14,
-    "media": []
+    "media": [
+      {
+        "id": "media-chrysoprase-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/chrysoprase.png",
+        "thumbnail_url": "/images/stones/chrysoprase.png",
+        "alt_text": "Chrysoprase gemstone - Luminous apple-green, mint, emerald tint",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-diopside-4-ray-star",
@@ -604,21 +884,31 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "diopside-4-ray-star",
     "short_description": "Black pyroxene exhibiting a distinct four-rayed star (asterism) caused by magnetite needles.",
     "full_description": "Star Diopside is a black calcium-magnesium silicate displaying a crisp four-rayed white star when cut as a cabochon, produced by light reflection from microscopic magnetite inclusions oriented along crystal planes.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Jet black to dark greenish black with 4-ray star",
     "hardness_min": 5.5,
     "hardness_max": 6.5,
     "chemical_composition": "CaMgSi2O6 (Pyroxene Group with Magnetite inclusions)",
     "crystal_system": "Monoclinic",
-    "origin": "India (Southern states including Tamil Nadu), Russia, Finland.",
+    "origin": "India (Andhra Pradesh, Karnataka), Russia, and Finland.",
     "formation": "Metamorphic skarns and ultrabasic igneous intrusions.",
     "history_notes": "Known in gem trade as the Black Star of India, celebrated for distinctive cross-shaped asterism.",
-    "treatments": "Untreated natural asterism.",
+    "treatments": "None routinely applied; four-rayed asterism occurs from oriented magnetite needles.",
     "care_instructions": "Moderate hardness; protect from heavy knocks and harsh domestic abrasives.",
     "availability": "available",
     "is_featured": false,
     "display_order": 15,
-    "media": []
+    "media": [
+      {
+        "id": "media-diopside-4-ray-star-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/diopside-4-ray-star.png",
+        "thumbnail_url": "/images/stones/diopside-4-ray-star.png",
+        "alt_text": "Diopside 4-ray Star gemstone - Jet black to dark greenish black with 4-ray star",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-fluorite-multicolor-banded",
@@ -629,7 +919,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "fluorite-multicolor-banded",
     "short_description": "Vibrant isometric mineral exhibiting rainbow bands of violet, emerald green, and golden yellow.",
     "full_description": "Fluorite is a calcium fluoride mineral famous for its wide spectrum of rich, fluorescent hues and striking color banding. While softer than quartz, its crystalline transparency and vibrant multi-banded patterns make it an exceptional collector gem.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Banded purple, green, yellow, and blue",
     "hardness_min": 4.0,
     "hardness_max": 4.0,
@@ -638,12 +928,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "China, Mexico, South Africa, UK (Derbyshire Blue John).",
     "formation": "Hydrothermal vein mineral accompanying metallic ores.",
     "history_notes": "The optical property of 'fluorescence' was named after fluorite in 1852 by George Gabriel Stokes.",
-    "treatments": "Occasionally stabilized with clear resin due to cleavage.",
+    "treatments": "None routinely applied; multi-colored banding develops naturally during crystallization.",
     "care_instructions": "Soft gem (Mohs 4) with perfect octahedral cleavage; protect from scratching and impacts.",
     "availability": "available",
     "is_featured": false,
     "display_order": 16,
-    "media": []
+    "media": [
+      {
+        "id": "media-fluorite-multicolor-banded-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/fluorite-multicolor-banded.png",
+        "thumbnail_url": "/images/stones/fluorite-multicolor-banded.png",
+        "alt_text": "Fluorite Multicolor Banded gemstone - Banded purple, green, yellow, and blue",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-garnet-almandine",
@@ -654,21 +954,136 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "garnet-almandine",
     "short_description": "Classic deep brownish-red to violet-red garnet with high refractive brilliance.",
     "full_description": "Almandine is the iron-aluminium species of garnet, revered since the Bronze Age for its deep crimson to rich wine-red coloration. When properly faceted, it exhibits a vitreous polish and fire that rivals ruby.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Deep red with purplish to brownish undertones",
     "hardness_min": 7.0,
     "hardness_max": 7.5,
     "chemical_composition": "Fe3Al2(SiO4)3 (Iron Aluminium Silicate)",
     "crystal_system": "Isometric",
-    "origin": "India (Rajasthan, Tamil Nadu), Sri Lanka, Madagascar, USA.",
+    "origin": "India (Rajasthan, Andhra Pradesh), Sri Lanka, Madagascar, and the USA.",
     "formation": "Regional metamorphism of pelitic argillaceous rocks into schists and gneisses.",
     "history_notes": "The 'carbuncle' of antiquity, widely set into Anglo-Saxon and Byzantine royal cloaks.",
-    "treatments": "Untreated natural gemstone.",
+    "treatments": "None routinely applied; deep red coloration is stable without heating.",
     "care_instructions": "Warm soapy water and soft brush. Very durable for everyday wear.",
     "availability": "available",
     "is_featured": true,
     "display_order": 17,
-    "media": []
+    "media": [
+      {
+        "id": "media-garnet-almandine-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/garnet-almandine.png",
+        "thumbnail_url": "/images/stones/garnet-almandine.png",
+        "alt_text": "Garnet Almandine gemstone - Deep red with purplish to brownish undertones",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
+  },
+  {
+    "id": "gem-garnet-rose-cut-checkerboard",
+    "category_id": "cat-semi-precious",
+    "category_slug": "semi-precious",
+    "category_name": "Semi-Precious Gemstones",
+    "name": "Garnet Rose Cut / Checkerboard",
+    "slug": "garnet-rose-cut-checkerboard",
+    "short_description": "Deep red garnet fashioned with geometric checkerboard crown facets or an antique rose cut.",
+    "full_description": "Garnet Rose Cut / Checkerboard features deep red garnet fashioned with geometric checkerboard facets or a flat-backed rose cut, reflecting light across multiple triangular surface facets.",
+    "material_type": "unconfirmed",
+    "colour": "Deep red to wine red",
+    "hardness_min": 7.0,
+    "hardness_max": 7.5,
+    "chemical_composition": "Fe3Al2(SiO4)3 / Mg3Al2(SiO4)3",
+    "crystal_system": "Isometric",
+    "origin": "Mined in India, Sri Lanka, Madagascar, and Mozambique.",
+    "formation": "Metamorphic schists and gneisses formed under elevated pressure and temperature.",
+    "history_notes": "Rose cuts originated in the 16th century, while checkerboard crowns gained prominence in modern faceted jewellery.",
+    "treatments": "Garnets are generally not treated; cutting technique determines the facet pattern.",
+    "care_instructions": "Clean with warm soapy water and a soft cloth.",
+    "availability": "available",
+    "is_featured": false,
+    "display_order": 18,
+    "media": [
+      {
+        "id": "media-garnet-rose-cut-checkerboard-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/garnet-rose-cut-checkerboard.png",
+        "thumbnail_url": "/images/stones/garnet-rose-cut-checkerboard.png",
+        "alt_text": "Garnet Rose Cut / Checkerboard gemstone - Deep red to wine red",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
+  },
+  {
+    "id": "gem-goldstone-sandstone-blue",
+    "category_id": "cat-semi-precious",
+    "category_slug": "semi-precious",
+    "category_name": "Semi-Precious Gemstones",
+    "name": "Goldstone Sandstone Blue",
+    "slug": "goldstone-sandstone-blue",
+    "short_description": "Manufactured blue glass containing glittering metallic crystalline inclusions.",
+    "full_description": "Goldstone Sandstone Blue is a manufactured glass produced in a low-oxygen atmosphere with cobalt and metallic flecks, creating a shimmering optical effect.",
+    "material_type": "imitation",
+    "colour": "Midnight blue with glittering flecks",
+    "hardness_min": 5.5,
+    "hardness_max": 6.0,
+    "chemical_composition": "Silica glass with cobalt and metallic flecks",
+    "crystal_system": "Amorphous (manufactured glass)",
+    "origin": "Manufactured material originally developed in Murano, Italy.",
+    "formation": "Produced by melting silica glass with metallic oxides in a reducing environment.",
+    "history_notes": "Origins trace to 17th-century Venetian glassmaking artisans.",
+    "treatments": "Manufactured glass material.",
+    "care_instructions": "Clean with a soft damp cloth. Avoid sharp impacts and harsh chemicals.",
+    "availability": "available",
+    "is_featured": false,
+    "display_order": 19,
+    "media": [
+      {
+        "id": "media-goldstone-sandstone-blue-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/goldstone-sandstone-blue.png",
+        "thumbnail_url": "/images/stones/goldstone-sandstone-blue.png",
+        "alt_text": "Goldstone Sandstone Blue gemstone - Midnight blue with glittering flecks",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
+  },
+  {
+    "id": "gem-goldstone-sandstone-red",
+    "category_id": "cat-semi-precious",
+    "category_slug": "semi-precious",
+    "category_name": "Semi-Precious Gemstones",
+    "name": "Goldstone Sandstone Red",
+    "slug": "goldstone-sandstone-red",
+    "short_description": "Manufactured reddish-brown glass containing sparkling copper flecks.",
+    "full_description": "Goldstone Sandstone Red is a manufactured glass containing suspended octahedral copper crystals that produce a golden sparkle.",
+    "material_type": "imitation",
+    "colour": "Reddish brown with golden copper sparkles",
+    "hardness_min": 5.5,
+    "hardness_max": 6.0,
+    "chemical_composition": "Silica glass with copper crystal flecks",
+    "crystal_system": "Amorphous (manufactured glass)",
+    "origin": "Manufactured material originally developed in Murano, Italy.",
+    "formation": "Produced by melting silica glass with copper oxides in a reducing environment.",
+    "history_notes": "Origins trace to 17th-century Venetian glassmaking artisans.",
+    "treatments": "Manufactured glass material.",
+    "care_instructions": "Clean with a soft damp cloth. Avoid harsh chemicals.",
+    "availability": "available",
+    "is_featured": false,
+    "display_order": 20,
+    "media": [
+      {
+        "id": "media-goldstone-sandstone-red-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/goldstone-sandstone-red.png",
+        "thumbnail_url": "/images/stones/goldstone-sandstone-red.png",
+        "alt_text": "Goldstone Sandstone Red gemstone - Reddish brown with golden copper sparkles",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-green-serpentine",
@@ -679,7 +1094,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "green-serpentine",
     "short_description": "A smooth olive to translucent yellowish-green metamorphic rock with jade-like waxy feel.",
     "full_description": "Serpentine encompasses a group of hydrous magnesium iron phyllosilicate minerals, admired for their smooth greasy to waxy luster and rich olive-green marbling.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Olive green, apple green, yellow-green mottled",
     "hardness_min": 3.0,
     "hardness_max": 5.0,
@@ -688,12 +1103,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "India, Pakistan, Canada, New Zealand.",
     "formation": "Metamorphism of ultramafic peridotite rocks.",
     "history_notes": "Used since antiquity for sealstones, ornamental cups, and temple carvings.",
-    "treatments": "Untreated natural mineral; sometimes lightly waxed to enhance luster.",
+    "treatments": "Sometimes lightly waxed to protect surface polish.",
     "care_instructions": "Avoid harsh household cleaners and acid; soft stone requiring gentle handling.",
     "availability": "available",
     "is_featured": false,
     "display_order": 21,
-    "media": []
+    "media": [
+      {
+        "id": "media-green-serpentine-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/green-serpentine.png",
+        "thumbnail_url": "/images/stones/green-serpentine.png",
+        "alt_text": "Green Serpentine gemstone - Olive green, apple green, yellow-green mottled",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-hematite-gunmetal",
@@ -704,7 +1129,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "hematite-gunmetal",
     "short_description": "Heavy iron oxide mineral polished to an exceptional mirror-like metallic gunmetal shine.",
     "full_description": "Hematite is the primary mineral form of iron(III) oxide. When cut and polished into cabochons or faceted beads, it exhibits a stunning, mirror-like metallic gunmetal-grey reflection with high heft and cool surface feel.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Metallic gunmetal grey, silver-black",
     "hardness_min": 5.5,
     "hardness_max": 6.5,
@@ -713,12 +1138,57 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "Brazil, Australia, Morocco, UK, USA.",
     "formation": "Banded iron formations and hydrothermal veins.",
     "history_notes": "Its name stems from Greek 'haima' (blood) due to the red powder it yields when ground.",
-    "treatments": "Untreated natural iron oxide.",
+    "treatments": "None routinely applied; fashioned directly from dense iron oxide mineral masses.",
     "care_instructions": "Keep away from prolonged water immersion to prevent rust; wipe clean with dry cloth.",
     "availability": "available",
     "is_featured": false,
     "display_order": 22,
-    "media": []
+    "media": [
+      {
+        "id": "media-hematite-gunmetal-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/hematite-gunmetal.png",
+        "thumbnail_url": "/images/stones/hematite-gunmetal.png",
+        "alt_text": "Hematite (Gunmetal) gemstone - Metallic gunmetal grey, silver-black",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
+  },
+  {
+    "id": "gem-hessonite-garnet-semi-precious",
+    "category_id": "cat-semi-precious",
+    "category_slug": "semi-precious",
+    "category_name": "Semi-Precious Gemstones",
+    "name": "Hessonite Garnet",
+    "slug": "hessonite-garnet-semi-precious",
+    "short_description": "The grossular garnet variety known for its warm cinnamon-orange to brownish-red hue.",
+    "full_description": "Hessonite is a calcium-aluminium variety of the grossular garnet species. Its characteristic amber to cinnamon colour is caused by traces of iron and manganese. Viewed under magnification, hessonite often shows a granular, roiled internal texture.",
+    "material_type": "unconfirmed",
+    "colour": "Cinnamon orange to brownish red",
+    "hardness_min": 7.0,
+    "hardness_max": 7.5,
+    "chemical_composition": "Ca3Al2(SiO4)3",
+    "crystal_system": "Isometric",
+    "origin": "Historically sourced from Sri Lanka, India, Madagascar, and Tanzania.",
+    "formation": "Contact and regional metamorphic skarn deposits.",
+    "history_notes": "Hessonite takes its name from the Greek word hesson, meaning inferior, in reference to its lower density compared to other garnets.",
+    "treatments": "Generally not treated; cut directly from garnet crystals.",
+    "care_instructions": "Clean with warm soapy water and a soft cloth.",
+    "availability": "available",
+    "is_featured": false,
+    "display_order": 23,
+    "media": [
+      {
+        "id": "media-hessonite-garnet-semi-precious-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/hessonite-garnet-semi-precious.png",
+        "thumbnail_url": "/images/stones/hessonite-garnet-semi-precious.png",
+        "alt_text": "Hessonite Garnet gemstone - Cinnamon orange to brownish red",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-labradorite",
@@ -728,8 +1198,8 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "name": "Labradorite",
     "slug": "labradorite",
     "short_description": "Plagioclase feldspar renowned for spectacular iridescent flashes of blue, gold, and green labradorescence.",
-    "full_description": "Labradorite is an intermediate-to-calcic member of the plagioclase feldspar series. Its fame rests on labradorescence\u2014a breathtaking optical play of iridescent peacock blues, golden coppers, and aurora greens produced by submicroscopic lamellar exsolution within the feldspar lattice.",
-    "material_type": "natural",
+    "full_description": "Labradorite is an intermediate-to-calcic member of the plagioclase feldspar series. Its fame rests on labradorescence—a breathtaking optical play of iridescent peacock blues, golden coppers, and aurora greens produced by submicroscopic lamellar exsolution within the feldspar lattice.",
+    "material_type": "unconfirmed",
     "colour": "Dark grey body with brilliant electric blue, green, and gold optical flashes",
     "hardness_min": 6.0,
     "hardness_max": 6.5,
@@ -738,12 +1208,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "Madagascar, Canada (Labrador), Finland, India.",
     "formation": "Mafic igneous rocks including anorthosite and basalt.",
     "history_notes": "Inuit folklore tells that an ancient warrior struck the stone with his spear to release the northern lights into the sky.",
-    "treatments": "Untreated natural optical phenomenon.",
+    "treatments": "None routinely applied; labradorescent optical flash arises from internal lamellar twinning.",
     "care_instructions": "Clean with mild soapy water. Protect from sharp blows along cleavage planes.",
     "availability": "available",
     "is_featured": true,
     "display_order": 24,
-    "media": []
+    "media": [
+      {
+        "id": "media-labradorite-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/labradorite.png",
+        "thumbnail_url": "/images/stones/labradorite.png",
+        "alt_text": "Labradorite gemstone - Dark grey body with brilliant electric blue, green, and gold optical flashes",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-lapis",
@@ -754,7 +1234,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "lapis",
     "short_description": "Intense celestial deep-blue metamorphic rock speckled with golden pyrite and calcite veins.",
     "full_description": "Lapis (Lapis Lazuli) is a deep-blue metamorphic rock composed primarily of lazurite, calcite, sodalite, and glittering flecks of golden pyrite. Cherished for over six millennia, it served as the source of natural ultramarine pigment and adornment for Mesopotamian and Egyptian kings.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Deep royal lazurite blue with golden pyrite specks",
     "hardness_min": 5.0,
     "hardness_max": 5.5,
@@ -763,12 +1243,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "Badakhshan (Afghanistan), Chile, Russia, Myanmar.",
     "formation": "Contact metamorphism of crystalline limestones by granitic intrusions.",
     "history_notes": "Used in the death mask of Tutankhamun and ground by Renaissance painters for royal ultramarine paint.",
-    "treatments": "Occasionally oiled or waxed; lower grades may be dyed.",
+    "treatments": "Often waxed or lightly oiled to enhance surface polish and protect matrix.",
     "care_instructions": "Sensitive to household acids, chemicals, and hot water. Wipe gently with dry cloth.",
     "availability": "available",
     "is_featured": true,
     "display_order": 25,
-    "media": []
+    "media": [
+      {
+        "id": "media-lapis-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/lapis.png",
+        "thumbnail_url": "/images/stones/lapis.png",
+        "alt_text": "Lapis gemstone - Deep royal lazurite blue with golden pyrite specks",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-lemon-citrine",
@@ -779,7 +1269,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "lemon-citrine",
     "short_description": "Sparkling transparent quartz in refreshing bright greenish-yellow and lemon hues.",
     "full_description": "Lemon Citrine is a vibrant yellow variety of quartz distinguished by its crisp, greenish-lemon tint and crystalline clarity. It is durable (Mohs 7), lustrous, and faceted into dazzling modern jewelry cuts.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Bright lemon yellow with slight green undertones",
     "hardness_min": 7.0,
     "hardness_max": 7.0,
@@ -788,12 +1278,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "Brazil, Madagascar, Bolivia.",
     "formation": "Hydrothermal quartz veins and pegmatite pockets.",
     "history_notes": "Popularized in Art Deco jewelry for its architectural clarity and sunny brilliance.",
-    "treatments": "Often produced via controlled heat treatment of amethyst or smoky quartz.",
+    "treatments": "Often produced through controlled low-temperature heating of amethyst or quartz.",
     "care_instructions": "Warm soapy water with a soft brush. Keep away from extreme heat.",
     "availability": "available",
     "is_featured": false,
     "display_order": 26,
-    "media": []
+    "media": [
+      {
+        "id": "media-lemon-citrine-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/lemon-citrine.png",
+        "thumbnail_url": "/images/stones/lemon-citrine.png",
+        "alt_text": "Lemon Citrine gemstone - Bright lemon yellow with slight green undertones",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-malachite",
@@ -804,7 +1304,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "malachite",
     "short_description": "Opaque copper carbonate mineral famous for dramatic concentric green banding.",
     "full_description": "Malachite is a copper carbonate hydroxide mineral distinguished by its mesmerizing concentric banding in shades of emerald to blackish green. Formed in oxidized copper zones, its silky luster and bold organic lines make it unmistakable.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Rich banded green, light green to dark forest green",
     "hardness_min": 3.5,
     "hardness_max": 4.0,
@@ -813,12 +1313,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "Democratic Republic of Congo, Namibia, Russia (Urals), Australia.",
     "formation": "Oxidation zones of copper ore deposits reacting with carbonate solutions.",
     "history_notes": "Decorated the famous Malachite Room in Saint Petersburg's Winter Palace.",
-    "treatments": "Often coated with protective resin due to porosity and softness.",
+    "treatments": "Often coated with protective colourless resin or wax due to softness.",
     "care_instructions": "Very sensitive to acids and heat. Clean only with a dry or lightly dampened soft cloth.",
     "availability": "available",
     "is_featured": true,
     "display_order": 27,
-    "media": []
+    "media": [
+      {
+        "id": "media-malachite-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/malachite.png",
+        "thumbnail_url": "/images/stones/malachite.png",
+        "alt_text": "Malachite gemstone - Rich banded green, light green to dark forest green",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-moonstone-white",
@@ -828,8 +1338,8 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "name": "Moonstone White",
     "slug": "moonstone-white",
     "short_description": "Orthoclase feldspar displaying a celestial silvery-white billowy adularescence.",
-    "full_description": "White Moonstone belongs to the orthoclase feldspar family and owes its romantic glow\u2014adularescence\u2014to light scattering between alternating microscopic layers of orthoclase and albite.",
-    "material_type": "natural",
+    "full_description": "White Moonstone belongs to the orthoclase feldspar family and owes its romantic glow—adularescence—to light scattering between alternating microscopic layers of orthoclase and albite.",
+    "material_type": "unconfirmed",
     "colour": "Translucent white with silvery-blue floating light sheen",
     "hardness_min": 6.0,
     "hardness_max": 6.5,
@@ -837,13 +1347,23 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "crystal_system": "Monoclinic",
     "origin": "Sri Lanka, India, Myanmar, Madagascar.",
     "formation": "Plutonic granites and pegmatite cooling.",
-    "history_notes": "Adored by Roman artisans who believed it was solidified moonlight; iconic in Art Nouveau jewellery by Ren\u00e9 Lalique.",
-    "treatments": "Untreated natural feldspar.",
+    "history_notes": "Adored by Roman artisans who believed it was solidified moonlight; iconic in Art Nouveau jewellery by René Lalique.",
+    "treatments": "None routinely applied; adularescent floating light originates from albite and orthoclase intergrowths.",
     "care_instructions": "Gentle soapy water. Sensitive to pressure and knocks due to cleavage.",
     "availability": "available",
     "is_featured": false,
     "display_order": 28,
-    "media": []
+    "media": [
+      {
+        "id": "media-moonstone-white-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/moonstone-white.png",
+        "thumbnail_url": "/images/stones/moonstone-white.png",
+        "alt_text": "Moonstone White gemstone - Translucent white with silvery-blue floating light sheen",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-obsidian-snowflake",
@@ -854,7 +1374,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "obsidian-snowflake",
     "short_description": "Natural volcanic black glass dotted with white radial 'snowflake' spherulites of cristobalite.",
     "full_description": "Snowflake Obsidian is a natural volcanic glass formed when felsic lava cools rapidly. Over geological time, partial devitrification creates radial clusters of white cristobalite crystals resembling delicate snowflakes against a glossy black background.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Opaque black with white crystalline snowflake patches",
     "hardness_min": 5.0,
     "hardness_max": 5.5,
@@ -863,12 +1383,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "USA (Utah), Mexico, Iceland.",
     "formation": "Rapid cooling of volcanic lava with subsequent spherulitic crystallization.",
     "history_notes": "Obsidian was among the first gem materials worked by prehistoric humans for sharp tools and ceremonial blades.",
-    "treatments": "Untreated natural volcanic stone.",
+    "treatments": "None routinely applied; snowflake inclusions are natural spherulites of cristobalite.",
     "care_instructions": "Clean with warm water and soft cloth. Keep away from severe knocks.",
     "availability": "available",
     "is_featured": false,
     "display_order": 29,
-    "media": []
+    "media": [
+      {
+        "id": "media-obsidian-snowflake-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/obsidian-snowflake.png",
+        "thumbnail_url": "/images/stones/obsidian-snowflake.png",
+        "alt_text": "Obsidian Snowflake gemstone - Opaque black with white crystalline snowflake patches",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-onyx-black",
@@ -879,7 +1409,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "onyx-black",
     "short_description": "Deep glossy uniform black chalcedony with high mirror-like vitreous finish.",
     "full_description": "Black Onyx is a microcrystalline quartz variety celebrated for its dense, uniform jet-black appearance and smooth polish. It serves as a staple of timeless statement jewellery and contrasting architectural settings.",
-    "material_type": "natural",
+    "material_type": "treated",
     "colour": "Deep uniform jet black",
     "hardness_min": 6.5,
     "hardness_max": 7.0,
@@ -888,12 +1418,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "India, Brazil, Madagascar, Uruguay.",
     "formation": "Cavity deposition in volcanic rocks.",
     "history_notes": "Favored by Roman soldiers who wore onyx carvings of Mars into battle for fortitude.",
-    "treatments": "Traditional sugar-acid chemical dyeing has been used since Roman antiquity to achieve deep uniform black.",
+    "treatments": "Commonly dyed using sugar-acid solution to produce an intense, uniform black hue.",
     "care_instructions": "Warm soapy water with a soft microfibre cloth.",
     "availability": "available",
     "is_featured": true,
     "display_order": 30,
-    "media": []
+    "media": [
+      {
+        "id": "media-onyx-black-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/onyx-black.png",
+        "thumbnail_url": "/images/stones/onyx-black.png",
+        "alt_text": "Onyx Black gemstone - Deep uniform jet black",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-onyx-green",
@@ -913,12 +1453,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "India, Brazil, Pakistan.",
     "formation": "Hydrothermal cavity deposition.",
     "history_notes": "Widely embraced in Indian and Mediterranean decorative arts.",
-    "treatments": "Standard commercial trade practice involves gentle dyeing of chalcedony to enhance green tones.",
+    "treatments": "Commonly dyed or acid-stained to produce vivid green colouration.",
     "care_instructions": "Clean with mild soapy water. Avoid prolonged exposure to harsh solvents.",
     "availability": "available",
     "is_featured": false,
     "display_order": 31,
-    "media": []
+    "media": [
+      {
+        "id": "media-onyx-green-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/onyx-green.png",
+        "thumbnail_url": "/images/stones/onyx-green.png",
+        "alt_text": "Onyx Green gemstone - Lush translucent forest to emerald green",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-onyx-ivory",
@@ -929,7 +1479,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "onyx-ivory",
     "short_description": "Warm creamy off-white banded chalcedony with soft silky luster.",
     "full_description": "Ivory Onyx features a calm, warm cream to alabaster-white body color, often accented with faint translucent undulating growth bands.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Creamy ivory, warm off-white, champagne tint",
     "hardness_min": 6.5,
     "hardness_max": 7.0,
@@ -938,12 +1488,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "India, Madagascar, Turkey.",
     "formation": "Precipitated within volcanic rock cavities.",
     "history_notes": "Cherished for classical relief cameos and subtle luxury adornments.",
-    "treatments": "Untreated natural mineral.",
+    "treatments": "None routinely applied; creamy ivory coloration reflects natural calcite or chalcedony layers.",
     "care_instructions": "Wipe with warm water and soft microfibre cloth.",
     "availability": "available",
     "is_featured": false,
     "display_order": 32,
-    "media": []
+    "media": [
+      {
+        "id": "media-onyx-ivory-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/onyx-ivory.png",
+        "thumbnail_url": "/images/stones/onyx-ivory.png",
+        "alt_text": "Onyx Ivory gemstone - Creamy ivory, warm off-white, champagne tint",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-onyx-multicolor",
@@ -954,7 +1514,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "onyx-multicolor",
     "short_description": "Banded chalcedony exhibiting striking stratified layers of amber, brown, cream, and green.",
     "full_description": "Multicolor Onyx displays dynamic, polychrome strata representing sequential geological fluid depositions, resulting in contrasting concentric bands.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Banded caramel, cream, mocha, sage green",
     "hardness_min": 6.5,
     "hardness_max": 7.0,
@@ -963,12 +1523,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "Pakistan, Mexico, India.",
     "formation": "Cavity fills in travertine or volcanic vesicles.",
     "history_notes": "Carved into decorative vessels and palace ornaments throughout the Near East.",
-    "treatments": "Untreated natural banding.",
+    "treatments": "None routinely applied; multi-colored banding occurs naturally in banded travertine/chalcedony.",
     "care_instructions": "Mild soapy water and soft brush.",
     "availability": "available",
     "is_featured": false,
     "display_order": 33,
-    "media": []
+    "media": [
+      {
+        "id": "media-onyx-multicolor-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/onyx-multicolor.png",
+        "thumbnail_url": "/images/stones/onyx-multicolor.png",
+        "alt_text": "Onyx Multicolor gemstone - Banded caramel, cream, mocha, sage green",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-onyx-red",
@@ -988,12 +1558,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "India, Brazil.",
     "formation": "Volcanic cavity deposition.",
     "history_notes": "Closely associated with classical sardonyx in Roman lapidary art.",
-    "treatments": "Standard commercial trade color enhancement.",
+    "treatments": "Commonly dyed or heat-treated to intensify red-orange saturation.",
     "care_instructions": "Clean with mild soap and water.",
     "availability": "available",
     "is_featured": false,
     "display_order": 34,
-    "media": []
+    "media": [
+      {
+        "id": "media-onyx-red-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/onyx-red.png",
+        "thumbnail_url": "/images/stones/onyx-red.png",
+        "alt_text": "Onyx Red gemstone - Fiery crimson, blood red, deep scarlet",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-onyx-red-pink",
@@ -1013,12 +1593,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "India, Brazil.",
     "formation": "Low-temperature silica deposition.",
     "history_notes": "Favored in ornamental beads and floral carvings.",
-    "treatments": "Color-enhanced in trade to achieve uniform blush-pink hues.",
+    "treatments": "Commonly dyed or chemical-bath treated to achieve uniform pinkish-red tones.",
     "care_instructions": "Warm soapy water with a soft cloth.",
     "availability": "available",
     "is_featured": false,
     "display_order": 35,
-    "media": []
+    "media": [
+      {
+        "id": "media-onyx-red-pink-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/onyx-red-pink.png",
+        "thumbnail_url": "/images/stones/onyx-red-pink.png",
+        "alt_text": "Onyx Red (Pink) gemstone - Rose red, blush pink, soft coral",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-onyx-rose",
@@ -1038,12 +1628,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "India, Madagascar.",
     "formation": "Silica hydrothermal mineralization.",
     "history_notes": "Cherished in boutique jewelry collections for subtle pastel undertones.",
-    "treatments": "Trade enhancement may be applied.",
+    "treatments": "Commonly dyed to produce delicate rose-pink hues.",
     "care_instructions": "Warm water and soft microfibre cloth.",
     "availability": "available",
     "is_featured": false,
     "display_order": 36,
-    "media": []
+    "media": [
+      {
+        "id": "media-onyx-rose-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/onyx-rose.png",
+        "thumbnail_url": "/images/stones/onyx-rose.png",
+        "alt_text": "Onyx Rose gemstone - Dusty rose, pastel mauve, tea-rose pink",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-onyx-yellow",
@@ -1063,12 +1663,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "India, Madagascar, Brazil.",
     "formation": "Cavity fills in volcanic host rock.",
     "history_notes": "Used in traditional decorative lapidary and gemstone beads.",
-    "treatments": "Standard commercial color enhancement.",
+    "treatments": "Commonly stained or dyed to yield bright golden-yellow colouration.",
     "care_instructions": "Warm soapy water and soft cloth.",
     "availability": "available",
     "is_featured": false,
     "display_order": 37,
-    "media": []
+    "media": [
+      {
+        "id": "media-onyx-yellow-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/onyx-yellow.png",
+        "thumbnail_url": "/images/stones/onyx-yellow.png",
+        "alt_text": "Onyx Yellow gemstone - Golden honey, canary yellow, amber",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-opal-dendrite",
@@ -1079,21 +1689,66 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "opal-dendrite",
     "short_description": "Creamy-white common opal containing delicate black fern-like manganese dendrites.",
     "full_description": "Dendritic Opal (or merlinite) is a natural common opal featuring dramatic tree- or fern-like inclusions (dendrites) composed of manganese and iron oxides blooming against an opaque white porcelain-like body.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Porcelain white with black/dark brown fern-like dendrites",
     "hardness_min": 5.5,
     "hardness_max": 6.5,
-    "chemical_composition": "SiO2\u00b7nH2O (Hydrated Silica with Mn-oxides)",
+    "chemical_composition": "SiO2·nH2O (Hydrated Silica with Mn-oxides)",
     "crystal_system": "Amorphous",
     "origin": "Madagascar, Australia, Turkey, USA.",
     "formation": "Low-temperature silica gels percolating through rock fissures with manganese solutions.",
     "history_notes": "Often referred to as 'landscape stone' because natural patterns resemble miniature winter paintings.",
-    "treatments": "Untreated natural mineral phenomenon.",
+    "treatments": "None routinely applied; black dendritic patterns are natural manganese oxide infiltrations.",
     "care_instructions": "Avoid extreme dryness, heat, and harsh chemicals to preserve hydrated silica structure.",
     "availability": "available",
     "is_featured": true,
     "display_order": 38,
-    "media": []
+    "media": [
+      {
+        "id": "media-opal-dendrite-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/opal-dendrite.png",
+        "thumbnail_url": "/images/stones/opal-dendrite.png",
+        "alt_text": "Opal Dendrite gemstone - Porcelain white with black/dark brown fern-like dendrites",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
+  },
+  {
+    "id": "gem-pearl-fresh-water",
+    "category_id": "cat-semi-precious",
+    "category_slug": "semi-precious",
+    "category_name": "Semi-Precious Gemstones",
+    "name": "Pearl Fresh Water",
+    "slug": "pearl-fresh-water",
+    "short_description": "Cultured freshwater pearls formed within river mussels.",
+    "full_description": "Pearl Fresh Water denotes pearls cultivated in freshwater unionid mussels. Composed of alternating layers of calcium carbonate (aragonite) and conchiolin, freshwater pearls display a soft, warm nacreous luster and occur in varied pastel shades.",
+    "material_type": "organic",
+    "colour": "White, cream, pink, and lavender",
+    "hardness_min": 2.5,
+    "hardness_max": 4.0,
+    "chemical_composition": "CaCO3 with organic conchiolin and water",
+    "crystal_system": "Orthorhombic (microcrystalline aragonite)",
+    "origin": "Cultivated in freshwater lakes and rivers, predominantly in China.",
+    "formation": "Formed organically through nacre secretion inside freshwater mussels.",
+    "history_notes": "Freshwater pearls have been harvested from rivers across Asia, Europe, and North America for centuries.",
+    "treatments": "Mild bleaching and polishing are standard trade practices for cultured pearls.",
+    "care_instructions": "Wipe with a soft damp cloth after wearing. Store separately from harder gemstones and avoid exposure to perfumes or acids.",
+    "availability": "available",
+    "is_featured": false,
+    "display_order": 39,
+    "media": [
+      {
+        "id": "media-pearl-fresh-water-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/pearl-fresh-water.png",
+        "thumbnail_url": "/images/stones/pearl-fresh-water.png",
+        "alt_text": "Pearl Fresh Water gemstone - White, cream, pink, and lavender",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-pyrite",
@@ -1104,7 +1759,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "pyrite",
     "short_description": "Brilliant metallic brass-yellow iron sulfide with mirror-like cubic facet reflections.",
     "full_description": "Pyrite (iron disulfide) is famed for its bright brassy-yellow metallic luster and perfect geometric crystal habits (cubes and pyritohedrons). Known historically as 'Fool's Gold', its dramatic metallic flash has made it a favorite in antique marcasite jewellery.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Brassy gold, metallic pale yellow",
     "hardness_min": 6.0,
     "hardness_max": 6.5,
@@ -1113,12 +1768,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "Peru, Spain, Italy, USA.",
     "formation": "Hydrothermal veins, sedimentary rocks, and contact metamorphic deposits.",
     "history_notes": "Valued since antiquity; sparks produced when struck by iron were used to kindle fires (from Greek 'pyr' for fire).",
-    "treatments": "Untreated natural mineral.",
+    "treatments": "None routinely applied; fashioned directly from natural metallic iron sulfide crystals.",
     "care_instructions": "Keep dry; moisture can cause oxidation over time. Clean with dry microfibre cloth.",
     "availability": "available",
     "is_featured": false,
     "display_order": 40,
-    "media": []
+    "media": [
+      {
+        "id": "media-pyrite-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/pyrite.png",
+        "thumbnail_url": "/images/stones/pyrite.png",
+        "alt_text": "Pyrite gemstone - Brassy gold, metallic pale yellow",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-quartz-cats-eye",
@@ -1129,7 +1794,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "quartz-cats-eye",
     "short_description": "Macro-crystalline quartz displaying a mobile chatoyant band of light caused by asbestos or rutile fibers.",
     "full_description": "Quartz Cat's Eye is a translucent variety of quartz displaying a sharp, moving ray of light when cut en cabochon, produced by parallel fibrous inclusions of actinolite, amosite, or fine rutile needles within the silica matrix.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Greyish green, honey yellow, brownish grey",
     "hardness_min": 7.0,
     "hardness_max": 7.0,
@@ -1138,12 +1803,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "Sri Lanka, India, Brazil, Germany.",
     "formation": "Hydrothermal crystallization with fibrous amphibole replacement.",
     "history_notes": "Always distinguished by gemologists from true chrysoberyl cat's eye by its quartz hardness and refractive index.",
-    "treatments": "Untreated natural chatoyancy.",
+    "treatments": "None routinely applied; chatoyancy is caused by dense parallel rutile needle inclusions.",
     "care_instructions": "Very durable (Mohs 7). Warm soapy water with a soft brush.",
     "availability": "available",
     "is_featured": false,
     "display_order": 41,
-    "media": []
+    "media": [
+      {
+        "id": "media-quartz-cats-eye-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/quartz-cats-eye.png",
+        "thumbnail_url": "/images/stones/quartz-cats-eye.png",
+        "alt_text": "Quartz Cat's Eye gemstone - Greyish green, honey yellow, brownish grey",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-rainbow-moonstone",
@@ -1154,21 +1829,31 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "rainbow-moonstone",
     "short_description": "Clear to milky plagioclase feldspar displaying a dazzling iridescent multi-color blue flash.",
     "full_description": "Rainbow Moonstone is technically a gem-quality transparent variety of labradorite feldspar that presents an ethereal blue and multicolor rainbow shimmer against a translucent white body color.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Translucent white with electric blue and rainbow optical flashes",
     "hardness_min": 6.0,
     "hardness_max": 6.5,
     "chemical_composition": "(Ca,Na)(Al,Si)4O8",
     "crystal_system": "Triclinic",
-    "origin": "India (Southern states), Sri Lanka, Madagascar.",
+    "origin": "India (Karnataka, Bihar), Sri Lanka, and Madagascar.",
     "formation": "Pegmatite intrusions and anorthosite rock bodies.",
     "history_notes": "One of the most popular gemstones in contemporary designer jewellery due to its ethereal optical play.",
-    "treatments": "Untreated natural optical phenomenon.",
+    "treatments": "None routinely applied; electric blue schiller arises from plagioclase feldspar exsolution lamellae.",
     "care_instructions": "Gentle soapy water. Protect from hard impacts along cleavage planes.",
     "availability": "available",
     "is_featured": true,
     "display_order": 42,
-    "media": []
+    "media": [
+      {
+        "id": "media-rainbow-moonstone-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/rainbow-moonstone.png",
+        "thumbnail_url": "/images/stones/rainbow-moonstone.png",
+        "alt_text": "Rainbow Moonstone gemstone - Translucent white with electric blue and rainbow optical flashes",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-rose-quartz",
@@ -1179,7 +1864,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "rose-quartz",
     "short_description": "Translucent delicate pink quartz with soft vitreous glow, the stone of unconditional warmth.",
     "full_description": "Rose Quartz is a beloved pink macrocrystalline variety of quartz, coloured by submicroscopic inclusions of aligned fibrous pink borosilicate minerals related to dumortierite. It displays a dreamy translucent pink glow.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Delicate pastel pink to rose peach",
     "hardness_min": 7.0,
     "hardness_max": 7.0,
@@ -1188,12 +1873,92 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "Brazil (Minas Gerais), Madagascar, India, South Africa.",
     "formation": "Hydrothermal pegmatite cores.",
     "history_notes": "Carved into decorative beads and amulets across ancient Mesopotamia and Rome since 7000 BCE.",
-    "treatments": "Untreated natural color.",
+    "treatments": "None routinely applied; soft pink hue derives from microscopic fibrous dumortierite inclusions.",
     "care_instructions": "Warm soapy water with a soft cloth. Avoid prolonged direct hot sunlight.",
     "availability": "available",
     "is_featured": true,
     "display_order": 43,
-    "media": []
+    "media": [
+      {
+        "id": "media-rose-quartz-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/rose-quartz.png",
+        "thumbnail_url": "/images/stones/rose-quartz.png",
+        "alt_text": "Rose Quartz gemstone - Delicate pastel pink to rose peach",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
+  },
+  {
+    "id": "gem-ruby-markara",
+    "category_id": "cat-semi-precious",
+    "category_slug": "semi-precious",
+    "category_name": "Semi-Precious Gemstones",
+    "name": "Ruby Markara",
+    "slug": "ruby-markara",
+    "short_description": "A trade name listed in commercial gemstone inventories.",
+    "full_description": "Ruby Markara is a commercial trade designation listed for cut red stones. Mineralogical parameters and geological origin are pending laboratory confirmation.",
+    "material_type": "unconfirmed",
+    "colour": "Red to purplish red",
+    "hardness_min": null,
+    "hardness_max": null,
+    "chemical_composition": null,
+    "crystal_system": null,
+    "origin": null,
+    "formation": null,
+    "history_notes": null,
+    "treatments": null,
+    "care_instructions": "Clean gently with a soft cloth and mild soapy water.",
+    "availability": "available",
+    "is_featured": false,
+    "display_order": 44,
+    "media": [
+      {
+        "id": "media-ruby-markara-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/ruby-markara.png",
+        "thumbnail_url": "/images/stones/ruby-markara.png",
+        "alt_text": "Ruby Markara gemstone - Red to purplish red",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
+  },
+  {
+    "id": "gem-rutilated-quartz-black-needle",
+    "category_id": "cat-semi-precious",
+    "category_slug": "semi-precious",
+    "category_name": "Semi-Precious Gemstones",
+    "name": "Rutilated Quartz Black Needle",
+    "slug": "rutilated-quartz-black-needle",
+    "short_description": "Transparent rock crystal quartz containing sharp black needle-like mineral inclusions.",
+    "full_description": "Rutilated Quartz Black Needle consists of transparent crystalline quartz hosting slender black acicular inclusions. In gemological analysis, these black needles are typically schorl (black tourmaline) or dark titanium-bearing rutile.",
+    "material_type": "unconfirmed",
+    "colour": "Transparent colourless quartz with black needles",
+    "hardness_min": 7.0,
+    "hardness_max": 7.0,
+    "chemical_composition": "SiO2 with tourmaline or rutile needle inclusions",
+    "crystal_system": "Trigonal",
+    "origin": "Found in pegmatite deposits in Brazil, Madagascar, and India.",
+    "formation": "Crystallized in hydrothermal veins and pegmatite pockets where quartz grows around existing needle crystals.",
+    "history_notes": "Acicular inclusions in quartz create distinct graphic patterns valued in ornamental gem carving.",
+    "treatments": "Cut directly from crystal rough without artificial enhancement.",
+    "care_instructions": "Clean with warm soapy water and a soft brush.",
+    "availability": "available",
+    "is_featured": false,
+    "display_order": 45,
+    "media": [
+      {
+        "id": "media-rutilated-quartz-black-needle-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/rutilated-quartz-black-needle.png",
+        "thumbnail_url": "/images/stones/rutilated-quartz-black-needle.png",
+        "alt_text": "Rutilated Quartz Black Needle gemstone - Transparent colourless quartz with black needles",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-rutile-quartz-golden-needle",
@@ -1204,7 +1969,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "rutile-quartz-golden-needle",
     "short_description": "Transparent quartz crystal crisscrossed with brilliant glittering golden rutile needles.",
     "full_description": "Golden Rutile Quartz features transparent rock crystal quartz hosting dazzling prismatic needles of golden rutile (titanium dioxide). The needles reflect light with metallic brilliance, creating an awe-inspiring 'hair of Venus' optical display.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Water-clear quartz with glittering golden-yellow needles",
     "hardness_min": 7.0,
     "hardness_max": 7.0,
@@ -1212,13 +1977,58 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "crystal_system": "Trigonal (Host) / Tetragonal (Inclusions)",
     "origin": "Brazil (Bahia, Minas Gerais), Madagascar, India.",
     "formation": "Hydrothermal fluids growing at high temperature within quartz crystal chambers.",
-    "history_notes": "Poetically celebrated since the Renaissance as 'Fl\u00e8ches d'amour' (Arrows of Love).",
-    "treatments": "Untreated natural growth phenomenon.",
+    "history_notes": "Poetically celebrated since the Renaissance as 'Flèches d'amour' (Arrows of Love).",
+    "treatments": "None routinely applied; golden rutile needle sprays are natural crystal growths.",
     "care_instructions": "Clean with warm soapy water and soft brush. Very durable.",
     "availability": "available",
     "is_featured": true,
     "display_order": 46,
-    "media": []
+    "media": [
+      {
+        "id": "media-rutile-quartz-golden-needle-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/rutile-quartz-golden-needle.png",
+        "thumbnail_url": "/images/stones/rutile-quartz-golden-needle.png",
+        "alt_text": "Rutile Quartz Golden Needle gemstone - Water-clear quartz with glittering golden-yellow needles",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
+  },
+  {
+    "id": "gem-sapphire-blue-semi-precious",
+    "category_id": "cat-semi-precious",
+    "category_slug": "semi-precious",
+    "category_name": "Semi-Precious Gemstones",
+    "name": "Sapphire Blue",
+    "slug": "sapphire-blue-semi-precious",
+    "short_description": "The blue variety of the corundum mineral species.",
+    "full_description": "Sapphire Blue is the blue variety of the corundum species (aluminium oxide), coloured by trace amounts of iron and titanium. Known for its hardness of 9 on the Mohs scale, corundum is second in hardness only to diamond.",
+    "material_type": "unconfirmed",
+    "colour": "Deep blue to royal blue",
+    "hardness_min": 9.0,
+    "hardness_max": 9.0,
+    "chemical_composition": "Al2O3:Fe,Ti",
+    "crystal_system": "Trigonal",
+    "origin": "Mined in Sri Lanka, Madagascar, Thailand, and Australia.",
+    "formation": "Forms in metamorphic rocks such as marble or gneiss, and in basaltic deposits.",
+    "history_notes": "Sapphires have decorated royal regalia and religious adornments across multiple civilizations.",
+    "treatments": "Heat treatment is commonly used in the trade to improve colour and clarity.",
+    "care_instructions": "Clean with warm soapy water and a soft brush.",
+    "availability": "available",
+    "is_featured": false,
+    "display_order": 47,
+    "media": [
+      {
+        "id": "media-sapphire-blue-semi-precious-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/sapphire-blue-semi-precious.png",
+        "thumbnail_url": "/images/stones/sapphire-blue-semi-precious.png",
+        "alt_text": "Sapphire Blue gemstone - Deep blue to royal blue",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-sillimanite-cats-eye",
@@ -1229,21 +2039,31 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "sillimanite-cats-eye",
     "short_description": "Fibrous aluminosilicate mineral showing a sharp silvery-white chatoyant eye across greyish-brown body.",
     "full_description": "Sillimanite Cat's Eye is an aluminium silicate mineral formed under high metamorphic pressures. When fibrous crystal bundles are polished into cabochons, they produce an intense and sharp chatoyant band of light across a chocolate or smoky body.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Smoky brown, greyish green, blackish brown with sharp white eye",
     "hardness_min": 6.5,
     "hardness_max": 7.5,
     "chemical_composition": "Al2SiO5 (Aluminium Silicate)",
     "crystal_system": "Orthorhombic",
-    "origin": "India (Odisha, Tamil Nadu), Sri Lanka, Myanmar.",
+    "origin": "India (Odisha, Kerala), Sri Lanka, and Myanmar.",
     "formation": "High-temperature regional metamorphism of aluminous sedimentary rocks.",
     "history_notes": "Renowned among gemstone collectors for crisp and well-defined cat's eye chatoyancy.",
-    "treatments": "Untreated natural chatoyancy.",
+    "treatments": "None routinely applied; sharp chatoyant eye arises from dense fibrous fibrolite alignment.",
     "care_instructions": "Clean with warm water and soft cloth. Protect from knocks along its directional cleavage.",
     "availability": "available",
     "is_featured": false,
     "display_order": 48,
-    "media": []
+    "media": [
+      {
+        "id": "media-sillimanite-cats-eye-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/sillimanite-cats-eye.png",
+        "thumbnail_url": "/images/stones/sillimanite-cats-eye.png",
+        "alt_text": "Sillimanite Cat's Eye gemstone - Smoky brown, greyish green, blackish brown with sharp white eye",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-smoky-quartz",
@@ -1254,7 +2074,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "smoky-quartz",
     "short_description": "Transparent crystalline quartz displaying rich translucent mocha, bronze, and clove-brown hues.",
     "full_description": "Smoky Quartz is the brown-to-charcoal variety of crystalline quartz. Its warm, translucent tea-to-espresso color arises from natural subterranean irradiation acting on trace aluminium impurities within the crystal lattice.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Translucent bronze, clove brown, smoky charcoal",
     "hardness_min": 7.0,
     "hardness_max": 7.0,
@@ -1263,12 +2083,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "Brazil, Switzerland (Alps), Madagascar, USA.",
     "formation": "Cavities in granite pegmatites and metamorphic veins.",
     "history_notes": "The national gem of Scotland (Cairngorm), traditionally adorning highland regalia and kilt pins.",
-    "treatments": "Untreated natural color.",
+    "treatments": "None routinely applied; smoky coloration develops naturally from geological irradiation around aluminum centers.",
     "care_instructions": "Warm soapy water with a soft cloth. Very durable for rings and pendants.",
     "availability": "available",
     "is_featured": true,
     "display_order": 49,
-    "media": []
+    "media": [
+      {
+        "id": "media-smoky-quartz-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/smoky-quartz.png",
+        "thumbnail_url": "/images/stones/smoky-quartz.png",
+        "alt_text": "Smoky Quartz gemstone - Translucent bronze, clove brown, smoky charcoal",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-spectrolite-cats-eye",
@@ -1277,23 +2107,33 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "category_name": "Semi-Precious Gemstones",
     "name": "Spectrolite Cat's Eye",
     "slug": "spectrolite-cats-eye",
-    "short_description": "Rare high-grade labradorite variety showing chatoyant light reflection with intense peacock spectral colors.",
+    "short_description": "A distinctive Finnish labradorite variety showing chatoyant light reflection with intense peacock spectral colours.",
     "full_description": "Spectrolite is an exceptionally colorful variety of labradorite feldspar that displays vivid spectral hues across the entire rainbow with chatoyant line reflections when shaped en cabochon.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Dark charcoal body with intense electric peacock-blue and green optical sheen",
     "hardness_min": 6.0,
     "hardness_max": 6.5,
     "chemical_composition": "(Ca,Na)(Al,Si)4O8",
     "crystal_system": "Triclinic",
-    "origin": "Finland (Yl\u00e4maa), Madagascar, India.",
+    "origin": "Finland (Ylämaa), Madagascar, India.",
     "formation": "Crystallized within deep-seated anorthosite igneous rocks.",
     "history_notes": "Discovered in Finland during fortification work in World War II, celebrated for unmatched color vibrancy.",
-    "treatments": "Untreated natural optical phenomenon.",
+    "treatments": "None routinely applied; vivid full-spectrum labradorescence occurs naturally in Finnish deposits.",
     "care_instructions": "Warm soapy water with a soft cloth. Avoid severe impacts.",
     "availability": "available",
     "is_featured": false,
     "display_order": 50,
-    "media": []
+    "media": [
+      {
+        "id": "media-spectrolite-cats-eye-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/spectrolite-cats-eye.png",
+        "thumbnail_url": "/images/stones/spectrolite-cats-eye.png",
+        "alt_text": "Spectrolite Cat's Eye gemstone - Dark charcoal body with intense electric peacock-blue and green optical sheen",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-sunstone",
@@ -1304,21 +2144,31 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "sunstone",
     "short_description": "Feldspar gemstone sparkling with warm golden and copper metallic schiller flashes.",
     "full_description": "Sunstone is an oligoclase or plagioclase feldspar displaying a warm, glistening golden-orange metallic iridescence (aventurescence) caused by microscopic reflections from oriented platelets of hematite or copper crystals.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Peach orange to reddish gold with sparkling copper schiller",
     "hardness_min": 6.0,
     "hardness_max": 6.5,
     "chemical_composition": "(Na,Ca)Al1-2Si3-2O8 with Hematite/Copper platelets",
     "crystal_system": "Triclinic",
-    "origin": "India (Southern states), USA (Oregon), Norway, Tanzania.",
+    "origin": "India (Karnataka, Andhra Pradesh), USA (Oregon), Norway, and Tanzania.",
     "formation": "Igneous basalt lavas and pegmatitic intrusions.",
     "history_notes": "Associated with ancient Norse solar navigation ('sunstone' legend) and solar deities.",
-    "treatments": "Untreated natural gemstone.",
+    "treatments": "None routinely applied; sparkling copper and hematite platelets are natural crystalline inclusions.",
     "care_instructions": "Clean with mild detergent and soft cloth. Protect from knocks.",
     "availability": "available",
     "is_featured": true,
     "display_order": 51,
-    "media": []
+    "media": [
+      {
+        "id": "media-sunstone-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/sunstone.png",
+        "thumbnail_url": "/images/stones/sunstone.png",
+        "alt_text": "Sunstone gemstone - Peach orange to reddish gold with sparkling copper schiller",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-tiger-eye",
@@ -1329,7 +2179,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "tiger-eye",
     "short_description": "Silicified crocidolite quartz displaying an unmistakable golden-yellow to rich brown silky chatoyancy.",
     "full_description": "Tiger Eye is an exquisite pseudomorph in which fibrous crocidolite (asbestos) has been completely replaced by quartz while retaining the fibrous structure, yielding a warm golden-amber luster with silky, undulating chatoyancy.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Banded golden yellow, caramel, rich dark brown",
     "hardness_min": 6.5,
     "hardness_max": 7.0,
@@ -1338,12 +2188,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "South Africa (Northern Cape), Australia, India, Brazil.",
     "formation": "Pseudomorphic replacement of crocidolite in banded iron formations.",
     "history_notes": "Ancient Roman soldiers wore tiger eye engraved with sacred symbols into battle for courage and vigilance.",
-    "treatments": "Untreated natural mineral.",
+    "treatments": "None routinely applied; silky golden-brown chatoyancy is formed through pseudomorphic replacement of crocidolite by silica.",
     "care_instructions": "Warm soapy water with a soft cloth. Very durable for daily wear.",
     "availability": "available",
     "is_featured": true,
     "display_order": 52,
-    "media": []
+    "media": [
+      {
+        "id": "media-tiger-eye-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/tiger-eye.png",
+        "thumbnail_url": "/images/stones/tiger-eye.png",
+        "alt_text": "Tiger Eye gemstone - Banded golden yellow, caramel, rich dark brown",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-tourmaline-green",
@@ -1354,7 +2214,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "tourmaline-green",
     "short_description": "The verdant elbaite tourmaline (verdelite), prized for crystal clarity and rich forest-green hues.",
     "full_description": "Green Tourmaline (verdelite) is a complex borosilicate mineral celebrated for exceptional crystal clarity, vitreous brilliance, and rich verdant shades ranging from bright mint to deep evergreen.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Lush emerald green to deep forest green",
     "hardness_min": 7.0,
     "hardness_max": 7.5,
@@ -1363,12 +2223,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "Brazil (Minas Gerais), Mozambique, Nigeria, Afghanistan.",
     "formation": "Granite pegmatites and pneumatolytic veins.",
     "history_notes": "Historically confused with emerald until Dutch gem traders recognized its distinct electrical and optical properties in the 1700s.",
-    "treatments": "Usually untreated; occasionally mild heat is used to lighten overly dark stones.",
+    "treatments": "Sometimes gently heated to lighten dark forest-green tones.",
     "care_instructions": "Warm soapy water with a soft brush. Keep away from abrupt temperature shifts.",
     "availability": "available",
     "is_featured": true,
     "display_order": 53,
-    "media": []
+    "media": [
+      {
+        "id": "media-tourmaline-green-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/tourmaline-green.png",
+        "thumbnail_url": "/images/stones/tourmaline-green.png",
+        "alt_text": "Tourmaline Green gemstone - Lush emerald green to deep forest green",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-turquoise-chinese",
@@ -1379,21 +2249,31 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "turquoise-chinese",
     "short_description": "Fine copper-aluminium phosphate featuring vivid sky-blue to apple-green colors with dark spiderweb matrix.",
     "full_description": "Chinese Turquoise is admired for its striking sky-blue to mint-green tones and intricate dark brown or black spiderweb matrix patterns, sourced from the historic deposits of Hubei and Shaanxi provinces.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Sky blue to turquoise green with dark matrix",
     "hardness_min": 5.0,
     "hardness_max": 6.0,
-    "chemical_composition": "CuAl6(PO4)4(OH)8\u00b74H2O (Hydrated Copper Aluminium Phosphate)",
+    "chemical_composition": "CuAl6(PO4)4(OH)8·4H2O (Hydrated Copper Aluminium Phosphate)",
     "crystal_system": "Triclinic (Cryptocrystalline)",
     "origin": "Hubei and Shaanxi Provinces, China.",
     "formation": "Secondary mineral formed in weathering zones of aluminous rocks.",
     "history_notes": "Worked in Chinese art for more than 3,000 years, second in traditional prestige only to jade.",
-    "treatments": "Stabilization with colorless resin is common in modern trade to protect porosity.",
+    "treatments": "Commonly stabilized with colourless polymers or paraffin to protect porosity.",
     "care_instructions": "Avoid soaps, perfumes, oils, and ultrasonic cleaners. Clean only with a dry or lightly dampened soft cloth.",
     "availability": "available",
     "is_featured": false,
     "display_order": 54,
-    "media": []
+    "media": [
+      {
+        "id": "media-turquoise-chinese-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/turquoise-chinese.png",
+        "thumbnail_url": "/images/stones/turquoise-chinese.png",
+        "alt_text": "Turquoise CHINESE gemstone - Sky blue to turquoise green with dark matrix",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-turquoise-tibetan",
@@ -1404,21 +2284,31 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "turquoise-tibetan",
     "short_description": "Treasured Himalayan turquoise displaying organic greenish-blue hues with bold rustic matrix.",
     "full_description": "Tibetan Turquoise is held in deep reverence across Himalayan and South Asian cultures, distinguished by its earthy sea-green to robin's egg blue coloration and rich organic chocolate-brown to black veining.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Sea green to turquoise blue with rich rustic veining",
     "hardness_min": 5.0,
     "hardness_max": 6.0,
-    "chemical_composition": "CuAl6(PO4)4(OH)8\u00b74H2O",
+    "chemical_composition": "CuAl6(PO4)4(OH)8·4H2O",
     "crystal_system": "Triclinic",
     "origin": "Tibet / Himalayan region.",
     "formation": "Hydrothermal weathering in sedimentary and volcanic host rocks.",
-    "history_notes": "Worn by Himalayan peoples as a sacred amulet of spiritual alignment, safe travels, and good fortune.",
-    "treatments": "Natural stone; traditional waxing may be applied.",
+    "history_notes": "Revered across Himalayan communities as a traditional ornamental gemstone treasured in elaborate silver jewellery, belts, and headdresses.",
+    "treatments": "Commonly stabilized with clear resins or paraffin to seal natural porous matrix.",
     "care_instructions": "Keep away from household chemicals, detergents, and direct heat.",
     "availability": "available",
     "is_featured": true,
     "display_order": 55,
-    "media": []
+    "media": [
+      {
+        "id": "media-turquoise-tibetan-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/turquoise-tibetan.png",
+        "thumbnail_url": "/images/stones/turquoise-tibetan.png",
+        "alt_text": "Turquoise Tibetan gemstone - Sea green to turquoise blue with rich rustic veining",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-white-quartz",
@@ -1429,7 +2319,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "white-quartz",
     "short_description": "Milky to translucent white crystalline quartz with serene satin luster.",
     "full_description": "White Quartz (Milky Quartz) is the most abundant variety of crystalline quartz, owing its white translucent appearance to millions of microscopic fluid and gas inclusions trapped during crystallization.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Translucent milky white",
     "hardness_min": 7.0,
     "hardness_max": 7.0,
@@ -1438,12 +2328,22 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "India, Brazil, Madagascar.",
     "formation": "Hydrothermal quartz veins.",
     "history_notes": "A foundation mineral in ancient stone carving and sacred architecture.",
-    "treatments": "Untreated natural mineral.",
+    "treatments": "None routinely applied; milky cloudiness is caused by microscopic fluid inclusions during crystal growth.",
     "care_instructions": "Warm soapy water and soft cloth. Very durable.",
     "availability": "available",
     "is_featured": false,
     "display_order": 56,
-    "media": []
+    "media": [
+      {
+        "id": "media-white-quartz-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/white-quartz.png",
+        "thumbnail_url": "/images/stones/white-quartz.png",
+        "alt_text": "White Quartz gemstone - Translucent milky white",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-white-quartz-crystal",
@@ -1453,22 +2353,32 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "name": "White Quartz Crystal",
     "slug": "white-quartz-crystal",
     "short_description": "Optically clear natural rock crystal quartz with razor-sharp geometric prism facets.",
-    "full_description": "White Quartz Crystal (Rock Crystal) is pure, transparent crystalline silica famous for diamond-like vitreous luster and flawless optical clarity when faceted or polished into natural crystal points.",
-    "material_type": "natural",
+    "full_description": "White Quartz Crystal (Rock Crystal) is pure, transparent crystalline silica famous for vitreous luster and exceptional optical clarity when fashioned into polished crystal prisms or faceted gemstones.",
+    "material_type": "unconfirmed",
     "colour": "Water-clear, pure colourless transparency",
     "hardness_min": 7.0,
     "hardness_max": 7.0,
     "chemical_composition": "SiO2",
     "crystal_system": "Trigonal",
-    "origin": "India (Himalayan belts, Tamil Nadu), Brazil, Madagascar, Arkansas USA.",
+    "origin": "India (Himalayan belts, Rajasthan), Brazil, Madagascar, and Arkansas USA.",
     "formation": "Formed from hydrothermal silica-rich solutions in cavities and pegmatites.",
     "history_notes": "Ancient Greeks believed rock crystal was water frozen so solid by divine power that it could never melt (from 'krystallos' for ice).",
-    "treatments": "Untreated natural crystal.",
+    "treatments": "None routinely applied; fashioned directly from transparent rock crystal prisms.",
     "care_instructions": "Warm soapy water with a soft cloth. Resists scratching.",
     "availability": "available",
     "is_featured": true,
     "display_order": 57,
-    "media": []
+    "media": [
+      {
+        "id": "media-white-quartz-crystal-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/white-quartz-crystal.png",
+        "thumbnail_url": "/images/stones/white-quartz-crystal.png",
+        "alt_text": "White Quartz Crystal gemstone - Water-clear, pure colourless transparency",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   },
   {
     "id": "gem-white-topaz",
@@ -1479,7 +2389,7 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "slug": "white-topaz",
     "short_description": "Natural transparent aluminium silicate boasting high vitreous brilliance and Mohs 8 hardness.",
     "full_description": "White Topaz (Silver Topaz) is the pure colourless variety of the fluorosilicate mineral topaz. Renowned for its Mohs 8 hardness, high refractive index, and superb clarity, it provides brilliant diamond-like sparkle in fine jewellery.",
-    "material_type": "natural",
+    "material_type": "unconfirmed",
     "colour": "Pure colourless transparent with crisp silver brilliance",
     "hardness_min": 8.0,
     "hardness_max": 8.0,
@@ -1488,11 +2398,56 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
     "origin": "Brazil, Sri Lanka, Nigeria, Madagascar.",
     "formation": "Pneumatolytic pegmatite cavities and rhyolite volcanic lavas.",
     "history_notes": "Known historically as 'silver topaz', often used in royal crowns as diamond alternatives.",
-    "treatments": "Untreated natural gemstone.",
+    "treatments": "None routinely applied; colourless topaz crystals are fashioned directly into faceted gems.",
     "care_instructions": "Warm soapy water with a soft brush. Avoid sharp blows due to perfect basal cleavage.",
     "availability": "available",
     "is_featured": true,
     "display_order": 58,
-    "media": []
+    "media": [
+      {
+        "id": "media-white-topaz-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/white-topaz.png",
+        "thumbnail_url": "/images/stones/white-topaz.png",
+        "alt_text": "White Topaz gemstone - Pure colourless transparent with crisp silver brilliance",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
+  },
+  {
+    "id": "gem-zircon-cubic-white",
+    "category_id": "cat-semi-precious",
+    "category_slug": "semi-precious",
+    "category_name": "Semi-Precious Gemstones",
+    "name": "Zircon Cubic White",
+    "slug": "zircon-cubic-white",
+    "short_description": "A trade listing describing a colourless faceted stone.",
+    "full_description": "Zircon Cubic White is a trade designation. Mineral classification between natural zircon and synthetic cubic zirconia is pending verification.",
+    "material_type": "unconfirmed",
+    "colour": "Colourless",
+    "hardness_min": null,
+    "hardness_max": null,
+    "chemical_composition": null,
+    "crystal_system": null,
+    "origin": null,
+    "formation": null,
+    "history_notes": null,
+    "treatments": null,
+    "care_instructions": "Clean with warm soapy water and a soft brush.",
+    "availability": "available",
+    "is_featured": false,
+    "display_order": 59,
+    "media": [
+      {
+        "id": "media-zircon-cubic-white-photo",
+        "media_type": "image",
+        "file_url": "/images/stones/zircon-cubic-white.png",
+        "thumbnail_url": "/images/stones/zircon-cubic-white.png",
+        "alt_text": "Zircon Cubic White gemstone - Colourless",
+        "display_order": 1,
+        "is_primary": true
+      }
+    ]
   }
 ];

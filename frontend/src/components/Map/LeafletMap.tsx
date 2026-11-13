@@ -81,3 +81,4 @@ export const LeafletMap: React.FC<LeafletMapProps> = ({ className = 'w-full h-fu
 
   return <div ref={mapContainerRef} className={className} />;
 };
+

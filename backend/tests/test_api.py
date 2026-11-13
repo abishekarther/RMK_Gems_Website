@@ -49,6 +49,14 @@ def test_filter_by_category():
     for item in data["items"]:
         assert item["category_slug"] == "precious"
 
+    # Test semi-precious gemstones filter - all 59 published stones returned
+    response_semi = client.get("/api/v1/gemstones?category=semi-precious&page_size=100")
+    assert response_semi.status_code == 200
+    data_semi = response_semi.json()
+    assert len(data_semi["items"]) == 59
+    for item in data_semi["items"]:
+        assert item["category_slug"] == "semi-precious"
+
 def test_search_gemstones():
     response = client.get("/api/v1/gemstones?search=ruby")
     assert response.status_code == 200
@@ -72,9 +80,29 @@ def test_get_gemstone_detail_404_for_unknown():
     assert response.status_code == 404
 
 def test_get_gemstone_detail_404_for_unpublished():
-    # Goldstone sandstone blue has needs_client_confirmation=True, is_published=False
-    response = client.get("/api/v1/gemstones/goldstone-sandstone-blue")
-    assert response.status_code == 404
+    from backend.app.core.database import SessionLocal
+    from backend.app.models.gemstone import Gemstone
+    from backend.app.models.category import GemstoneCategory
+    db = SessionLocal()
+    try:
+        cat = db.query(GemstoneCategory).first()
+        temp_gem = Gemstone(
+            category_id=cat.id,
+            name="Test Unpublished Gem",
+            slug="test-unpublished-gem",
+            is_published=False,
+            availability="available"
+        )
+        db.add(temp_gem)
+        db.commit()
+
+        response = client.get("/api/v1/gemstones/test-unpublished-gem")
+        assert response.status_code == 404
+
+        db.delete(temp_gem)
+        db.commit()
+    finally:
+        db.close()
 
 def test_homepage_slides():
     response = client.get("/api/v1/home/slides")

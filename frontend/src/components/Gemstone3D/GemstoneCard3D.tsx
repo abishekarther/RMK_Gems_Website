@@ -89,7 +89,7 @@ export const GemstoneCard3D: React.FC<GemstoneCard3DProps> = ({ gemstone, priori
             {gemstone.name}
           </h3>
           <p className="text-xs text-[#717171] uppercase tracking-wider mt-0.5 capitalize">
-            {config.cut} Cut • {gemstone.material_type || 'Natural'}
+            {config.cut} Cut • {gemstone.material_type === 'imitation' ? 'Imitation' : gemstone.material_type === 'organic' ? 'Organic' : 'Gemstone'}
           </p>
           
           {/* Subtle View link */}
