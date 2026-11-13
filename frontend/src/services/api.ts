@@ -94,14 +94,16 @@ export async function fetchGemstones(params?: {
 export async function fetchGemstoneBySlug(slug: string): Promise<GemstoneDetail | null> {
   try {
     const res = await fetch(`${API_BASE}/gemstones/${encodeURIComponent(slug)}`);
-    if (res.status === 404) return null;
-    if (!res.ok) throw new Error('Failed to fetch gemstone detail');
-    return await res.json();
+    if (res.ok) {
+      return await res.json();
+    }
   } catch (err) {
     console.warn(`API error fetching gemstone ${slug}; checking fallback:`, err);
-    const found = FALLBACK_GEMSTONES.find((g) => g.slug === slug);
-    return found || null;
   }
+  // When backend API is absent or returns 404 on static hosts like Vercel,
+  // seamlessly serve the stone from the verified catalog dataset
+  const found = FALLBACK_GEMSTONES.find((g) => g.slug === slug);
+  return found || null;
 }
 
 export async function fetchHomepageSlides(): Promise<HomepageSlide[]> {
