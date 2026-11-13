@@ -6,15 +6,15 @@
 
 export const GEMSTONE_PHOTOS: Record<string, string> = {
   // Precious Gemstones (GIA Gem Encyclopedia)
-  'ruby': '/images/gia/ruby.png',
-  'pearl': '/images/gia/pearl.png',
-  'red-coral': '/images/gia/red-coral.png',
-  'emerald': '/images/gia/emerald.png',
-  'yellow-sapphire': '/images/gia/yellow-sapphire.png',
-  'diamond': '/images/gia/diamond.png',
-  'blue-sapphire': '/images/gia/blue-sapphire.png',
-  'hessonite-garnet': '/images/gia/hessonite-garnet.png',
-  'cats-eye-chrysoberyl': '/images/gia/cats-eye-chrysoberyl.png',
+  'ruby': '/images/stones/ruby.png',
+  'pearl': '/images/stones/pearl.png',
+  'red-coral': '/images/stones/red-coral.png',
+  'emerald': '/images/stones/emerald.png',
+  'yellow-sapphire': '/images/stones/yellow-sapphire.png',
+  'diamond': '/images/stones/diamond.png',
+  'blue-sapphire': '/images/stones/blue-sapphire.png',
+  'hessonite-garnet': '/images/stones/hessonite-garnet.png',
+  'cats-eye-chrysoberyl': '/images/stones/cats-eye-chrysoberyl.png',
 
   // Semi-Precious Gemstones
   'agate-black-banded': '/images/stones/agate-black-banded.png',
@@ -81,7 +81,7 @@ export const GEMSTONE_PHOTOS: Record<string, string> = {
 };
 
 const PLACEHOLDER_PHOTO = '/images/stones/placeholder.png';
-const PHOTO_VERSION = 'v=20261113_10';
+const PHOTO_VERSION = 'v=20261113_clean';
 
 /**
  * Returns the image URL for a given gemstone slug.

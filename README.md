@@ -1,6 +1,6 @@
 # RMK Gems — Official Website & Gemstone Catalogue
 
-Premium, responsive gemstone catalogue and WhatsApp enquiry website for **RMK Gems**, located in Tenkasi, Tamil Nadu, India. Built to specification v1.1 and refined to client preferences.
+Premium, responsive gemstone catalogue and WhatsApp enquiry website for **RMK Gems**, located in Tenkasi, Tamil Nadu, India.
 
 ---
 
@@ -11,19 +11,20 @@ Premium, responsive gemstone catalogue and WhatsApp enquiry website for **RMK Ge
 - **Typography**: Serif headlines (*Playfair Display* & *Cormorant Garamond*) paired with modern sans-serif body (*Plus Jakarta Sans*).
 - **Brand Statement**: Styled in Cormorant Garamond luxury serif italics with All-India delivery reassurance.
 
-### 2. Authentic Gemstone Photography (GIA Reference)
-- High-resolution cut and polished gemstone photography sourced directly from the **GIA Gem Encyclopedia** (`https://www.gia.edu/gem-encyclopedia`).
-- **Minimalist Stone Cards**: Clean, modern cards displaying **strictly the authentic stone photo and its name** — all badges, cut tags (`OVAL CUT • NATURAL`), and unwanted buttons have been removed for an uncluttered luxury feel.
+### 2. Curated Gemstone Photography
+- **All 68 Gemstones**: Complete coverage across 9 precious gemstones and 59 semi-precious gemstones.
+- **Unified Location**: All photography resides centrally in `frontend/public/images/stones/<slug>.png`. Sourcing, provenance, and curatorial standards are documented in `frontend/public/images/stones/CREDITS.md`.
+- **Minimalist Stone Cards**: Clean, modern cards displaying strictly the stone photograph and its name.
 - **Factual Gemological Properties**: Accurate Mohs hardness, chemical composition, crystal system, colour range, and care guidelines on every detail page.
 
 ### 3. Five-Slide Gemstone History Carousel
-- Editorial sequence focused entirely on **gemstone historical significance** (not shop history):
+- Editorial sequence focused entirely on **gemstone historical significance**:
   1. *The Story of Gemstones*
   2. *Treasured Through Time*
   3. *The Legacy of Ruby and Sapphire*
   4. *Emeralds, Diamonds and Royal Heritage*
   5. *Discover the Gemstone World*
-- Autoplay with accessible pause/play toggle, slide indicators, keyboard navigation, and `prefers-reduced-motion` support.
+- Autoplay with accessible pause/play toggle, slide indicators, keyboard navigation, and `prefers-reduced-motion` support. Located in `frontend/public/images/slides/`.
 
 ### 4. Direct WhatsApp Click-to-Chat Integration
 - Instant WhatsApp link pre-filled with the exact required enquiry template:
@@ -43,9 +44,8 @@ Premium, responsive gemstone catalogue and WhatsApp enquiry website for **RMK Ge
   | **Monday – Thursday, Saturday** | 10:30 AM – 9:00 PM |
   | **Friday** | 10:30 AM – 12:30 PM, 4:00 PM – 9:00 PM |
   | **Sunday** | Closed |
-- **Dedicated Shop Visit Page (`/contact`)**: Centralizes the full physical address, confirmed schedule table, street-level Google Maps embed (`z=18`), directions, and direct customer care pillars.
-- **Content Deduplication**: The shop address, timetable, and map grid were removed from the homepage to eliminate repetition; the homepage links seamlessly to the Shop Visit page.
-- **Conditional Footer**: The universal footer is shown on the Homepage and Detail pages, and is cleanly hidden on the Precious Gemstones, Semi-Precious Gemstones, and Contact pages.
+- **Dedicated Shop Visit Page (`/contact`)**: Centralizes the full physical address, confirmed schedule table, interactive Leaflet.js map with verified coordinates (`8.9576, 77.3095`), directions, and direct customer care pillars.
+- **Conditional Footer**: Displayed on the Homepage and Detail pages, cleanly hidden on catalogue list pages and Contact page.
 
 ### 6. Strict Scope & Privacy Safeguards
 - **No Admin Dashboard**: Explicitly excluded; no `/admin` routes or interfaces.
@@ -59,9 +59,9 @@ Premium, responsive gemstone catalogue and WhatsApp enquiry website for **RMK Ge
 
 | Layer | Technologies |
 |---|---|
-| **Frontend** | React 19, TypeScript, Vite, Tailwind CSS v4, React Router v7, Lucide Icons |
+| **Frontend** | React 19, TypeScript, Vite, Tailwind CSS v4, React Router v7, Lucide Icons, Leaflet |
 | **Backend** | Python 3.11+, FastAPI, SQLAlchemy, Pydantic v2, SQLite (zero-config local) / PostgreSQL compatible |
-| **Testing** | Pytest, HTTPX, TypeScript (`tsc -b`), Vite Build |
+| **Testing & Quality** | Pytest, HTTPX, TypeScript (`tsc -b`), Oxlint, Vite Build |
 
 ---
 
@@ -106,25 +106,33 @@ RMK_Gems_Website/
 │   ├── app/
 │   │   ├── api/v1/          # Categories, Gemstones, Slides, Shop endpoints
 │   │   ├── core/            # App settings, database configuration
-│   │   ├── models/          # SQLAlchemy ORM models
+│   │   ├── models/          # SQLAlchemy ORM models (Category, Gemstone, Media, Slide, Shop)
 │   │   ├── schemas/         # Pydantic validation schemas (internal fields withheld)
-│   │   ├── seed/            # GIA/Mindat researched seed data (68 gemstones)
+│   │   ├── seed/            # Seed data (68 gemstones: 9 precious + 59 semi-precious)
 │   │   └── main.py          # FastAPI application & lifecycle management
 │   ├── tests/               # Pytest suite (11 passing tests)
 │   ├── requirements.txt     # Python dependencies
 │   └── .env.example         # Environment variables template
 ├── frontend/
-│   ├── public/              # Favicon, robots.txt, sitemap.xml, GIA gemstone photography
+│   ├── public/
+│   │   ├── images/
+│   │   │   ├── slides/      # 5 homepage hero carousel slides
+│   │   │   └── stones/      # All 68 gemstone images (<slug>.png) & CREDITS.md
+│   │   ├── favicon.svg      # Favicon
+│   │   ├── robots.txt       # Search engine crawler instructions
+│   │   └── sitemap.xml      # XML sitemap
 │   ├── src/
-│   │   ├── app/             # App root, router, and conditional footer layout
-│   │   ├── components/      # Header, Footer, GemstoneCard, ScrollToTop
+│   │   ├── app/             # App root, router, and layout
+│   │   ├── components/      # Header, Footer, GemstoneCard, LeafletMap, ScrollToTop
 │   │   ├── config/          # Central shop settings & WhatsApp builders
-│   │   ├── data/            # Resilient offline/fallback dataset & GIA photos mapping
+│   │   ├── data/            # Resilient fallback dataset & gemstone photo registry
 │   │   ├── pages/           # Home, Precious, Semi-Precious, Detail, Contact, 404
 │   │   ├── sections/        # Hero carousel, categories, location/brand statement
 │   │   ├── services/        # Central API client
 │   │   └── types/           # TypeScript definitions
-│   ├── package.json
-│   └── vite.config.ts
+│   ├── package.json         # Frontend dependencies (React, Vite, Tailwind, Leaflet)
+│   └── vite.config.ts       # Vite build configuration
+├── rmk_gems.db              # SQLite development database
+├── .gitignore               # Comprehensive Git ignore rules
 └── package.json             # Root runner scripts
 ```

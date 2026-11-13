@@ -97,8 +97,8 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
       {
         "id": "media-ruby-photo",
         "media_type": "image",
-        "file_url": "/images/gia/ruby.png",
-        "thumbnail_url": "/images/gia/ruby.png",
+        "file_url": "/images/stones/ruby.png",
+        "thumbnail_url": "/images/stones/ruby.png",
         "alt_text": "Ruby gemstone - Pigeon blood red to purplish red",
         "display_order": 1,
         "is_primary": true
@@ -132,8 +132,8 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
       {
         "id": "media-pearl-photo",
         "media_type": "image",
-        "file_url": "/images/gia/pearl.png",
-        "thumbnail_url": "/images/gia/pearl.png",
+        "file_url": "/images/stones/pearl.png",
+        "thumbnail_url": "/images/stones/pearl.png",
         "alt_text": "Pearl gemstone - White, cream, silver, gold, and subtle pastels",
         "display_order": 1,
         "is_primary": true
@@ -167,8 +167,8 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
       {
         "id": "media-red-coral-photo",
         "media_type": "image",
-        "file_url": "/images/gia/red-coral.png",
-        "thumbnail_url": "/images/gia/red-coral.png",
+        "file_url": "/images/stones/red-coral.png",
+        "thumbnail_url": "/images/stones/red-coral.png",
         "alt_text": "Red Coral gemstone - Vibrant red, oxblood red, salmon pink",
         "display_order": 1,
         "is_primary": true
@@ -202,8 +202,8 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
       {
         "id": "media-emerald-photo",
         "media_type": "image",
-        "file_url": "/images/gia/emerald.png",
-        "thumbnail_url": "/images/gia/emerald.png",
+        "file_url": "/images/stones/emerald.png",
+        "thumbnail_url": "/images/stones/emerald.png",
         "alt_text": "Emerald gemstone - Deep lush green to slightly bluish green",
         "display_order": 1,
         "is_primary": true
@@ -237,8 +237,8 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
       {
         "id": "media-yellow-sapphire-photo",
         "media_type": "image",
-        "file_url": "/images/gia/yellow-sapphire.png",
-        "thumbnail_url": "/images/gia/yellow-sapphire.png",
+        "file_url": "/images/stones/yellow-sapphire.png",
+        "thumbnail_url": "/images/stones/yellow-sapphire.png",
         "alt_text": "Yellow Sapphire gemstone - Canary yellow, lemon yellow, warm golden amber",
         "display_order": 1,
         "is_primary": true
@@ -272,8 +272,8 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
       {
         "id": "media-diamond-photo",
         "media_type": "image",
-        "file_url": "/images/gia/diamond.png",
-        "thumbnail_url": "/images/gia/diamond.png",
+        "file_url": "/images/stones/diamond.png",
+        "thumbnail_url": "/images/stones/diamond.png",
         "alt_text": "Diamond gemstone - Colourless (D-F) to near-colourless (G-J), with faint warm tints",
         "display_order": 1,
         "is_primary": true
@@ -307,8 +307,8 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
       {
         "id": "media-blue-sapphire-photo",
         "media_type": "image",
-        "file_url": "/images/gia/blue-sapphire.png",
-        "thumbnail_url": "/images/gia/blue-sapphire.png",
+        "file_url": "/images/stones/blue-sapphire.png",
+        "thumbnail_url": "/images/stones/blue-sapphire.png",
         "alt_text": "Blue Sapphire gemstone - Cornflower blue, royal blue, deep navy",
         "display_order": 1,
         "is_primary": true
@@ -342,8 +342,8 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
       {
         "id": "media-hessonite-garnet-photo",
         "media_type": "image",
-        "file_url": "/images/gia/hessonite-garnet.png",
-        "thumbnail_url": "/images/gia/hessonite-garnet.png",
+        "file_url": "/images/stones/hessonite-garnet.png",
+        "thumbnail_url": "/images/stones/hessonite-garnet.png",
         "alt_text": "Hessonite Garnet gemstone - Cinnamon orange, honey brown, golden amber",
         "display_order": 1,
         "is_primary": true
@@ -377,8 +377,8 @@ export const FALLBACK_GEMSTONES: GemstoneDetail[] = [
       {
         "id": "media-cats-eye-chrysoberyl-photo",
         "media_type": "image",
-        "file_url": "/images/gia/cats-eye-chrysoberyl.png",
-        "thumbnail_url": "/images/gia/cats-eye-chrysoberyl.png",
+        "file_url": "/images/stones/cats-eye-chrysoberyl.png",
+        "thumbnail_url": "/images/stones/cats-eye-chrysoberyl.png",
         "alt_text": "Cat's Eye (Chrysoberyl) gemstone - Honey yellow, greenish yellow, milk-and-honey",
         "display_order": 1,
         "is_primary": true

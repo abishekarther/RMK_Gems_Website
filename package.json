@@ -14,11 +14,9 @@
     "rmk-gems",
     "gemstone-catalogue",
     "tenkasi",
-    "threejs",
     "fastapi",
     "react"
   ],
   "author": "RMK Gems Development Team",
   "license": "Private"
 }
-

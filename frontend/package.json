@@ -10,17 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@react-three/drei": "^10.7.9",
-    "@react-three/fiber": "^9.8.2",
-    "@types/three": "^0.187.0",
-    "clsx": "^2.1.1",
     "leaflet": "^1.9.4",
     "lucide-react": "^1.71.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-router-dom": "^7.18.5",
-    "tailwind-merge": "^3.7.0",
-    "three": "^0.187.0"
+    "rmk-gems-website": "file:.."
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.5",

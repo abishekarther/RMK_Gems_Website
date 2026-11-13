@@ -10,15 +10,15 @@ This document catalogs the photographic sources, provenance, copyright holders, 
 
 | # | Stone Name | Slug | Image File | Type | Source / Provenance |
 |---|---|---|---|---|---|
-| 1 | Ruby | `ruby` | `/images/gia/ruby.png` | Natural Cut Gemstone | GIA Gem Encyclopedia |
-| 2 | Pearl | `pearl` | `/images/gia/pearl.png` | Natural Gemstone | GIA Gem Encyclopedia |
-| 3 | Red Coral | `red-coral` | `/images/gia/red-coral.png` | Natural Gemstone | GIA Gem Encyclopedia |
-| 4 | Emerald | `emerald` | `/images/gia/emerald.png` | Natural Cut Gemstone | GIA Gem Encyclopedia |
-| 5 | Yellow Sapphire | `yellow-sapphire` | `/images/gia/yellow-sapphire.png` | Natural Cut Gemstone | GIA Gem Encyclopedia |
-| 6 | Diamond | `diamond` | `/images/gia/diamond.png` | Natural Cut Gemstone | GIA Gem Encyclopedia |
-| 7 | Blue Sapphire | `blue-sapphire` | `/images/gia/blue-sapphire.png` | Natural Cut Gemstone | GIA Gem Encyclopedia |
-| 8 | Hessonite Garnet | `hessonite-garnet` | `/images/gia/hessonite-garnet.png` | Natural Cut Gemstone | GIA Gem Encyclopedia |
-| 9 | Cat's Eye (Chrysoberyl) | `cats-eye-chrysoberyl` | `/images/gia/cats-eye-chrysoberyl.png` | Natural Cut Gemstone | GIA Gem Encyclopedia |
+| 1 | Ruby | `ruby` | `/images/stones/ruby.png` | Natural Cut Gemstone | GIA Gem Encyclopedia |
+| 2 | Pearl | `pearl` | `/images/stones/pearl.png` | Natural Gemstone | GIA Gem Encyclopedia |
+| 3 | Red Coral | `red-coral` | `/images/stones/red-coral.png` | Natural Gemstone | GIA Gem Encyclopedia |
+| 4 | Emerald | `emerald` | `/images/stones/emerald.png` | Natural Cut Gemstone | GIA Gem Encyclopedia |
+| 5 | Yellow Sapphire | `yellow-sapphire` | `/images/stones/yellow-sapphire.png` | Natural Cut Gemstone | GIA Gem Encyclopedia |
+| 6 | Diamond | `diamond` | `/images/stones/diamond.png` | Natural Cut Gemstone | GIA Gem Encyclopedia |
+| 7 | Blue Sapphire | `blue-sapphire` | `/images/stones/blue-sapphire.png` | Natural Cut Gemstone | GIA Gem Encyclopedia |
+| 8 | Hessonite Garnet | `hessonite-garnet` | `/images/stones/hessonite-garnet.png` | Natural Cut Gemstone | GIA Gem Encyclopedia |
+| 9 | Cat's Eye (Chrysoberyl) | `cats-eye-chrysoberyl` | `/images/stones/cats-eye-chrysoberyl.png` | Natural Cut Gemstone | GIA Gem Encyclopedia |
 
 ## 2. Semi-Precious Gemstones (All 59 Stones - Client Studio Photography)
 
