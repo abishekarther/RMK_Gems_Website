@@ -81,7 +81,7 @@ export const GEMSTONE_PHOTOS: Record<string, string> = {
 };
 
 const PLACEHOLDER_PHOTO = '/images/stones/placeholder.png';
-const PHOTO_VERSION = 'v=20261116_1';
+const PHOTO_VERSION = 'v=20261116_2';
 
 /**
  * Returns the image URL for a given gemstone slug.
