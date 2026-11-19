@@ -10,9 +10,9 @@ export const LocationSection: React.FC = () => {
         
         {/* Brand Statement */}
         <div className="max-w-3xl mx-auto text-center p-6 sm:p-10 rounded-2xl bg-[#F4EFE6]/70 border border-[#E8E2D9] shadow-xs">
-          <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#997A48] mb-2 block">
-            About RMK Gems
-          </span>
+          <h1 className="text-xs font-semibold uppercase tracking-[0.25em] text-[#997A48] mb-2 block">
+            RMK Gems &bull; Fine Natural Gemstones in Tenkasi
+          </h1>
           
           <p className="font-brand-statement text-2xl sm:text-3xl text-[#1E1E1E] leading-relaxed font-medium">
             &ldquo;{SHOP_CONFIG.aboutDescription}&rdquo;

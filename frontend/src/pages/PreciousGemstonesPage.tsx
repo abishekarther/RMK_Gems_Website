@@ -4,6 +4,20 @@ import type { GemstoneItem } from '../types/gemstone';
 import { fetchGemstones } from '../services/api';
 import { GemstoneCard } from '../components/GemstoneCard/GemstoneCard';
 import { FALLBACK_GEMSTONES } from '../data/gemstoneFallbackData';
+import { SEO } from '../components/SEO';
+
+const preciousSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Precious Gemstones Master Collection | RMK Gems",
+  "url": "https://rmkgems.com/precious-gemstones",
+  "description": "Browse RMK Gems curated collection of 9 iconic precious gemstones including Ruby, Emerald, Blue Sapphire, Yellow Sapphire, Diamond, Pearl, Red Coral, Hessonite, and Chrysoberyl Cat's Eye in Tenkasi.",
+  "provider": {
+    "@type": "JewelryStore",
+    "name": "RMK Gems",
+    "telephone": "+919385706450"
+  }
+};
 
 export const PreciousGemstonesPage: React.FC = () => {
   const [gemstones, setGemstones] = useState<GemstoneItem[]>(() =>
@@ -21,45 +35,54 @@ export const PreciousGemstonesPage: React.FC = () => {
   }, []);
 
   return (
-    <main className="py-12 sm:py-16 bg-[#FAF8F5] min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Page Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-[#997A48] mb-3">
-            <Sparkles className="w-4 h-4" />
-            <span>Master Collection</span>
+    <>
+      <SEO
+        title="Precious Gemstones Collection"
+        description="Explore 9 iconic precious gemstones at RMK Gems Tenkasi: Ruby, Emerald, Blue & Yellow Sapphire, Chrysoberyl Cat's Eye, and more with nationwide delivery."
+        canonical="/precious-gemstones"
+        ogImage="/images/stones/ruby.png"
+        schema={preciousSchema}
+      />
+      <main className="py-12 sm:py-16 bg-[#FAF8F5] min-h-screen">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          {/* Page Header */}
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-[#997A48] mb-3">
+              <Sparkles className="w-4 h-4" />
+              <span>Master Collection</span>
+            </div>
+
+            <h1 className="font-serif text-3xl sm:text-5xl font-bold text-[#1E1E1E] tracking-tight">
+              Precious Gemstones
+            </h1>
+
+            <div className="w-20 h-0.5 bg-[#C5A880] mx-auto mt-4 mb-5" />
+
+            <p className="text-sm sm:text-base text-[#717171] leading-relaxed">
+              Revered across millennia for rarity, brilliance, and cultural significance. Select any stone to view its details.
+            </p>
           </div>
 
-          <h1 className="font-serif text-3xl sm:text-5xl font-bold text-[#1E1E1E] tracking-tight">
-            Precious Gemstones
-          </h1>
+          {/* Gemstone Gallery Grid */}
+          {loading && gemstones.length === 0 ? (
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-6 sm:gap-10 py-12 animate-pulse">
+              {[...Array(6)].map((_, i) => (
+                <div key={i} className="aspect-square bg-[#F4EFE6] rounded-xl flex items-center justify-center text-xs text-[#997A48]">
+                  Loading...
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-6 sm:gap-10">
+              {gemstones.map((gemstone) => (
+                <GemstoneCard key={gemstone.id} gemstone={gemstone} />
+              ))}
+            </div>
+          )}
 
-          <div className="w-20 h-0.5 bg-[#C5A880] mx-auto mt-4 mb-5" />
-
-          <p className="text-sm sm:text-base text-[#717171] leading-relaxed">
-            Revered across millennia for rarity, brilliance, and cultural significance. Select any stone to view its details.
-          </p>
         </div>
-
-        {/* Gemstone Gallery Grid */}
-        {loading && gemstones.length === 0 ? (
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-6 sm:gap-10 py-12 animate-pulse">
-            {[...Array(6)].map((_, i) => (
-              <div key={i} className="aspect-square bg-[#F4EFE6] rounded-xl flex items-center justify-center text-xs text-[#997A48]">
-                Loading...
-              </div>
-            ))}
-          </div>
-        ) : (
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-6 sm:gap-10">
-            {gemstones.map((gemstone) => (
-              <GemstoneCard key={gemstone.id} gemstone={gemstone} />
-            ))}
-          </div>
-        )}
-
-      </div>
-    </main>
+      </main>
+    </>
   );
 };

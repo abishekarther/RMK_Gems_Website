@@ -2,6 +2,33 @@ import React, { useEffect } from 'react';
 import { MapPin, Phone, MessageSquare, Clock, Truck, ExternalLink, Sparkles, Navigation } from 'lucide-react';
 import { SHOP_CONFIG, createGeneralWhatsAppEnquiry } from '../config/shop';
 import { LeafletMap } from '../components/Map/LeafletMap';
+import { SEO } from '../components/SEO';
+
+const contactSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact RMK Gems & Visit Tenkasi Shop",
+  "url": "https://rmkgems.com/contact",
+  "description": "Contact RMK Gems in Tenkasi or get in touch via WhatsApp for custom gemstone consultations, certificate verification, and nationwide shipping.",
+  "mainEntity": {
+    "@type": "JewelryStore",
+    "name": "RMK Gems",
+    "telephone": "+919385706450",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "No. 12, Arafath Complex, Keela Avani Moola Veethi, Near Theppakulam",
+      "addressLocality": "Tenkasi",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "627811",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 8.9593,
+      "longitude": 77.3152
+    }
+  }
+};
 
 export const ContactPage: React.FC = () => {
   useEffect(() => {
@@ -9,7 +36,15 @@ export const ContactPage: React.FC = () => {
   }, []);
 
   return (
-    <main className="py-12 sm:py-20 bg-[#FAF8F5] min-h-screen">
+    <>
+      <SEO
+        title="Contact & Shop Visit"
+        description="Visit RMK Gems in Tenkasi or connect directly on WhatsApp for tailored gemstone consultations, natural gemstone certificates, and nationwide delivery."
+        canonical="/contact"
+        ogImage="/images/slides/slide-1.jpg"
+        schema={contactSchema}
+      />
+      <main className="py-12 sm:py-20 bg-[#FAF8F5] min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Page Header */}
@@ -227,5 +262,6 @@ export const ContactPage: React.FC = () => {
 
       </div>
     </main>
+    </>
   );
 };

@@ -1,24 +1,710 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Main Site Pages -->
   <url>
     <loc>https://rmkgems.com/</loc>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://rmkgems.com/precious-gemstones</loc>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://rmkgems.com/semi-precious-gemstones</loc>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://rmkgems.com/contact</loc>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Gemstone Catalogue Individual Pages -->
+  <url>
+    <loc>https://rmkgems.com/gemstones/ruby</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/ruby.png</image:loc>
+      <image:title>Ruby Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/pearl</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/pearl.png</image:loc>
+      <image:title>Pearl Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/red-coral</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/red-coral.png</image:loc>
+      <image:title>Red Coral Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/emerald</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/emerald.png</image:loc>
+      <image:title>Emerald Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/yellow-sapphire</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/yellow-sapphire.png</image:loc>
+      <image:title>Yellow Sapphire Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/diamond</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/diamond.png</image:loc>
+      <image:title>Diamond Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/blue-sapphire</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/blue-sapphire.png</image:loc>
+      <image:title>Blue Sapphire Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/hessonite-garnet</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/hessonite-garnet.png</image:loc>
+      <image:title>Hessonite Garnet Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/cats-eye-chrysoberyl</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/cats-eye-chrysoberyl.png</image:loc>
+      <image:title>Cats Eye Chrysoberyl Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/agate-black-banded</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/agate-black-banded.png</image:loc>
+      <image:title>Agate Black Banded Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/agate-green-banded</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/agate-green-banded.png</image:loc>
+      <image:title>Agate Green Banded Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/agate-red-jasper</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/agate-red-jasper.png</image:loc>
+      <image:title>Agate Red Jasper Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/amethyst-african</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/amethyst-african.png</image:loc>
+      <image:title>Amethyst African Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/amethyst-brazil</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/amethyst-brazil.png</image:loc>
+      <image:title>Amethyst Brazil Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/amethyst-brazil-pink</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/amethyst-brazil-pink.png</image:loc>
+      <image:title>Amethyst Brazil Pink Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/aquamarine-yellow</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/aquamarine-yellow.png</image:loc>
+      <image:title>Aquamarine Yellow Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/aventurine-green</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/aventurine-green.png</image:loc>
+      <image:title>Aventurine Green Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/bloodstone</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/bloodstone.png</image:loc>
+      <image:title>Bloodstone Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/blue-lace-banded-agate</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/blue-lace-banded-agate.png</image:loc>
+      <image:title>Blue Lace Banded Agate Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/carnelian</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/carnelian.png</image:loc>
+      <image:title>Carnelian Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/chalcedony-blue</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/chalcedony-blue.png</image:loc>
+      <image:title>Chalcedony Blue Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/chalcedony-white</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/chalcedony-white.png</image:loc>
+      <image:title>Chalcedony White Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/chrysoprase</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/chrysoprase.png</image:loc>
+      <image:title>Chrysoprase Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/diopside-4-ray-star</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/diopside-4-ray-star.png</image:loc>
+      <image:title>Diopside 4 Ray Star Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/fluorite-multicolor-banded</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/fluorite-multicolor-banded.png</image:loc>
+      <image:title>Fluorite Multicolor Banded Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/garnet-almandine</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/garnet-almandine.png</image:loc>
+      <image:title>Garnet Almandine Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/garnet-rose-cut-checkerboard</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/garnet-rose-cut-checkerboard.png</image:loc>
+      <image:title>Garnet Rose Cut Checkerboard Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/goldstone-sandstone-blue</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/goldstone-sandstone-blue.png</image:loc>
+      <image:title>Goldstone Sandstone Blue Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/goldstone-sandstone-red</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/goldstone-sandstone-red.png</image:loc>
+      <image:title>Goldstone Sandstone Red Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/green-serpentine</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/green-serpentine.png</image:loc>
+      <image:title>Green Serpentine Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/hematite-gunmetal</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/hematite-gunmetal.png</image:loc>
+      <image:title>Hematite Gunmetal Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/hessonite-garnet-semi-precious</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/hessonite-garnet-semi-precious.png</image:loc>
+      <image:title>Hessonite Garnet Semi Precious Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/labradorite</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/labradorite.png</image:loc>
+      <image:title>Labradorite Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/lapis</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/lapis.png</image:loc>
+      <image:title>Lapis Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/lemon-citrine</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/lemon-citrine.png</image:loc>
+      <image:title>Lemon Citrine Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/malachite</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/malachite.png</image:loc>
+      <image:title>Malachite Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/moonstone-white</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/moonstone-white.png</image:loc>
+      <image:title>Moonstone White Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/obsidian-snowflake</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/obsidian-snowflake.png</image:loc>
+      <image:title>Obsidian Snowflake Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/onyx-black</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/onyx-black.png</image:loc>
+      <image:title>Onyx Black Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/onyx-green</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/onyx-green.png</image:loc>
+      <image:title>Onyx Green Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/onyx-ivory</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/onyx-ivory.png</image:loc>
+      <image:title>Onyx Ivory Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/onyx-multicolor</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/onyx-multicolor.png</image:loc>
+      <image:title>Onyx Multicolor Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/onyx-red</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/onyx-red.png</image:loc>
+      <image:title>Onyx Red Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/onyx-red-pink</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/onyx-red-pink.png</image:loc>
+      <image:title>Onyx Red Pink Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/onyx-rose</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/onyx-rose.png</image:loc>
+      <image:title>Onyx Rose Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/onyx-yellow</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/onyx-yellow.png</image:loc>
+      <image:title>Onyx Yellow Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/opal-dendrite</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/opal-dendrite.png</image:loc>
+      <image:title>Opal Dendrite Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/pearl-fresh-water</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/pearl-fresh-water.png</image:loc>
+      <image:title>Pearl Fresh Water Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/pyrite</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/pyrite.png</image:loc>
+      <image:title>Pyrite Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/quartz-cats-eye</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/quartz-cats-eye.png</image:loc>
+      <image:title>Quartz Cats Eye Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/rainbow-moonstone</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/rainbow-moonstone.png</image:loc>
+      <image:title>Rainbow Moonstone Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/rose-quartz</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/rose-quartz.png</image:loc>
+      <image:title>Rose Quartz Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/ruby-markara</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/ruby-markara.png</image:loc>
+      <image:title>Ruby Markara Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/rutilated-quartz-black-needle</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/rutilated-quartz-black-needle.png</image:loc>
+      <image:title>Rutilated Quartz Black Needle Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/rutile-quartz-golden-needle</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/rutile-quartz-golden-needle.png</image:loc>
+      <image:title>Rutile Quartz Golden Needle Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/sapphire-blue-semi-precious</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/sapphire-blue-semi-precious.png</image:loc>
+      <image:title>Sapphire Blue Semi Precious Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/sillimanite-cats-eye</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/sillimanite-cats-eye.png</image:loc>
+      <image:title>Sillimanite Cats Eye Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/smoky-quartz</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/smoky-quartz.png</image:loc>
+      <image:title>Smoky Quartz Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/spectrolite-cats-eye</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/spectrolite-cats-eye.png</image:loc>
+      <image:title>Spectrolite Cats Eye Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/sunstone</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/sunstone.png</image:loc>
+      <image:title>Sunstone Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/tiger-eye</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/tiger-eye.png</image:loc>
+      <image:title>Tiger Eye Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/tourmaline-green</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/tourmaline-green.png</image:loc>
+      <image:title>Tourmaline Green Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/turquoise-chinese</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/turquoise-chinese.png</image:loc>
+      <image:title>Turquoise Chinese Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/turquoise-tibetan</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/turquoise-tibetan.png</image:loc>
+      <image:title>Turquoise Tibetan Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/white-quartz</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/white-quartz.png</image:loc>
+      <image:title>White Quartz Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/white-quartz-crystal</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/white-quartz-crystal.png</image:loc>
+      <image:title>White Quartz Crystal Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/white-topaz</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/white-topaz.png</image:loc>
+      <image:title>White Topaz Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rmkgems.com/gemstones/zircon-cubic-white</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rmkgems.com/images/stones/zircon-cubic-white.png</image:loc>
+      <image:title>Zircon Cubic White Gemstone - RMK Gems</image:title>
+    </image:image>
+  </url>
 </urlset>
-

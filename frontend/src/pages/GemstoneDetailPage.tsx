@@ -6,6 +6,7 @@ import { fetchGemstoneBySlug } from '../services/api';
 import { getGemstonePhoto, getGemstoneAltText, isRepresentativePhoto } from '../data/gemstonePhotos';
 import { createWhatsAppEnquiry, SHOP_CONFIG } from '../config/shop';
 import { FALLBACK_GEMSTONES } from '../data/gemstoneFallbackData';
+import { SEO } from '../components/SEO';
 
 const formatMaterialType = (type?: string): string => {
   if (!type) return 'Gemstone';
@@ -34,20 +35,26 @@ export const GemstoneDetailPage: React.FC = () => {
 
   if (!gemstone) {
     return (
-      <main className="py-24 bg-[#FAF8F5] min-h-screen flex items-center justify-center">
-        <div className="text-center max-w-md mx-auto p-8 bg-white rounded-2xl border border-[#E8E2D9] shadow-xs">
-          <h2 className="font-serif text-2xl font-bold text-[#1E1E1E] mb-3">Gemstone Not Found</h2>
-          <p className="text-sm text-[#717171] mb-6">
-            The requested gemstone is not available.
-          </p>
-          <Link
-            to="/precious-gemstones"
-            className="px-5 py-2.5 text-xs font-semibold tracking-wider text-white bg-[#997A48] hover:bg-[#806437] transition-colors rounded-full"
-          >
-            Browse Collections
-          </Link>
-        </div>
-      </main>
+      <>
+        <SEO
+          title="Gemstone Not Found"
+          description="The requested gemstone is not available in our catalogue."
+        />
+        <main className="py-24 bg-[#FAF8F5] min-h-screen flex items-center justify-center">
+          <div className="text-center max-w-md mx-auto p-8 bg-white rounded-2xl border border-[#E8E2D9] shadow-xs">
+            <h2 className="font-serif text-2xl font-bold text-[#1E1E1E] mb-3">Gemstone Not Found</h2>
+            <p className="text-sm text-[#717171] mb-6">
+              The requested gemstone is not available.
+            </p>
+            <Link
+              to="/precious-gemstones"
+              className="px-5 py-2.5 text-xs font-semibold tracking-wider text-white bg-[#997A48] hover:bg-[#806437] transition-colors rounded-full"
+            >
+              Browse Collections
+            </Link>
+          </div>
+        </main>
+      </>
     );
   }
 
@@ -58,8 +65,42 @@ export const GemstoneDetailPage: React.FC = () => {
   const categoryLabel = gemstone.category_name || (gemstone.category_slug === 'semi-precious' ? 'Semi-Precious Gemstones' : 'Precious Gemstones');
   const photoUrl = getGemstonePhoto(gemstone.slug);
 
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": `${gemstone.name} Gemstone`,
+    "image": `https://rmkgems.com${photoUrl}`,
+    "description": gemstone.short_description || `Authentic natural ${gemstone.name} gemstone available at RMK Gems, Tenkasi. Enquire for price and certification via WhatsApp.`,
+    "brand": {
+      "@type": "Brand",
+      "name": "RMK Gems"
+    },
+    "category": categoryLabel,
+    "color": gemstone.colour || undefined,
+    "offers": {
+      "@type": "Offer",
+      "url": `https://rmkgems.com/gemstones/${gemstone.slug}`,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "JewelryStore",
+        "name": "RMK Gems",
+        "telephone": "+919385706450"
+      }
+    }
+  };
+
   return (
-    <main className="py-10 sm:py-16 bg-[#FAF8F5] min-h-screen">
+    <>
+      <SEO
+        title={`${gemstone.name} Gemstone`}
+        description={gemstone.short_description ? `${gemstone.name} — ${gemstone.short_description}` : `Authentic natural ${gemstone.name} at RMK Gems Tenkasi. Check colour, hardness, and enquire via WhatsApp.`}
+        canonical={`/gemstones/${gemstone.slug}`}
+        ogImage={photoUrl}
+        ogType="product"
+        schema={productSchema}
+      />
+      <main className="py-10 sm:py-16 bg-[#FAF8F5] min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Breadcrumb Navigation */}
@@ -256,5 +297,6 @@ export const GemstoneDetailPage: React.FC = () => {
 
       </div>
     </main>
+    </>
   );
 };
