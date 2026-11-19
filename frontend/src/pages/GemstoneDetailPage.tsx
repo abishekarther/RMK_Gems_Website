@@ -69,7 +69,7 @@ export const GemstoneDetailPage: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": `${gemstone.name} Gemstone`,
-    "image": `https://rmkgems.com${photoUrl}`,
+    "image": `https://rmkgems.in${photoUrl}`,
     "description": gemstone.short_description || `Authentic natural ${gemstone.name} gemstone available at RMK Gems, Tenkasi. Enquire for price and certification via WhatsApp.`,
     "brand": {
       "@type": "Brand",
@@ -79,7 +79,7 @@ export const GemstoneDetailPage: React.FC = () => {
     "color": gemstone.colour || undefined,
     "offers": {
       "@type": "Offer",
-      "url": `https://rmkgems.com/gemstones/${gemstone.slug}`,
+      "url": `https://rmkgems.in/gemstones/${gemstone.slug}`,
       "priceCurrency": "INR",
       "availability": "https://schema.org/InStock",
       "seller": {

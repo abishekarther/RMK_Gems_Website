@@ -10,7 +10,7 @@ const preciousSchema = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
   "name": "Precious Gemstones Master Collection | RMK Gems",
-  "url": "https://rmkgems.com/precious-gemstones",
+  "url": "https://rmkgems.in/precious-gemstones",
   "description": "Browse RMK Gems curated collection of 9 iconic precious gemstones including Ruby, Emerald, Blue Sapphire, Yellow Sapphire, Diamond, Pearl, Red Coral, Hessonite, and Chrysoberyl Cat's Eye in Tenkasi.",
   "provider": {
     "@type": "JewelryStore",

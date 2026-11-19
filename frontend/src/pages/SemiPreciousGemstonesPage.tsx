@@ -10,7 +10,7 @@ const semiPreciousSchema = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
   "name": "Semi-Precious Gemstones Mineral Panorama | RMK Gems",
-  "url": "https://rmkgems.com/semi-precious-gemstones",
+  "url": "https://rmkgems.in/semi-precious-gemstones",
   "description": "Discover authentic semi-precious gemstones at RMK Gems Tenkasi. Over 50+ mineral varieties including Amethyst, Citrine, Aquamarine, Garnet, Peridot, Tourmaline, Moonstone, and more.",
   "provider": {
     "@type": "JewelryStore",

@@ -8,7 +8,7 @@ const contactSchema = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
   "name": "Contact RMK Gems & Visit Tenkasi Shop",
-  "url": "https://rmkgems.com/contact",
+  "url": "https://rmkgems.in/contact",
   "description": "Contact RMK Gems in Tenkasi or get in touch via WhatsApp for custom gemstone consultations, certificate verification, and nationwide shipping.",
   "mainEntity": {
     "@type": "JewelryStore",

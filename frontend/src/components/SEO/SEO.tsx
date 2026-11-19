@@ -11,7 +11,7 @@ export interface SEOProps {
 
 const DEFAULT_TITLE = 'RMK Gems — Fine Gemstone Catalogue & WhatsApp Enquiry | Tenkasi, Tamil Nadu';
 const DEFAULT_DESCRIPTION = 'Discover natural and fine precious & semi-precious gemstones at RMK Gems, Tenkasi. Explore authentic polished gemstones and enquire directly via WhatsApp. All-India delivery available.';
-const BASE_URL = 'https://rmkgems.com';
+const BASE_URL = 'https://rmkgems.in';
 const DEFAULT_IMAGE = `${BASE_URL}/images/slides/slide-1.jpg`;
 
 export const SEO: React.FC<SEOProps> = ({
